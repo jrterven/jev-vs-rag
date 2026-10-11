@@ -1,0 +1,13 @@
+# Official RAGAS collections API. Compatible LangChain imports are explicit:
+# unconstrained langchain-community 0.4 removes vertexai imported by RAGAS 0.4.3.
+# Use a separate venv; do not install in research/.venv (GPU worker).
+ragas==0.4.3
+langchain==0.3.27
+langchain-community==0.3.31
+langchain-core==0.3.80
+langchain-openai==0.3.35
+langchain-text-splitters==0.3.11
+instructor==1.11.3
+openai==1.109.1
+pydantic==2.13.5
+httpx==0.28.1

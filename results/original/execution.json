@@ -1,0 +1,853 @@
+{
+  "schemaVersion": 1,
+  "reportSha256": "f102690b610c8fc7c14f924ede944d470a4ddcaa3fb3a0d6a0e63bfaecff3e59",
+  "judgeComplete": true,
+  "preparation": [
+    {
+      "corpus": "openstax-books",
+      "documents": 8,
+      "sharedLocalIndexes": {
+        "meanMs": 56661.916406375014,
+        "medianMs": 51489.03363349999
+      },
+      "openaiDocumentEmbeddings": {
+        "meanMs": 28980.05961487502,
+        "medianMs": 23679.102031000017
+      }
+    },
+    {
+      "corpus": "qasper-test",
+      "documents": 264,
+      "sharedLocalIndexes": {
+        "meanMs": 597.201280632574,
+        "medianMs": 470.291432500002
+      },
+      "openaiDocumentEmbeddings": {
+        "meanMs": 1143.5380480530318,
+        "medianMs": 642.7758985000255
+      }
+    }
+  ],
+  "generation": [
+    {
+      "corpus": "openstax-books",
+      "method": "bge-m3",
+      "assigned": 60,
+      "completed": 60,
+      "retrievalFailed": 0,
+      "oracleIneligible": 0,
+      "failedOrUnavailable": 0,
+      "generationWallTime": {
+        "medianMs": 1694.8976594991982,
+        "p95Ms": 2365.241738250013
+      }
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "bm25",
+      "assigned": 60,
+      "completed": 60,
+      "retrievalFailed": 0,
+      "oracleIneligible": 0,
+      "failedOrUnavailable": 0,
+      "generationWallTime": {
+        "medianMs": 1569.2246035002172,
+        "p95Ms": 2191.218303049449
+      }
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "closed-book",
+      "assigned": 60,
+      "completed": 60,
+      "retrievalFailed": 0,
+      "oracleIneligible": 0,
+      "failedOrUnavailable": 0,
+      "generationWallTime": {
+        "medianMs": 1396.33015349973,
+        "p95Ms": 2101.287963948771
+      }
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "hybrid",
+      "assigned": 60,
+      "completed": 60,
+      "retrievalFailed": 0,
+      "oracleIneligible": 0,
+      "failedOrUnavailable": 0,
+      "generationWallTime": {
+        "medianMs": 1703.900375999976,
+        "p95Ms": 2331.600016499404
+      }
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "hybrid-bge",
+      "assigned": 60,
+      "completed": 59,
+      "retrievalFailed": 0,
+      "oracleIneligible": 0,
+      "failedOrUnavailable": 1,
+      "generationWallTime": {
+        "medianMs": 1640.5813270006329,
+        "p95Ms": 2374.10622670073
+      }
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "hybrid-jev",
+      "assigned": 60,
+      "completed": 60,
+      "retrievalFailed": 0,
+      "oracleIneligible": 0,
+      "failedOrUnavailable": 0,
+      "generationWallTime": {
+        "medianMs": 1652.1147275008261,
+        "p95Ms": 2797.9238086998926
+      }
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "jev-scan",
+      "assigned": 60,
+      "completed": 57,
+      "retrievalFailed": 3,
+      "oracleIneligible": 0,
+      "failedOrUnavailable": 3,
+      "generationWallTime": {
+        "medianMs": 1716.7022080011666,
+        "p95Ms": 3132.4711749995045
+      }
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "openai-dense",
+      "assigned": 60,
+      "completed": 60,
+      "retrievalFailed": 0,
+      "oracleIneligible": 0,
+      "failedOrUnavailable": 0,
+      "generationWallTime": {
+        "medianMs": 1646.646028499119,
+        "p95Ms": 2245.150623799581
+      }
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "oracle",
+      "assigned": 60,
+      "completed": 60,
+      "retrievalFailed": 0,
+      "oracleIneligible": 0,
+      "failedOrUnavailable": 0,
+      "generationWallTime": {
+        "medianMs": 1264.1981340004131,
+        "p95Ms": 1732.481274450104
+      }
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "bge-m3",
+      "assigned": 140,
+      "completed": 139,
+      "retrievalFailed": 0,
+      "oracleIneligible": 0,
+      "failedOrUnavailable": 1,
+      "generationWallTime": {
+        "medianMs": 1536.7182710003108,
+        "p95Ms": 2149.475513799954
+      }
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "bm25",
+      "assigned": 140,
+      "completed": 140,
+      "retrievalFailed": 0,
+      "oracleIneligible": 0,
+      "failedOrUnavailable": 0,
+      "generationWallTime": {
+        "medianMs": 1556.0730874999426,
+        "p95Ms": 2392.8836590013
+      }
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "closed-book",
+      "assigned": 140,
+      "completed": 140,
+      "retrievalFailed": 0,
+      "oracleIneligible": 0,
+      "failedOrUnavailable": 0,
+      "generationWallTime": {
+        "medianMs": 1264.275886499323,
+        "p95Ms": 1709.9556395508343
+      }
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "hybrid",
+      "assigned": 140,
+      "completed": 140,
+      "retrievalFailed": 0,
+      "oracleIneligible": 0,
+      "failedOrUnavailable": 0,
+      "generationWallTime": {
+        "medianMs": 1555.5728584998287,
+        "p95Ms": 2253.6462922004494
+      }
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "hybrid-bge",
+      "assigned": 140,
+      "completed": 140,
+      "retrievalFailed": 0,
+      "oracleIneligible": 0,
+      "failedOrUnavailable": 0,
+      "generationWallTime": {
+        "medianMs": 1628.6877309996635,
+        "p95Ms": 2543.7516503506804
+      }
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "hybrid-jev",
+      "assigned": 140,
+      "completed": 139,
+      "retrievalFailed": 0,
+      "oracleIneligible": 0,
+      "failedOrUnavailable": 1,
+      "generationWallTime": {
+        "medianMs": 1592.42264899984,
+        "p95Ms": 2493.8686067000026
+      }
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "jev-scan",
+      "assigned": 140,
+      "completed": 140,
+      "retrievalFailed": 0,
+      "oracleIneligible": 0,
+      "failedOrUnavailable": 0,
+      "generationWallTime": {
+        "medianMs": 1631.0142614999786,
+        "p95Ms": 2249.0444969998657
+      }
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "openai-dense",
+      "assigned": 140,
+      "completed": 140,
+      "retrievalFailed": 0,
+      "oracleIneligible": 0,
+      "failedOrUnavailable": 0,
+      "generationWallTime": {
+        "medianMs": 1648.6971014998853,
+        "p95Ms": 2332.1365288503457
+      }
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "oracle",
+      "assigned": 140,
+      "completed": 140,
+      "retrievalFailed": 0,
+      "oracleIneligible": 0,
+      "failedOrUnavailable": 0,
+      "generationWallTime": {
+        "medianMs": 1144.6622085003182,
+        "p95Ms": 1794.7944814493874
+      }
+    }
+  ],
+  "timingByRound": [
+    {
+      "corpus": "openstax-books",
+      "method": "bge-m3",
+      "round0based": 0,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 23.078734500333667
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "bge-m3",
+      "round0based": 1,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 22.810573499882594
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "bge-m3",
+      "round0based": 2,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 23.438676500227302
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "bm25",
+      "round0based": 0,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 17.040183000266552
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "bm25",
+      "round0based": 1,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 17.169345000060275
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "bm25",
+      "round0based": 2,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 16.272519999882206
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "hybrid",
+      "round0based": 0,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 44.82055599987507
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "hybrid",
+      "round0based": 1,
+      "assigned": 50,
+      "valid": 49,
+      "failed": 0,
+      "completedTimingInvalid": 1,
+      "medianMs": 44.40282700001262
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "hybrid",
+      "round0based": 2,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 49.938118499936536
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "hybrid-bge",
+      "round0based": 0,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 2054.0282994997688
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "hybrid-bge",
+      "round0based": 1,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 2042.313166999782
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "hybrid-bge",
+      "round0based": 2,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 2056.341198500246
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "hybrid-jev",
+      "round0based": 0,
+      "assigned": 50,
+      "valid": 49,
+      "failed": 1,
+      "completedTimingInvalid": 0,
+      "medianMs": 1973.2419649995863
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "hybrid-jev",
+      "round0based": 1,
+      "assigned": 50,
+      "valid": 47,
+      "failed": 3,
+      "completedTimingInvalid": 0,
+      "medianMs": 1939.4056449999916
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "hybrid-jev",
+      "round0based": 2,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 2045.7815419996623
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "jev-scan",
+      "round0based": 0,
+      "assigned": 50,
+      "valid": 48,
+      "failed": 2,
+      "completedTimingInvalid": 0,
+      "medianMs": 26101.414259000216
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "jev-scan",
+      "round0based": 1,
+      "assigned": 50,
+      "valid": 46,
+      "failed": 4,
+      "completedTimingInvalid": 0,
+      "medianMs": 26477.37389050005
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "jev-scan",
+      "round0based": 2,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 27346.88901500008
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "openai-dense",
+      "round0based": 0,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 497.93536500027403
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "openai-dense",
+      "round0based": 1,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 566.0570585000096
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "openai-dense",
+      "round0based": 2,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 588.7273599999025
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "bge-m3",
+      "round0based": 0,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 17.365366500336677
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "bge-m3",
+      "round0based": 1,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 16.71331100037787
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "bge-m3",
+      "round0based": 2,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 16.943021500483155
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "bm25",
+      "round0based": 0,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 4.9742720001377165
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "bm25",
+      "round0based": 1,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 4.910826000093948
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "bm25",
+      "round0based": 2,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 5.16410050005652
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "hybrid",
+      "round0based": 0,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 26.822887499816716
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "hybrid",
+      "round0based": 1,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 27.184042500331998
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "hybrid",
+      "round0based": 2,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 27.494504499947652
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "hybrid-bge",
+      "round0based": 0,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 492.755946499994
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "hybrid-bge",
+      "round0based": 1,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 499.9787475002231
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "hybrid-bge",
+      "round0based": 2,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 489.45772250019945
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "hybrid-jev",
+      "round0based": 0,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 526.1470695002936
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "hybrid-jev",
+      "round0based": 1,
+      "assigned": 50,
+      "valid": 43,
+      "failed": 7,
+      "completedTimingInvalid": 0,
+      "medianMs": 444.10954099998344
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "hybrid-jev",
+      "round0based": 2,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 493.743475999916
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "jev-scan",
+      "round0based": 0,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 471.63440700015053
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "jev-scan",
+      "round0based": 1,
+      "assigned": 50,
+      "valid": 43,
+      "failed": 7,
+      "completedTimingInvalid": 0,
+      "medianMs": 460.65004099998623
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "jev-scan",
+      "round0based": 2,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 423.92364399996586
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "openai-dense",
+      "round0based": 0,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 515.6897700000554
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "openai-dense",
+      "round0based": 1,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 559.4070875002071
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "openai-dense",
+      "round0based": 2,
+      "assigned": 50,
+      "valid": 50,
+      "failed": 0,
+      "completedTimingInvalid": 0,
+      "medianMs": 578.7956934999675
+    }
+  ],
+  "generationContext": [
+    {
+      "corpus": "qasper-test",
+      "method": "hybrid-jev",
+      "completed": 139,
+      "omittedPassageGenerations": 0
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "hybrid",
+      "completed": 140,
+      "omittedPassageGenerations": 1
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "jev-scan",
+      "completed": 140,
+      "omittedPassageGenerations": 0
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "bm25",
+      "completed": 140,
+      "omittedPassageGenerations": 2
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "hybrid-bge",
+      "completed": 140,
+      "omittedPassageGenerations": 2
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "bge-m3",
+      "completed": 139,
+      "omittedPassageGenerations": 2
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "openai-dense",
+      "completed": 140,
+      "omittedPassageGenerations": 0
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "bm25",
+      "completed": 60,
+      "omittedPassageGenerations": 18
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "bge-m3",
+      "completed": 60,
+      "omittedPassageGenerations": 6
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "openai-dense",
+      "completed": 60,
+      "omittedPassageGenerations": 7
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "hybrid-bge",
+      "completed": 59,
+      "omittedPassageGenerations": 10
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "jev-scan",
+      "completed": 57,
+      "omittedPassageGenerations": 12
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "hybrid",
+      "completed": 60,
+      "omittedPassageGenerations": 9
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "hybrid-jev",
+      "completed": 60,
+      "omittedPassageGenerations": 10
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "closed-book",
+      "completed": 140,
+      "omittedPassageGenerations": 0
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "oracle",
+      "completed": 140,
+      "omittedPassageGenerations": 0
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "closed-book",
+      "completed": 60,
+      "omittedPassageGenerations": 0
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "oracle",
+      "completed": 60,
+      "omittedPassageGenerations": 0
+    }
+  ],
+  "executionCohorts": [
+    {
+      "label": "Primary base retrieval",
+      "assigned": 3332,
+      "completed": 3327,
+      "failed": 5,
+      "unavailable": 0
+    },
+    {
+      "label": "Later retrieval repetitions",
+      "assigned": 1400,
+      "completed": 1379,
+      "failed": 21,
+      "unavailable": 0
+    },
+    {
+      "label": "Retrieval/control setup",
+      "assigned": 400,
+      "completed": 400,
+      "failed": 0,
+      "unavailable": 0
+    },
+    {
+      "label": "Answer generation",
+      "assigned": 1800,
+      "completed": 1794,
+      "failed": 3,
+      "unavailable": 3
+    }
+  ],
+  "costComponents": {
+    "preparation": {
+      "knownSubtotalUsd": "0.13407260",
+      "unknownAttempts": 0,
+      "unresolvedReservationUsd": "0"
+    },
+    "baseRetrieval": {
+      "knownSubtotalUsd": "5.588127160",
+      "unknownAttempts": 5,
+      "unresolvedReservationUsd": "0.210"
+    },
+    "repeatedRetrieval": {
+      "knownSubtotalUsd": "6.606009560",
+      "unknownAttempts": 28,
+      "unresolvedReservationUsd": "1.176"
+    },
+    "generation": {
+      "knownSubtotalUsd": "1.6952568",
+      "unknownAttempts": 1,
+      "unresolvedReservationUsd": "0.4198496"
+    }
+  },
+  "observedUsd": "14.02346612",
+  "unresolvedReservationUsd": "1.8058496"
+}

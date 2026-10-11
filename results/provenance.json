@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "kind": "numerical-result-provenance",
+  "artifacts": [
+    {
+      "path": "original/measurements.json",
+      "cohort": "original",
+      "sourceSha256": "844bf32f709fd8041ef8e11f52cf76144559154ff746bd956a5fe27dd520d0ff",
+      "sha256": "844bf32f709fd8041ef8e11f52cf76144559154ff746bd956a5fe27dd520d0ff"
+    },
+    {
+      "path": "original/execution.json",
+      "cohort": "original",
+      "sourceSha256": "68a473364030db4c41b7455d14b220d1cb13966f3bbf39bbb2b2bed79128f77a",
+      "sha256": "68a473364030db4c41b7455d14b220d1cb13966f3bbf39bbb2b2bed79128f77a"
+    },
+    {
+      "path": "original/answer-metrics.json",
+      "cohort": "original",
+      "sourceSha256": "c9dbd1d8084430f3fd90ee9c2714069d206bb64a7f1bd58ffb3e3f6cd371142f",
+      "sha256": "c9dbd1d8084430f3fd90ee9c2714069d206bb64a7f1bd58ffb3e3f6cd371142f"
+    },
+    {
+      "path": "original/retrieval-sensitivity.json",
+      "cohort": "original",
+      "sourceSha256": "b86fc57efce81bdbb000ab6451c9beb19d0e35381242f697910a4e444e5bd4ff",
+      "sha256": "b86fc57efce81bdbb000ab6451c9beb19d0e35381242f697910a4e444e5bd4ff"
+    },
+    {
+      "path": "original/generation-context.json",
+      "cohort": "original",
+      "sourceSha256": "194ed2ef98ce643d35585cb7deb2e7bfeacde2e9b32d8fd82f953ff87cdf39ba",
+      "sha256": "194ed2ef98ce643d35585cb7deb2e7bfeacde2e9b32d8fd82f953ff87cdf39ba"
+    },
+    {
+      "path": "original/cost-audit.json",
+      "cohort": "original",
+      "sourceSha256": "7f144d5447a8ee4a9e9bbcda730f6c46a3a47672d0dc0e4faedf6ac43eb5f269",
+      "sha256": "7f144d5447a8ee4a9e9bbcda730f6c46a3a47672d0dc0e4faedf6ac43eb5f269"
+    },
+    {
+      "path": "decisions/retrieval.json",
+      "cohort": "decisions",
+      "sourceSha256": "30b821e441410271080fe53004024fe72e5f581ea865b291e5fe3ffdf03fb5d4",
+      "sha256": "07c414ae75d31dca0ad7e671e15a893203162bcc8e8cd12197deee98179bd555"
+    },
+    {
+      "path": "decisions/answers.json",
+      "cohort": "decisions",
+      "sourceSha256": "8bd08e9805050fb6575ab6a983473428d93451e41011586253842b7b4597ec66",
+      "sha256": "6032e721168d4d0abcc44bd12f669df29626336d239a06ae4aaeb14979775a2f"
+    },
+    {
+      "path": "decisions/audit-summary.json",
+      "cohort": "decisions",
+      "sourceSha256": "6a9b7f4c9982b1213156996bb06daf880622ccde0d0da84d6c3a05d472598244",
+      "sha256": "6a9b7f4c9982b1213156996bb06daf880622ccde0d0da84d6c3a05d472598244"
+    },
+    {
+      "path": "clef/measurements.json",
+      "cohort": "clef",
+      "sourceSha256": "095cbc76c8fc5b90f34aab9af8ec2fc4fb080c9687dbb93aa34c7e6ee30c7d2b",
+      "sha256": "5be660a61cc55cd5dca7c18e065feafe4d9db6eea68096d9b798e84fb9aadfe7"
+    },
+    {
+      "path": "clef/audit-summary.json",
+      "cohort": "clef",
+      "sourceSha256": "b533c680f8460a0abd2722ce4a9c318cefe7dd2a2f47a5be18be49511094c344",
+      "sha256": "b533c680f8460a0abd2722ce4a9c318cefe7dd2a2f47a5be18be49511094c344"
+    }
+  ],
+  "summary": "Checksums bind the distributed numerical measurements to their recorded source artifacts. Public projections exclude presentation-only metadata while preserving all measurements, counts, intervals, and API accounting."
+}

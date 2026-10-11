@@ -1,0 +1,28 @@
+services:
+  annotation:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ${ANNOTATION_IMAGE:?Set ANNOTATION_IMAGE}
+    environment:
+      NODE_ENV: production
+      ANNOTATION_HOST: 0.0.0.0
+      ANNOTATION_PORT: "3002"
+      ANNOTATION_DATA_DIR: /data
+      ANNOTATION_ORIGIN: ${ANNOTATION_ORIGIN:?Set ANNOTATION_ORIGIN}
+      ANNOTATION_TRUST_PROXY: "1"
+    ports:
+      - "127.0.0.1:${ANNOTATION_BIND_PORT:-13002}:3002"
+    volumes:
+      - annotation-data:/data
+    restart: unless-stopped
+    init: true
+    read_only: true
+    tmpfs:
+      - /tmp:size=64m,mode=1777
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    stop_grace_period: 30s
+volumes:
+  annotation-data:
+    name: ${ANNOTATION_DATA_VOLUME:?Set ANNOTATION_DATA_VOLUME}

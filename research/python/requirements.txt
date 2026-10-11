@@ -1,0 +1,9 @@
+# Python 3.11 or 3.12; pin the CUDA-compatible torch build for the actual host separately.
+# Base version below; record torch.__version__ (including +cu suffix) in the run manifest.
+torch==2.9.1
+transformers==4.57.3
+numpy==2.3.4
+huggingface-hub==0.36.0
+sentencepiece==0.2.1
+safetensors==0.6.2
+snowballstemmer==2.2.0

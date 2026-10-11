@@ -1,0 +1,12 @@
+# Optional: connect ONLY this app to an existing Docker proxy network.
+services:
+  annotation:
+    networks:
+      default: {}
+      existing-proxy:
+        aliases:
+          - ${ANNOTATION_PROXY_ALIAS:-jev-annotation-upstream}
+networks:
+  existing-proxy:
+    external: true
+    name: ${ANNOTATION_PROXY_NETWORK:?Set ANNOTATION_PROXY_NETWORK}

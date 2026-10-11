@@ -1,0 +1,1828 @@
+{
+  "schemaVersion": 1,
+  "kind": "audited-clef-aggregate-figure-data",
+  "sourceHashes": {
+    "retrieval-analysis-final.json": "a0f6ae084ca55422db9f5909f4d3d785f4c94b533befe0048284287fe918107e",
+    "judge-analysis-final.json": "17ccd4f2b4e11c1d3b86588e32da84ac357e70da95c181fad8603ace5a3a1a49",
+    "judge-final-audit.json": "bd272f9b1619ed2efbdf15210dc32cc791802cc61f90ff81ee320b57b0c2dc7a",
+    "judge-preservation.json": "c2f7ac06188171fc463e8cd227f6663ad7b9b9d0ceed565932879aa6134fd135",
+    "candidate-scope-diagnostic.json": "fbc2875bad35a0da00a414ae8a0ca08ce1071178a0370ce3c1318c16eb9ec243",
+    "earlier-primary-timing-components.json": "08486f5c1edd2d7a0f64d94bc5bfb7a99853febd0321d59a994d88b3edde5177"
+  },
+  "quality": [
+    {
+      "corpus": "qasper-test",
+      "method": "openai-dense",
+      "mean": 0.9036478160765025,
+      "low": 0.8698417802955783,
+      "high": 0.9350258131721596
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "hybrid-bge",
+      "mean": 0.8894590685647943,
+      "low": 0.8581977143690818,
+      "high": 0.9188427164621161
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "hybrid-jev",
+      "mean": 0.9701994256935285,
+      "low": 0.9532818572848294,
+      "high": 0.9844890739952535
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "jev-scan",
+      "mean": 0.9771609179223232,
+      "low": 0.963309335488457,
+      "high": 0.9886797366820591
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "openai-dense",
+      "mean": 0.813151936089188,
+      "low": 0.7281303615711651,
+      "high": 0.8942212978327445
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "hybrid-bge",
+      "mean": 0.8662287712287712,
+      "low": 0.7995941558441559,
+      "high": 0.9312499999999999
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "hybrid-jev",
+      "mean": 0.9412477106227106,
+      "low": 0.9099969093406592,
+      "high": 0.9721428571428572
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "jev-scan",
+      "mean": 0.8871130952380952,
+      "low": 0.8117261904761904,
+      "high": 0.9475297619047619
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "hybrid-decisions",
+      "mean": 0.9622366451101142,
+      "low": 0.9410694414524364,
+      "high": 0.979647829672706
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "decisions-scan",
+      "mean": 0.9622366451101142,
+      "low": 0.9410694414524364,
+      "high": 0.979647829672706
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "hybrid-decisions",
+      "mean": 0.8741351140855038,
+      "low": 0.8338483146067417,
+      "high": 0.9183304803867001
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "decisions-scan",
+      "mean": 0.7663262078754346,
+      "low": 0.7082371794871796,
+      "high": 0.806977271003144
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "hybrid-clef",
+      "mean": 0.9883606815619816,
+      "low": 0.9761381026137702,
+      "high": 0.9971914054444212,
+      "clusters": 230,
+      "samples": 10000,
+      "seed": 42
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "clef-scan",
+      "mean": 0.9883606815619816,
+      "low": 0.9761381026137702,
+      "high": 0.9971914054444212,
+      "clusters": 230,
+      "samples": 10000,
+      "seed": 42
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "hybrid-clef",
+      "mean": 0.9121130952380953,
+      "low": 0.8475297619047619,
+      "high": 0.9689084821428572,
+      "clusters": 8,
+      "samples": 10000,
+      "seed": 42
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "clef-scan",
+      "mean": 0.916109693877551,
+      "low": 0.866109693877551,
+      "high": 0.9638149447278912,
+      "clusters": 8,
+      "samples": 10000,
+      "seed": 42
+    }
+  ],
+  "timing": [
+    {
+      "corpus": "qasper-test",
+      "method": "hybrid-jev",
+      "scope": "reranking-only",
+      "environment": "earlier exclusive block",
+      "n": 396,
+      "assigned": 396,
+      "medianSeconds": 0.3384947304998059,
+      "p95Seconds": 0.7514588837503688
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "jev-scan",
+      "scope": "full-scan",
+      "environment": "earlier exclusive block",
+      "n": 396,
+      "assigned": 396,
+      "medianSeconds": 0.339064323999919,
+      "p95Seconds": 0.7166217662499985
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "hybrid-decisions",
+      "scope": "reranking-only",
+      "environment": "earlier exclusive block",
+      "n": 395,
+      "assigned": 396,
+      "medianSeconds": 0.6209931169999764,
+      "p95Seconds": 1.1626432659998511
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "decisions-scan",
+      "scope": "full-scan",
+      "environment": "earlier exclusive block",
+      "n": 396,
+      "assigned": 396,
+      "medianSeconds": 0.6205889084999798,
+      "p95Seconds": 1.0384112099999911
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "hybrid-clef",
+      "scope": "reranking-only",
+      "environment": "new shared Spark",
+      "n": 396,
+      "assigned": 396,
+      "medianSeconds": 5.453482029959559,
+      "p95Seconds": 10.1327305555169
+    },
+    {
+      "corpus": "qasper-test",
+      "method": "clef-scan",
+      "scope": "full-scan",
+      "environment": "new shared Spark",
+      "n": 396,
+      "assigned": 396,
+      "medianSeconds": 5.462235431012232,
+      "p95Seconds": 10.108955600240733
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "hybrid-jev",
+      "scope": "reranking-only",
+      "environment": "earlier exclusive block",
+      "n": 79,
+      "assigned": 80,
+      "medianSeconds": 1.7237829280002042,
+      "p95Seconds": 2.372443119699601
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "jev-scan",
+      "scope": "full-scan",
+      "environment": "earlier exclusive block",
+      "n": 76,
+      "assigned": 80,
+      "medianSeconds": 25.10284382599965,
+      "p95Seconds": 45.710618857999854
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "hybrid-decisions",
+      "scope": "reranking-only",
+      "environment": "earlier exclusive block",
+      "n": 80,
+      "assigned": 80,
+      "medianSeconds": 4.513759198500076,
+      "p95Seconds": 5.5771317771998925
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "decisions-scan",
+      "scope": "full-scan",
+      "environment": "earlier exclusive block",
+      "n": 72,
+      "assigned": 80,
+      "medianSeconds": 63.36064489550027,
+      "p95Seconds": 112.58598733375014
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "hybrid-clef",
+      "scope": "reranking-only",
+      "environment": "new shared Spark",
+      "n": 80,
+      "assigned": 80,
+      "medianSeconds": 54.69076712947572,
+      "p95Seconds": 62.58020838230732
+    },
+    {
+      "corpus": "openstax-books",
+      "method": "clef-scan",
+      "scope": "full-scan",
+      "environment": "new shared Spark",
+      "n": 80,
+      "assigned": 80,
+      "medianSeconds": 1397.6722788299667,
+      "p95Seconds": 2494.5308383759693
+    }
+  ],
+  "retention": [
+    {
+      "method": "hybrid-clef",
+      "stage": "initial",
+      "coverage": 0.9875,
+      "queries": 80,
+      "documents": 8
+    },
+    {
+      "method": "hybrid-clef",
+      "stage": "first-selection",
+      "coverage": 0.9875,
+      "queries": 80,
+      "documents": 8
+    },
+    {
+      "method": "hybrid-clef",
+      "stage": "final-input",
+      "coverage": 0.9770833333333333,
+      "queries": 80,
+      "documents": 8
+    },
+    {
+      "method": "hybrid-clef",
+      "stage": "final-five",
+      "coverage": 0.9121130952380953,
+      "queries": 80,
+      "documents": 8
+    },
+    {
+      "method": "clef-scan",
+      "stage": "initial",
+      "coverage": 1,
+      "queries": 80,
+      "documents": 8
+    },
+    {
+      "method": "clef-scan",
+      "stage": "first-selection",
+      "coverage": 1,
+      "queries": 80,
+      "documents": 8
+    },
+    {
+      "method": "clef-scan",
+      "stage": "final-input",
+      "coverage": 0.9875,
+      "queries": 80,
+      "documents": 8
+    },
+    {
+      "method": "clef-scan",
+      "stage": "final-five",
+      "coverage": 0.916109693877551,
+      "queries": 80,
+      "documents": 8
+    }
+  ],
+  "answerGroups": [
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "hybrid-bge",
+      "metric": "answer_accuracy",
+      "nAnswers": 59,
+      "nRequested": 59,
+      "nScored": 59,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 1,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.8418402777777778,
+      "naReasons": {},
+      "referenceKinds": {
+        "model_generated_book": 58,
+        "human_book": 1
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "hybrid-bge",
+      "metric": "faithfulness",
+      "nAnswers": 59,
+      "nRequested": 59,
+      "nScored": 59,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 1,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.9473557056369556,
+      "naReasons": {},
+      "referenceKinds": {
+        "model_generated_book": 58,
+        "human_book": 1
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "hybrid-jev",
+      "metric": "answer_accuracy",
+      "nAnswers": 60,
+      "nRequested": 60,
+      "nScored": 60,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.864360119047619,
+      "naReasons": {},
+      "referenceKinds": {
+        "model_generated_book": 59,
+        "human_book": 1
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "hybrid-jev",
+      "metric": "faithfulness",
+      "nAnswers": 60,
+      "nRequested": 60,
+      "nScored": 60,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.9631761551664826,
+      "naReasons": {},
+      "referenceKinds": {
+        "model_generated_book": 59,
+        "human_book": 1
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "jev-scan",
+      "metric": "answer_accuracy",
+      "nAnswers": 57,
+      "nRequested": 57,
+      "nScored": 57,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 3,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.8738095238095238,
+      "naReasons": {},
+      "referenceKinds": {
+        "model_generated_book": 56,
+        "human_book": 1
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "jev-scan",
+      "metric": "faithfulness",
+      "nAnswers": 57,
+      "nRequested": 57,
+      "nScored": 57,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 3,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.9750550575343774,
+      "naReasons": {},
+      "referenceKinds": {
+        "model_generated_book": 56,
+        "human_book": 1
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "openai-dense",
+      "metric": "answer_accuracy",
+      "nAnswers": 60,
+      "nRequested": 60,
+      "nScored": 60,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.8349578373015873,
+      "naReasons": {},
+      "referenceKinds": {
+        "model_generated_book": 59,
+        "human_book": 1
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "openai-dense",
+      "metric": "faithfulness",
+      "nAnswers": 60,
+      "nRequested": 60,
+      "nScored": 60,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.9102899132571314,
+      "naReasons": {},
+      "referenceKinds": {
+        "model_generated_book": 59,
+        "human_book": 1
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "hybrid-bge",
+      "metric": "answer_accuracy",
+      "nAnswers": 100,
+      "nRequested": 100,
+      "nScored": 100,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 92,
+      "meanDocumentMacro": 0.6082427536231884,
+      "naReasons": {},
+      "referenceKinds": {
+        "human_qasper": 100
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "hybrid-bge",
+      "metric": "faithfulness",
+      "nAnswers": 100,
+      "nRequested": 99,
+      "nScored": 99,
+      "nNA": 1,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 91,
+      "meanDocumentMacro": 0.951516615252879,
+      "naReasons": {
+        "explicit_abstention": 1
+      },
+      "referenceKinds": {
+        "human_qasper": 100
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "hybrid-jev",
+      "metric": "answer_accuracy",
+      "nAnswers": 99,
+      "nRequested": 99,
+      "nScored": 99,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 1,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 91,
+      "meanDocumentMacro": 0.6071428571428571,
+      "naReasons": {},
+      "referenceKinds": {
+        "human_qasper": 99
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "hybrid-jev",
+      "metric": "faithfulness",
+      "nAnswers": 99,
+      "nRequested": 98,
+      "nScored": 98,
+      "nNA": 1,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 1,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 90,
+      "meanDocumentMacro": 0.9582772936939603,
+      "naReasons": {
+        "explicit_abstention": 1
+      },
+      "referenceKinds": {
+        "human_qasper": 99
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "jev-scan",
+      "metric": "answer_accuracy",
+      "nAnswers": 100,
+      "nRequested": 100,
+      "nScored": 100,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 92,
+      "meanDocumentMacro": 0.6019021739130435,
+      "naReasons": {},
+      "referenceKinds": {
+        "human_qasper": 100
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "jev-scan",
+      "metric": "faithfulness",
+      "nAnswers": 100,
+      "nRequested": 99,
+      "nScored": 99,
+      "nNA": 1,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 91,
+      "meanDocumentMacro": 0.948464533294042,
+      "naReasons": {
+        "explicit_abstention": 1
+      },
+      "referenceKinds": {
+        "human_qasper": 100
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "openai-dense",
+      "metric": "answer_accuracy",
+      "nAnswers": 100,
+      "nRequested": 100,
+      "nScored": 99,
+      "nNA": 0,
+      "nFailed": 1,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 91,
+      "meanDocumentMacro": 0.6135531135531136,
+      "naReasons": {},
+      "referenceKinds": {
+        "human_qasper": 100
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "openai-dense",
+      "metric": "faithfulness",
+      "nAnswers": 100,
+      "nRequested": 99,
+      "nScored": 99,
+      "nNA": 1,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 91,
+      "meanDocumentMacro": 0.9472864683797134,
+      "naReasons": {
+        "explicit_abstention": 1
+      },
+      "referenceKinds": {
+        "human_qasper": 100
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "hybrid-bge",
+      "metric": "answer_accuracy",
+      "nAnswers": 40,
+      "nRequested": 0,
+      "nScored": 0,
+      "nNA": 40,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 0,
+      "meanDocumentMacro": null,
+      "naReasons": {
+        "unanswerable_reference": 40
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "hybrid-bge",
+      "metric": "faithfulness",
+      "nAnswers": 40,
+      "nRequested": 25,
+      "nScored": 25,
+      "nNA": 15,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 24,
+      "meanDocumentMacro": 0.7606962481962481,
+      "naReasons": {
+        "explicit_abstention": 15
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "hybrid-jev",
+      "metric": "answer_accuracy",
+      "nAnswers": 40,
+      "nRequested": 0,
+      "nScored": 0,
+      "nNA": 40,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 0,
+      "meanDocumentMacro": null,
+      "naReasons": {
+        "unanswerable_reference": 40
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "hybrid-jev",
+      "metric": "faithfulness",
+      "nAnswers": 40,
+      "nRequested": 28,
+      "nScored": 28,
+      "nNA": 12,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 26,
+      "meanDocumentMacro": 0.7721904164211857,
+      "naReasons": {
+        "explicit_abstention": 12
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "jev-scan",
+      "metric": "answer_accuracy",
+      "nAnswers": 40,
+      "nRequested": 0,
+      "nScored": 0,
+      "nNA": 40,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 0,
+      "meanDocumentMacro": null,
+      "naReasons": {
+        "unanswerable_reference": 40
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "jev-scan",
+      "metric": "faithfulness",
+      "nAnswers": 40,
+      "nRequested": 27,
+      "nScored": 27,
+      "nNA": 13,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 24,
+      "meanDocumentMacro": 0.7633943602693603,
+      "naReasons": {
+        "explicit_abstention": 13
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "openai-dense",
+      "metric": "answer_accuracy",
+      "nAnswers": 40,
+      "nRequested": 0,
+      "nScored": 0,
+      "nNA": 40,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 0,
+      "meanDocumentMacro": null,
+      "naReasons": {
+        "unanswerable_reference": 40
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "openai-dense",
+      "metric": "faithfulness",
+      "nAnswers": 40,
+      "nRequested": 23,
+      "nScored": 23,
+      "nNA": 17,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 22,
+      "meanDocumentMacro": 0.8510489510489511,
+      "naReasons": {
+        "explicit_abstention": 17
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "decisions-extension-20261007-v1:v2:main",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "decisions-scan",
+      "metric": "answer_accuracy",
+      "nAnswers": 53,
+      "nRequested": 53,
+      "nScored": 53,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 7,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.8876612103174604,
+      "naReasons": {},
+      "referenceKinds": {
+        "human_book": 1,
+        "model_generated_book": 52
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "decisions-extension-20261007-v1:v2:main",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "decisions-scan",
+      "metric": "faithfulness",
+      "nAnswers": 53,
+      "nRequested": 53,
+      "nScored": 53,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 7,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.9726657519068234,
+      "naReasons": {},
+      "referenceKinds": {
+        "human_book": 1,
+        "model_generated_book": 52
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "decisions-extension-20261007-v1:v2:main",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "hybrid-decisions",
+      "metric": "answer_accuracy",
+      "nAnswers": 60,
+      "nRequested": 60,
+      "nScored": 60,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.8919022817460318,
+      "naReasons": {},
+      "referenceKinds": {
+        "model_generated_book": 59,
+        "human_book": 1
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "decisions-extension-20261007-v1:v2:main",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "hybrid-decisions",
+      "metric": "faithfulness",
+      "nAnswers": 60,
+      "nRequested": 60,
+      "nScored": 60,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.9737773086118674,
+      "naReasons": {},
+      "referenceKinds": {
+        "model_generated_book": 59,
+        "human_book": 1
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "decisions-extension-20261007-v1:v2:main",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "decisions-scan",
+      "metric": "answer_accuracy",
+      "nAnswers": 100,
+      "nRequested": 100,
+      "nScored": 100,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 92,
+      "meanDocumentMacro": 0.6154891304347826,
+      "naReasons": {},
+      "referenceKinds": {
+        "human_qasper": 100
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "decisions-extension-20261007-v1:v2:main",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "decisions-scan",
+      "metric": "faithfulness",
+      "nAnswers": 100,
+      "nRequested": 99,
+      "nScored": 99,
+      "nNA": 1,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 91,
+      "meanDocumentMacro": 0.9563930035836612,
+      "naReasons": {
+        "explicit_abstention": 1
+      },
+      "referenceKinds": {
+        "human_qasper": 100
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "decisions-extension-20261007-v1:v2:main",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "hybrid-decisions",
+      "metric": "answer_accuracy",
+      "nAnswers": 99,
+      "nRequested": 99,
+      "nScored": 99,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 1,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 91,
+      "meanDocumentMacro": 0.6085164835164835,
+      "naReasons": {},
+      "referenceKinds": {
+        "human_qasper": 99
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "decisions-extension-20261007-v1:v2:main",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "hybrid-decisions",
+      "metric": "faithfulness",
+      "nAnswers": 99,
+      "nRequested": 98,
+      "nScored": 96,
+      "nNA": 1,
+      "nFailed": 2,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 1,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 89,
+      "meanDocumentMacro": 0.9463772136377104,
+      "naReasons": {
+        "explicit_abstention": 1
+      },
+      "referenceKinds": {
+        "human_qasper": 99
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "decisions-extension-20261007-v1:v2:main",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "decisions-scan",
+      "metric": "answer_accuracy",
+      "nAnswers": 40,
+      "nRequested": 0,
+      "nScored": 0,
+      "nNA": 40,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 0,
+      "meanDocumentMacro": null,
+      "naReasons": {
+        "unanswerable_reference": 40
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "decisions-extension-20261007-v1:v2:main",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "decisions-scan",
+      "metric": "faithfulness",
+      "nAnswers": 40,
+      "nRequested": 26,
+      "nScored": 26,
+      "nNA": 14,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 24,
+      "meanDocumentMacro": 0.7784045815295815,
+      "naReasons": {
+        "explicit_abstention": 14
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "decisions-extension-20261007-v1:v2:main",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "hybrid-decisions",
+      "metric": "answer_accuracy",
+      "nAnswers": 40,
+      "nRequested": 0,
+      "nScored": 0,
+      "nNA": 40,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 0,
+      "meanDocumentMacro": null,
+      "naReasons": {
+        "unanswerable_reference": 40
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "decisions-extension-20261007-v1:v2:main",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "hybrid-decisions",
+      "metric": "faithfulness",
+      "nAnswers": 40,
+      "nRequested": 28,
+      "nScored": 28,
+      "nNA": 12,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 26,
+      "meanDocumentMacro": 0.7441648095494249,
+      "naReasons": {
+        "explicit_abstention": 12
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "clef-spark-20261007-v1:main",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "clef-scan",
+      "metric": "answer_accuracy",
+      "nAnswers": 60,
+      "nRequested": 60,
+      "nScored": 60,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.8456845238095239,
+      "naReasons": {},
+      "referenceKinds": {
+        "model_generated_book": 59,
+        "human_book": 1
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "clef-spark-20261007-v1:main",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "clef-scan",
+      "metric": "faithfulness",
+      "nAnswers": 60,
+      "nRequested": 60,
+      "nScored": 59,
+      "nNA": 0,
+      "nFailed": 1,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.9630856771613074,
+      "naReasons": {},
+      "referenceKinds": {
+        "model_generated_book": 59,
+        "human_book": 1
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "clef-spark-20261007-v1:main",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "hybrid-clef",
+      "metric": "answer_accuracy",
+      "nAnswers": 60,
+      "nRequested": 60,
+      "nScored": 59,
+      "nNA": 0,
+      "nFailed": 1,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.8624627976190476,
+      "naReasons": {},
+      "referenceKinds": {
+        "model_generated_book": 59,
+        "human_book": 1
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "clef-spark-20261007-v1:main",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "hybrid-clef",
+      "metric": "faithfulness",
+      "nAnswers": 60,
+      "nRequested": 60,
+      "nScored": 59,
+      "nNA": 0,
+      "nFailed": 1,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.9622588648313577,
+      "naReasons": {},
+      "referenceKinds": {
+        "model_generated_book": 59,
+        "human_book": 1
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "clef-spark-20261007-v1:main",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "clef-scan",
+      "metric": "answer_accuracy",
+      "nAnswers": 100,
+      "nRequested": 100,
+      "nScored": 100,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 92,
+      "meanDocumentMacro": 0.6331521739130435,
+      "naReasons": {},
+      "referenceKinds": {
+        "human_qasper": 100
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "clef-spark-20261007-v1:main",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "clef-scan",
+      "metric": "faithfulness",
+      "nAnswers": 100,
+      "nRequested": 98,
+      "nScored": 97,
+      "nNA": 2,
+      "nFailed": 1,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 91,
+      "meanDocumentMacro": 0.9603309693969034,
+      "naReasons": {
+        "explicit_abstention": 2
+      },
+      "referenceKinds": {
+        "human_qasper": 100
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "clef-spark-20261007-v1:main",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "hybrid-clef",
+      "metric": "answer_accuracy",
+      "nAnswers": 100,
+      "nRequested": 100,
+      "nScored": 100,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 92,
+      "meanDocumentMacro": 0.6127717391304348,
+      "naReasons": {},
+      "referenceKinds": {
+        "human_qasper": 100
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "clef-spark-20261007-v1:main",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "hybrid-clef",
+      "metric": "faithfulness",
+      "nAnswers": 100,
+      "nRequested": 99,
+      "nScored": 99,
+      "nNA": 1,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 91,
+      "meanDocumentMacro": 0.9660489442325254,
+      "naReasons": {
+        "explicit_abstention": 1
+      },
+      "referenceKinds": {
+        "human_qasper": 100
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "clef-spark-20261007-v1:main",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "clef-scan",
+      "metric": "answer_accuracy",
+      "nAnswers": 40,
+      "nRequested": 0,
+      "nScored": 0,
+      "nNA": 40,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 0,
+      "meanDocumentMacro": null,
+      "naReasons": {
+        "unanswerable_reference": 40
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "clef-spark-20261007-v1:main",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "clef-scan",
+      "metric": "faithfulness",
+      "nAnswers": 40,
+      "nRequested": 29,
+      "nScored": 29,
+      "nNA": 11,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 27,
+      "meanDocumentMacro": 0.8426513815402704,
+      "naReasons": {
+        "explicit_abstention": 11
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "clef-spark-20261007-v1:main",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "hybrid-clef",
+      "metric": "answer_accuracy",
+      "nAnswers": 40,
+      "nRequested": 0,
+      "nScored": 0,
+      "nNA": 40,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 0,
+      "meanDocumentMacro": null,
+      "naReasons": {
+        "unanswerable_reference": 40
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "clef-spark-20261007-v1:main",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "hybrid-clef",
+      "metric": "faithfulness",
+      "nAnswers": 40,
+      "nRequested": 28,
+      "nScored": 28,
+      "nNA": 12,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 26,
+      "meanDocumentMacro": 0.8896713172448467,
+      "naReasons": {
+        "explicit_abstention": 12
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    }
+  ],
+  "pairedAnswerContrasts": [
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "metric": "answer_accuracy",
+      "method": "hybrid-clef",
+      "baseline": "openai-dense",
+      "nPairs": 59,
+      "nBothRequested": 60,
+      "nMethodScored": 59,
+      "nBaselineScored": 60,
+      "nMethodScoredUnmatched": 0,
+      "nBaselineScoredUnmatched": 1,
+      "meanDifference": 0.027504960317460317,
+      "ciLow": -0.008581349206349204,
+      "ciHigh": 0.06530257936507937,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "metric": "answer_accuracy",
+      "method": "hybrid-clef",
+      "baseline": "jev-scan",
+      "nPairs": 56,
+      "nBothRequested": 57,
+      "nMethodScored": 59,
+      "nBaselineScored": 57,
+      "nMethodScoredUnmatched": 3,
+      "nBaselineScoredUnmatched": 1,
+      "meanDifference": -0.020089285714285712,
+      "ciLow": -0.041666666666666664,
+      "ciHigh": -0.004352678571430195,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "metric": "answer_accuracy",
+      "method": "clef-scan",
+      "baseline": "openai-dense",
+      "nPairs": 60,
+      "nBothRequested": 60,
+      "nMethodScored": 60,
+      "nBaselineScored": 60,
+      "nMethodScoredUnmatched": 0,
+      "nBaselineScoredUnmatched": 0,
+      "meanDifference": 0.010726686507936508,
+      "ciLow": -0.012834821428571428,
+      "ciHigh": 0.034722222222222224,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "metric": "answer_accuracy",
+      "method": "clef-scan",
+      "baseline": "jev-scan",
+      "nPairs": 57,
+      "nBothRequested": 57,
+      "nMethodScored": 60,
+      "nBaselineScored": 57,
+      "nMethodScoredUnmatched": 3,
+      "nBaselineScoredUnmatched": 0,
+      "meanDifference": -0.03463541666666667,
+      "ciLow": -0.06354166666666666,
+      "ciHigh": -0.0078125,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "metric": "answer_accuracy",
+      "method": "hybrid-clef",
+      "baseline": "openai-dense",
+      "nPairs": 99,
+      "nBothRequested": 100,
+      "nMethodScored": 100,
+      "nBaselineScored": 99,
+      "nMethodScoredUnmatched": 1,
+      "nBaselineScoredUnmatched": 0,
+      "meanDifference": 0.00045787545787545793,
+      "ciLow": -0.037545787545787544,
+      "ciHigh": 0.03891941391941392,
+      "nDocuments": 91,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "metric": "answer_accuracy",
+      "method": "hybrid-clef",
+      "baseline": "jev-scan",
+      "nPairs": 100,
+      "nBothRequested": 100,
+      "nMethodScored": 100,
+      "nBaselineScored": 100,
+      "nMethodScoredUnmatched": 0,
+      "nBaselineScoredUnmatched": 0,
+      "meanDifference": 0.010869565217391304,
+      "ciLow": -0.016304347826086956,
+      "ciHigh": 0.03940217391304348,
+      "nDocuments": 92,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "metric": "answer_accuracy",
+      "method": "clef-scan",
+      "baseline": "openai-dense",
+      "nPairs": 99,
+      "nBothRequested": 100,
+      "nMethodScored": 100,
+      "nBaselineScored": 99,
+      "nMethodScoredUnmatched": 1,
+      "nBaselineScoredUnmatched": 0,
+      "meanDifference": 0.021062271062271064,
+      "ciLow": -0.018315018315018316,
+      "ciHigh": 0.06227106227106227,
+      "nDocuments": 91,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "metric": "answer_accuracy",
+      "method": "clef-scan",
+      "baseline": "jev-scan",
+      "nPairs": 100,
+      "nBothRequested": 100,
+      "nMethodScored": 100,
+      "nBaselineScored": 100,
+      "nMethodScoredUnmatched": 0,
+      "nBaselineScoredUnmatched": 0,
+      "meanDifference": 0.03125,
+      "ciLow": 0.005434782608695652,
+      "ciHigh": 0.058423913043478264,
+      "nDocuments": 92,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "metric": "answer_accuracy",
+      "method": "hybrid-clef",
+      "baseline": "hybrid-decisions",
+      "nPairs": 59,
+      "nBothRequested": 60,
+      "nMethodScored": 59,
+      "nBaselineScored": 60,
+      "nMethodScoredUnmatched": 0,
+      "nBaselineScoredUnmatched": 1,
+      "meanDifference": -0.03167162698412698,
+      "ciLow": -0.04573412698412698,
+      "ciHigh": -0.016865079365079364,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "metric": "answer_accuracy",
+      "method": "clef-scan",
+      "baseline": "decisions-scan",
+      "nPairs": 53,
+      "nBothRequested": 53,
+      "nMethodScored": 60,
+      "nBaselineScored": 53,
+      "nMethodScoredUnmatched": 7,
+      "nBaselineScoredUnmatched": 0,
+      "meanDifference": -0.03810763888888889,
+      "ciLow": -0.06414930555555555,
+      "ciHigh": -0.014322916666666666,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "metric": "answer_accuracy",
+      "method": "hybrid-clef",
+      "baseline": "hybrid-decisions",
+      "nPairs": 99,
+      "nBothRequested": 99,
+      "nMethodScored": 100,
+      "nBaselineScored": 99,
+      "nMethodScoredUnmatched": 1,
+      "nBaselineScoredUnmatched": 0,
+      "meanDifference": 0.0027472527472527475,
+      "ciLow": -0.027014652014652016,
+      "ciHigh": 0.034340659340659344,
+      "nDocuments": 91,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "metric": "answer_accuracy",
+      "method": "clef-scan",
+      "baseline": "decisions-scan",
+      "nPairs": 100,
+      "nBothRequested": 100,
+      "nMethodScored": 100,
+      "nBaselineScored": 100,
+      "nMethodScoredUnmatched": 0,
+      "nBaselineScoredUnmatched": 0,
+      "meanDifference": 0.017663043478260868,
+      "ciLow": -0.009057971014492754,
+      "ciHigh": 0.04619565217391304,
+      "nDocuments": 92,
+      "limitedDocumentSupport": false
+    }
+  ],
+  "accounting": {
+    "answers": 400,
+    "requestedMetrics": 694,
+    "terminalMetrics": 694,
+    "completed": 690,
+    "failed": 4,
+    "unscorable": 0,
+    "pending": 0,
+    "notApplicable": 106,
+    "missingGenerations": 0
+  },
+  "costs": {
+    "global": {
+      "knownUsd": "98.815484948",
+      "reservedUsd": "7.2200192",
+      "committedUsd": "106.035504148",
+      "attempts": 77316,
+      "unknownAttempts": 56
+    },
+    "cumulativeJudge": {
+      "knownUsd": "48.0114526",
+      "reservedUsd": "4.57152",
+      "committedUsd": "52.5829726",
+      "attempts": 9875,
+      "unknownAttempts": 6
+    },
+    "extension": {
+      "knownUsd": "7.7290061",
+      "reservedUsd": "2.28576",
+      "committedUsd": "10.0147661",
+      "attempts": 1788,
+      "unknownAttempts": 3
+    },
+    "newJudge": {
+      "knownUsd": "7.2604705",
+      "reservedUsd": "2.28576",
+      "committedUsd": "9.5462305",
+      "attempts": 1388,
+      "unknownAttempts": 3
+    }
+  },
+  "candidateScope": [
+    {
+      "corpus": "qasper-test",
+      "questions": 396,
+      "answerableQuestions": 320,
+      "documents": 264,
+      "questionsWhose50CandidatePoolIsEntireDocument": 395,
+      "answerableWhosePoolIsEntireDocument": 319,
+      "identicalOrderedFinalFive": 396,
+      "answerableIdenticalOrderedFinalFive": 320,
+      "documentChunks": {
+        "min": 2,
+        "median": 11.0,
+        "max": 70
+      }
+    },
+    {
+      "corpus": "openstax-books",
+      "questions": 80,
+      "answerableQuestions": 80,
+      "documents": 8,
+      "questionsWhose50CandidatePoolIsEntireDocument": 0,
+      "answerableWhosePoolIsEntireDocument": 0,
+      "identicalOrderedFinalFive": 1,
+      "answerableIdenticalOrderedFinalFive": 1,
+      "documentChunks": {
+        "min": 662,
+        "median": 1206.0,
+        "max": 2245
+      }
+    }
+  ],
+  "policy": "Aggregates only. No source book text, questions, answers, provider prompts, participant account mappings or credentials."
+}

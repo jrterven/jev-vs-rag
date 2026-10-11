@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "kind": "clef-extension-final-judge-audit",
+  "ok": true,
+  "allMetricsTerminal": true,
+  "costs": {
+    "global": {
+      "knownUsd": "98.815484948",
+      "reservedUsd": "7.2200192",
+      "committedUsd": "106.035504148",
+      "attempts": 77316,
+      "unknownAttempts": 56
+    },
+    "cumulativeJudge": {
+      "knownUsd": "48.0114526",
+      "reservedUsd": "4.57152",
+      "committedUsd": "52.5829726",
+      "attempts": 9875,
+      "unknownAttempts": 6
+    },
+    "extension": {
+      "knownUsd": "7.7290061",
+      "reservedUsd": "2.28576",
+      "committedUsd": "10.0147661",
+      "attempts": 1788,
+      "unknownAttempts": 3
+    },
+    "newJudge": {
+      "knownUsd": "7.2604705",
+      "reservedUsd": "2.28576",
+      "committedUsd": "9.5462305",
+      "attempts": 1388,
+      "unknownAttempts": 3
+    }
+  },
+  "historicalRows": {
+    "attempts": {
+      "unchanged": 75928,
+      "changedOrMissing": 0
+    },
+    "runs": {
+      "unchanged": 11004,
+      "changedOrMissing": 0
+    },
+    "immutable": {
+      "unchanged": 218925,
+      "changedOrMissing": 0
+    },
+    "responses": {
+      "unchanged": 75875,
+      "changedOrMissing": 0
+    }
+  },
+  "scoreRecomputation": {
+    "metrics": 694,
+    "completed": 690,
+    "policy": "Official FA verdict mean; AA average of two 0/2/4 ratings divided by four. Recomputed from archived provider text."
+  },
+  "integrity": {
+    "ledgerSha256": "384060a73e67ccf51dc9fa4c99e5086832b53acd640bb079f95120bedf6aa0df",
+    "retrievalBackupSha256": "cf5d5bf75a0c90cfbe6cd4af67123447ee7994cd031ffefbea4428d8bd645700",
+    "freezeSha256": "5eeb1457088574a871aac634f0f26094365fb625bc9386a29458408e3ba8bedf",
+    "sourceSha256": "dbeb7019b4333a45f26a6fd353cb19ac3f1560d643352fe83b2c590dd2b4e70c"
+  },
+  "interpretation": "Completed cohort may retain errors and unknown consumption. Reservations are commitments, not confirmed charges. Original study and all pilots remain unchanged."
+}

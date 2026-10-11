@@ -1,0 +1,38 @@
+services:
+  annotation:
+    build:
+      context: ..
+      dockerfile: annotation/Dockerfile
+    environment:
+      ANNOTATION_ORIGIN: ${ANNOTATION_ORIGIN:?Set the HTTPS public origin}
+      ANNOTATION_TRUST_PROXY: "1"
+    volumes:
+      - annotation-data:/data
+    restart: unless-stopped
+    init: true
+    read_only: true
+    tmpfs:
+      - /tmp:size=64m,mode=1777
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+  proxy:
+    image: caddy:2-alpine
+    environment:
+      ANNOTATION_DOMAIN: ${ANNOTATION_DOMAIN:?Set the public hostname}
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    restart: unless-stopped
+    depends_on:
+      annotation:
+        condition: service_healthy
+volumes:
+  annotation-data:
+  caddy-data:
+  caddy-config:

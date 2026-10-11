@@ -1,0 +1,68 @@
+{
+  "kind": "decisions-extension-final-judge-audit",
+  "ok": true,
+  "allMetricsTerminal": true,
+  "judgeCostsComplete": true,
+  "extensionCostsComplete": false,
+  "globalCostsComplete": false,
+  "costs": {
+    "global": {
+      "knownUsd": "91.086478848",
+      "reservedUsd": "4.9342592",
+      "committedUsd": "96.020738048",
+      "attempts": 75528,
+      "unknownAttempts": 53
+    },
+    "cumulativeJudge": {
+      "knownUsd": "40.7509821",
+      "reservedUsd": "2.28576",
+      "committedUsd": "43.0367421",
+      "attempts": 8487,
+      "unknownAttempts": 3
+    },
+    "extension": {
+      "knownUsd": "38.2242044",
+      "reservedUsd": "0.8006496",
+      "committedUsd": "39.024854",
+      "attempts": 31150,
+      "unknownAttempts": 15
+    },
+    "newJudge": {
+      "knownUsd": "7.0250816",
+      "reservedUsd": "0",
+      "committedUsd": "7.0250816",
+      "attempts": 1352,
+      "unknownAttempts": 0
+    }
+  },
+  "historicalRows": {
+    "attempts": {
+      "unchanged": 74176,
+      "changedOrMissing": 0
+    },
+    "runs": {
+      "unchanged": 10034,
+      "changedOrMissing": 0
+    },
+    "immutable": {
+      "unchanged": 214046,
+      "changedOrMissing": 0
+    },
+    "responses": {
+      "unchanged": 74123,
+      "changedOrMissing": 0
+    }
+  },
+  "scoreRecomputation": {
+    "metrics": 676,
+    "completed": 674,
+    "policy": "Official FA verdict mean; AA average of two 0/2/4 ratings divided by four. Recomputed from archived provider text."
+  },
+  "integrity": {
+    "ledgerSha256": "b7b391147049899a598862d59ccee0ce5848a03d8b046b256cef545528345f9b",
+    "retrievalBackupSha256": "ae32ef0c13df405fa8f22722566556726458292f9e5fa2823b5cc2f3b7023fb4",
+    "freezeSha256": "c13b7f13bef429920ad9b1592b5448a1f91e6f09d249208edc788f015c0073b3",
+    "sourceSha256": "febd56caefc21826391207cf5fecb585e0bcc9b16a2f5d849e400cdf5a26f246"
+  },
+  "interpretation": "Completed cohort may retain errors and unknown consumption. Reservations are commitments, not confirmed charges. Original study and both pilots remain unchanged."
+}

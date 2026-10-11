@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "kind": "ragas-readonly-cost-provenance-audit",
+  "createdAt": "2026-10-06T17:42:16.997Z",
+  "ledgerSha256": "66fb1133e10f524ae444a6918f243c69a335c389a68c52da57f0d28f1e98c874",
+  "ok": true,
+  "complete": false,
+  "global": {
+    "attempts": 44378,
+    "knownUsd": "52.862274448",
+    "reservedUsd": "4.1336096",
+    "committedUsd": "56.995884048",
+    "pendingAttempts": 0,
+    "unknownAttempts": 38,
+    "missingCostAttempts": 38
+  },
+  "judge": {
+    "attempts": 5744,
+    "knownUsd": "27.36998",
+    "reservedUsd": "2.28576",
+    "committedUsd": "29.65574",
+    "pendingAttempts": 0,
+    "unknownAttempts": 3,
+    "missingCostAttempts": 3
+  },
+  "phases": [
+    {
+      "runId": "ragas-books-test-20261004-v1",
+      "configHash": "9495816cbb02202425d5d969070f2182e85407841ed210a52fcc3138c2f7d2dc",
+      "inputHash": "a9f834fb5fffccb76378fe1f910cd354b613ada5174a93a77702aa6022c870dc",
+      "requestRecords": 5746,
+      "samples": 1794,
+      "expectedMetrics": 2874,
+      "terminalMetrics": 2874,
+      "accountedAttempts": 5744,
+      "issueCount": 3,
+      "totals": {
+        "attempts": 5744,
+        "knownUsd": "27.36998",
+        "reservedUsd": "2.28576",
+        "committedUsd": "29.65574",
+        "pendingAttempts": 0,
+        "unknownAttempts": 3,
+        "missingCostAttempts": 3
+      },
+      "statusCounts": {
+        "completed": 2869,
+        "error": 5,
+        "unscorable": 0
+      }
+    }
+  ],
+  "issues": [
+    {
+      "code": "usage_unknown",
+      "severity": "incomplete"
+    },
+    {
+      "code": "usage_unknown",
+      "severity": "incomplete"
+    },
+    {
+      "code": "usage_unknown",
+      "severity": "incomplete"
+    }
+  ]
+}

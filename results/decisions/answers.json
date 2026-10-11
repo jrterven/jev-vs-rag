@@ -1,0 +1,6446 @@
+{
+  "kind": "audited-decisions-answer-figure-data",
+  "schemaVersion": 1,
+  "sources": {
+    "judge-analysis": "bf556f62063a3ee7547698dc098be452d021cf99fc6e1f630f9d083e876eb787",
+    "judge-final-audit": "69f8f67fc9b4c0cf5d7998d429295201f1285064aa89d4ce8fd7b7ac6896f140",
+    "judge-preservation": "b3f1fb2fa6038bc411e8b3edc929d05f59bbee7ae4833b55c25970cd8968ae1b"
+  },
+  "accounting": {
+    "answers": 392,
+    "requestedMetrics": 676,
+    "terminalMetrics": 676,
+    "completed": 674,
+    "failed": 2,
+    "unscorable": 0,
+    "pending": 0,
+    "notApplicable": 108,
+    "missingGenerations": 8
+  },
+  "groups": [
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "bge-m3",
+      "metric": "answer_accuracy",
+      "nAnswers": 60,
+      "nRequested": 60,
+      "nScored": 60,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.8635168650793651,
+      "naReasons": {},
+      "referenceKinds": {
+        "model_generated_book": 59,
+        "human_book": 1
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "bge-m3",
+      "metric": "faithfulness",
+      "nAnswers": 60,
+      "nRequested": 60,
+      "nScored": 60,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.9009074588379122,
+      "naReasons": {},
+      "referenceKinds": {
+        "model_generated_book": 59,
+        "human_book": 1
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "bm25",
+      "metric": "answer_accuracy",
+      "nAnswers": 60,
+      "nRequested": 60,
+      "nScored": 60,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.827579365079365,
+      "naReasons": {},
+      "referenceKinds": {
+        "model_generated_book": 59,
+        "human_book": 1
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "bm25",
+      "metric": "faithfulness",
+      "nAnswers": 60,
+      "nRequested": 59,
+      "nScored": 59,
+      "nNA": 1,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.8906111358684888,
+      "naReasons": {
+        "explicit_abstention": 1
+      },
+      "referenceKinds": {
+        "model_generated_book": 59,
+        "human_book": 1
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "closed-book",
+      "metric": "answer_accuracy",
+      "nAnswers": 60,
+      "nRequested": 60,
+      "nScored": 59,
+      "nNA": 0,
+      "nFailed": 1,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.8076140873015873,
+      "naReasons": {},
+      "referenceKinds": {
+        "model_generated_book": 59,
+        "human_book": 1
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "closed-book",
+      "metric": "faithfulness",
+      "nAnswers": 60,
+      "nRequested": 0,
+      "nScored": 0,
+      "nNA": 60,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 0,
+      "meanDocumentMacro": null,
+      "naReasons": {
+        "closed_book_no_supplied_evidence": 60
+      },
+      "referenceKinds": {
+        "model_generated_book": 59,
+        "human_book": 1
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "hybrid",
+      "metric": "answer_accuracy",
+      "nAnswers": 60,
+      "nRequested": 60,
+      "nScored": 60,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.8294890873015873,
+      "naReasons": {},
+      "referenceKinds": {
+        "model_generated_book": 59,
+        "human_book": 1
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "hybrid",
+      "metric": "faithfulness",
+      "nAnswers": 60,
+      "nRequested": 59,
+      "nScored": 59,
+      "nNA": 1,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.937518262987013,
+      "naReasons": {
+        "explicit_abstention": 1
+      },
+      "referenceKinds": {
+        "model_generated_book": 59,
+        "human_book": 1
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "hybrid-bge",
+      "metric": "answer_accuracy",
+      "nAnswers": 59,
+      "nRequested": 59,
+      "nScored": 59,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 1,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.8418402777777778,
+      "naReasons": {},
+      "referenceKinds": {
+        "model_generated_book": 58,
+        "human_book": 1
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "hybrid-bge",
+      "metric": "faithfulness",
+      "nAnswers": 59,
+      "nRequested": 59,
+      "nScored": 59,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 1,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.9473557056369556,
+      "naReasons": {},
+      "referenceKinds": {
+        "model_generated_book": 58,
+        "human_book": 1
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "hybrid-jev",
+      "metric": "answer_accuracy",
+      "nAnswers": 60,
+      "nRequested": 60,
+      "nScored": 60,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.864360119047619,
+      "naReasons": {},
+      "referenceKinds": {
+        "model_generated_book": 59,
+        "human_book": 1
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "hybrid-jev",
+      "metric": "faithfulness",
+      "nAnswers": 60,
+      "nRequested": 60,
+      "nScored": 60,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.9631761551664826,
+      "naReasons": {},
+      "referenceKinds": {
+        "model_generated_book": 59,
+        "human_book": 1
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "jev-scan",
+      "metric": "answer_accuracy",
+      "nAnswers": 57,
+      "nRequested": 57,
+      "nScored": 57,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 3,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.8738095238095238,
+      "naReasons": {},
+      "referenceKinds": {
+        "model_generated_book": 56,
+        "human_book": 1
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "jev-scan",
+      "metric": "faithfulness",
+      "nAnswers": 57,
+      "nRequested": 57,
+      "nScored": 57,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 3,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.9750550575343774,
+      "naReasons": {},
+      "referenceKinds": {
+        "model_generated_book": 56,
+        "human_book": 1
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "openai-dense",
+      "metric": "answer_accuracy",
+      "nAnswers": 60,
+      "nRequested": 60,
+      "nScored": 60,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.8349578373015873,
+      "naReasons": {},
+      "referenceKinds": {
+        "model_generated_book": 59,
+        "human_book": 1
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "openai-dense",
+      "metric": "faithfulness",
+      "nAnswers": 60,
+      "nRequested": 60,
+      "nScored": 60,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.9102899132571314,
+      "naReasons": {},
+      "referenceKinds": {
+        "model_generated_book": 59,
+        "human_book": 1
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "oracle",
+      "metric": "answer_accuracy",
+      "nAnswers": 60,
+      "nRequested": 60,
+      "nScored": 60,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.938157242063492,
+      "naReasons": {},
+      "referenceKinds": {
+        "model_generated_book": 59,
+        "human_book": 1
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "oracle",
+      "metric": "faithfulness",
+      "nAnswers": 60,
+      "nRequested": 60,
+      "nScored": 60,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.9063781415343916,
+      "naReasons": {},
+      "referenceKinds": {
+        "model_generated_book": 59,
+        "human_book": 1
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "bge-m3",
+      "metric": "answer_accuracy",
+      "nAnswers": 100,
+      "nRequested": 100,
+      "nScored": 100,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 92,
+      "meanDocumentMacro": 0.6227355072463768,
+      "naReasons": {},
+      "referenceKinds": {
+        "human_qasper": 100
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "bge-m3",
+      "metric": "faithfulness",
+      "nAnswers": 100,
+      "nRequested": 98,
+      "nScored": 98,
+      "nNA": 2,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 90,
+      "meanDocumentMacro": 0.9527259523337954,
+      "naReasons": {
+        "explicit_abstention": 2
+      },
+      "referenceKinds": {
+        "human_qasper": 100
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "bm25",
+      "metric": "answer_accuracy",
+      "nAnswers": 100,
+      "nRequested": 100,
+      "nScored": 100,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 92,
+      "meanDocumentMacro": 0.5810688405797102,
+      "naReasons": {},
+      "referenceKinds": {
+        "human_qasper": 100
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "bm25",
+      "metric": "faithfulness",
+      "nAnswers": 100,
+      "nRequested": 98,
+      "nScored": 98,
+      "nNA": 2,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 90,
+      "meanDocumentMacro": 0.9261080094465027,
+      "naReasons": {
+        "explicit_abstention": 2
+      },
+      "referenceKinds": {
+        "human_qasper": 100
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "closed-book",
+      "metric": "answer_accuracy",
+      "nAnswers": 100,
+      "nRequested": 100,
+      "nScored": 100,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 92,
+      "meanDocumentMacro": 0.051630434782608696,
+      "naReasons": {},
+      "referenceKinds": {
+        "human_qasper": 100
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "closed-book",
+      "metric": "faithfulness",
+      "nAnswers": 100,
+      "nRequested": 0,
+      "nScored": 0,
+      "nNA": 100,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 0,
+      "meanDocumentMacro": null,
+      "naReasons": {
+        "explicit_abstention": 50,
+        "closed_book_no_supplied_evidence": 50
+      },
+      "referenceKinds": {
+        "human_qasper": 100
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "hybrid",
+      "metric": "answer_accuracy",
+      "nAnswers": 100,
+      "nRequested": 100,
+      "nScored": 100,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 92,
+      "meanDocumentMacro": 0.5919384057971014,
+      "naReasons": {},
+      "referenceKinds": {
+        "human_qasper": 100
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "hybrid",
+      "metric": "faithfulness",
+      "nAnswers": 100,
+      "nRequested": 98,
+      "nScored": 97,
+      "nNA": 2,
+      "nFailed": 1,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 89,
+      "meanDocumentMacro": 0.9504882197973111,
+      "naReasons": {
+        "explicit_abstention": 2
+      },
+      "referenceKinds": {
+        "human_qasper": 100
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "hybrid-bge",
+      "metric": "answer_accuracy",
+      "nAnswers": 100,
+      "nRequested": 100,
+      "nScored": 100,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 92,
+      "meanDocumentMacro": 0.6082427536231884,
+      "naReasons": {},
+      "referenceKinds": {
+        "human_qasper": 100
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "hybrid-bge",
+      "metric": "faithfulness",
+      "nAnswers": 100,
+      "nRequested": 99,
+      "nScored": 99,
+      "nNA": 1,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 91,
+      "meanDocumentMacro": 0.951516615252879,
+      "naReasons": {
+        "explicit_abstention": 1
+      },
+      "referenceKinds": {
+        "human_qasper": 100
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "hybrid-jev",
+      "metric": "answer_accuracy",
+      "nAnswers": 99,
+      "nRequested": 99,
+      "nScored": 99,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 1,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 91,
+      "meanDocumentMacro": 0.6071428571428571,
+      "naReasons": {},
+      "referenceKinds": {
+        "human_qasper": 99
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "hybrid-jev",
+      "metric": "faithfulness",
+      "nAnswers": 99,
+      "nRequested": 98,
+      "nScored": 98,
+      "nNA": 1,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 1,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 90,
+      "meanDocumentMacro": 0.9582772936939603,
+      "naReasons": {
+        "explicit_abstention": 1
+      },
+      "referenceKinds": {
+        "human_qasper": 99
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "jev-scan",
+      "metric": "answer_accuracy",
+      "nAnswers": 100,
+      "nRequested": 100,
+      "nScored": 100,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 92,
+      "meanDocumentMacro": 0.6019021739130435,
+      "naReasons": {},
+      "referenceKinds": {
+        "human_qasper": 100
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "jev-scan",
+      "metric": "faithfulness",
+      "nAnswers": 100,
+      "nRequested": 99,
+      "nScored": 99,
+      "nNA": 1,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 91,
+      "meanDocumentMacro": 0.948464533294042,
+      "naReasons": {
+        "explicit_abstention": 1
+      },
+      "referenceKinds": {
+        "human_qasper": 100
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "openai-dense",
+      "metric": "answer_accuracy",
+      "nAnswers": 100,
+      "nRequested": 100,
+      "nScored": 99,
+      "nNA": 0,
+      "nFailed": 1,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 91,
+      "meanDocumentMacro": 0.6135531135531136,
+      "naReasons": {},
+      "referenceKinds": {
+        "human_qasper": 100
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "openai-dense",
+      "metric": "faithfulness",
+      "nAnswers": 100,
+      "nRequested": 99,
+      "nScored": 99,
+      "nNA": 1,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 91,
+      "meanDocumentMacro": 0.9472864683797134,
+      "naReasons": {
+        "explicit_abstention": 1
+      },
+      "referenceKinds": {
+        "human_qasper": 100
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "oracle",
+      "metric": "answer_accuracy",
+      "nAnswers": 100,
+      "nRequested": 100,
+      "nScored": 99,
+      "nNA": 0,
+      "nFailed": 1,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 92,
+      "meanDocumentMacro": 0.6721014492753623,
+      "naReasons": {},
+      "referenceKinds": {
+        "human_qasper": 100
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "oracle",
+      "metric": "faithfulness",
+      "nAnswers": 100,
+      "nRequested": 94,
+      "nScored": 93,
+      "nNA": 6,
+      "nFailed": 1,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 87,
+      "meanDocumentMacro": 0.9034254698047801,
+      "naReasons": {
+        "explicit_abstention": 6
+      },
+      "referenceKinds": {
+        "human_qasper": 100
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "bge-m3",
+      "metric": "answer_accuracy",
+      "nAnswers": 39,
+      "nRequested": 0,
+      "nScored": 0,
+      "nNA": 39,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 1,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 0,
+      "meanDocumentMacro": null,
+      "naReasons": {
+        "unanswerable_reference": 39
+      },
+      "referenceKinds": {
+        "human_qasper": 39
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "bge-m3",
+      "metric": "faithfulness",
+      "nAnswers": 39,
+      "nRequested": 23,
+      "nScored": 23,
+      "nNA": 16,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 1,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 22,
+      "meanDocumentMacro": 0.7891053391053391,
+      "naReasons": {
+        "explicit_abstention": 16
+      },
+      "referenceKinds": {
+        "human_qasper": 39
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "bm25",
+      "metric": "answer_accuracy",
+      "nAnswers": 40,
+      "nRequested": 0,
+      "nScored": 0,
+      "nNA": 40,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 0,
+      "meanDocumentMacro": null,
+      "naReasons": {
+        "unanswerable_reference": 40
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "bm25",
+      "metric": "faithfulness",
+      "nAnswers": 40,
+      "nRequested": 28,
+      "nScored": 28,
+      "nNA": 12,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 26,
+      "meanDocumentMacro": 0.7552197802197802,
+      "naReasons": {
+        "explicit_abstention": 12
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "closed-book",
+      "metric": "answer_accuracy",
+      "nAnswers": 40,
+      "nRequested": 0,
+      "nScored": 0,
+      "nNA": 40,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 0,
+      "meanDocumentMacro": null,
+      "naReasons": {
+        "unanswerable_reference": 40
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "closed-book",
+      "metric": "faithfulness",
+      "nAnswers": 40,
+      "nRequested": 0,
+      "nScored": 0,
+      "nNA": 40,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 0,
+      "meanDocumentMacro": null,
+      "naReasons": {
+        "explicit_abstention": 18,
+        "closed_book_no_supplied_evidence": 22
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "hybrid",
+      "metric": "answer_accuracy",
+      "nAnswers": 40,
+      "nRequested": 0,
+      "nScored": 0,
+      "nNA": 40,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 0,
+      "meanDocumentMacro": null,
+      "naReasons": {
+        "unanswerable_reference": 40
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "hybrid",
+      "metric": "faithfulness",
+      "nAnswers": 40,
+      "nRequested": 28,
+      "nScored": 28,
+      "nNA": 12,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 27,
+      "meanDocumentMacro": 0.7875594570039014,
+      "naReasons": {
+        "explicit_abstention": 12
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "hybrid-bge",
+      "metric": "answer_accuracy",
+      "nAnswers": 40,
+      "nRequested": 0,
+      "nScored": 0,
+      "nNA": 40,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 0,
+      "meanDocumentMacro": null,
+      "naReasons": {
+        "unanswerable_reference": 40
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "hybrid-bge",
+      "metric": "faithfulness",
+      "nAnswers": 40,
+      "nRequested": 25,
+      "nScored": 25,
+      "nNA": 15,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 24,
+      "meanDocumentMacro": 0.7606962481962481,
+      "naReasons": {
+        "explicit_abstention": 15
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "hybrid-jev",
+      "metric": "answer_accuracy",
+      "nAnswers": 40,
+      "nRequested": 0,
+      "nScored": 0,
+      "nNA": 40,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 0,
+      "meanDocumentMacro": null,
+      "naReasons": {
+        "unanswerable_reference": 40
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "hybrid-jev",
+      "metric": "faithfulness",
+      "nAnswers": 40,
+      "nRequested": 28,
+      "nScored": 28,
+      "nNA": 12,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 26,
+      "meanDocumentMacro": 0.7721904164211857,
+      "naReasons": {
+        "explicit_abstention": 12
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "jev-scan",
+      "metric": "answer_accuracy",
+      "nAnswers": 40,
+      "nRequested": 0,
+      "nScored": 0,
+      "nNA": 40,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 0,
+      "meanDocumentMacro": null,
+      "naReasons": {
+        "unanswerable_reference": 40
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "jev-scan",
+      "metric": "faithfulness",
+      "nAnswers": 40,
+      "nRequested": 27,
+      "nScored": 27,
+      "nNA": 13,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 24,
+      "meanDocumentMacro": 0.7633943602693603,
+      "naReasons": {
+        "explicit_abstention": 13
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "openai-dense",
+      "metric": "answer_accuracy",
+      "nAnswers": 40,
+      "nRequested": 0,
+      "nScored": 0,
+      "nNA": 40,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 0,
+      "meanDocumentMacro": null,
+      "naReasons": {
+        "unanswerable_reference": 40
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "openai-dense",
+      "metric": "faithfulness",
+      "nAnswers": 40,
+      "nRequested": 23,
+      "nScored": 23,
+      "nNA": 17,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 22,
+      "meanDocumentMacro": 0.8510489510489511,
+      "naReasons": {
+        "explicit_abstention": 17
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "oracle",
+      "metric": "answer_accuracy",
+      "nAnswers": 40,
+      "nRequested": 0,
+      "nScored": 0,
+      "nNA": 40,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 0,
+      "meanDocumentMacro": null,
+      "naReasons": {
+        "unanswerable_reference": 40
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "oracle",
+      "metric": "faithfulness",
+      "nAnswers": 40,
+      "nRequested": 0,
+      "nScored": 0,
+      "nNA": 40,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 0,
+      "meanDocumentMacro": null,
+      "naReasons": {
+        "explicit_abstention": 39,
+        "empty_response": 1
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "decisions-extension-20261007-v1:v2:main",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "decisions-scan",
+      "metric": "answer_accuracy",
+      "nAnswers": 53,
+      "nRequested": 53,
+      "nScored": 53,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 7,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.8876612103174604,
+      "naReasons": {},
+      "referenceKinds": {
+        "human_book": 1,
+        "model_generated_book": 52
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "decisions-extension-20261007-v1:v2:main",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "decisions-scan",
+      "metric": "faithfulness",
+      "nAnswers": 53,
+      "nRequested": 53,
+      "nScored": 53,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 7,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.9726657519068234,
+      "naReasons": {},
+      "referenceKinds": {
+        "human_book": 1,
+        "model_generated_book": 52
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "decisions-extension-20261007-v1:v2:main",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "hybrid-decisions",
+      "metric": "answer_accuracy",
+      "nAnswers": 60,
+      "nRequested": 60,
+      "nScored": 60,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.8919022817460318,
+      "naReasons": {},
+      "referenceKinds": {
+        "model_generated_book": 59,
+        "human_book": 1
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "decisions-extension-20261007-v1:v2:main",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "hybrid-decisions",
+      "metric": "faithfulness",
+      "nAnswers": 60,
+      "nRequested": 60,
+      "nScored": 60,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 60,
+      "nDocumentsScored": 8,
+      "meanDocumentMacro": 0.9737773086118674,
+      "naReasons": {},
+      "referenceKinds": {
+        "model_generated_book": 59,
+        "human_book": 1
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "decisions-extension-20261007-v1:v2:main",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "decisions-scan",
+      "metric": "answer_accuracy",
+      "nAnswers": 100,
+      "nRequested": 100,
+      "nScored": 100,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 92,
+      "meanDocumentMacro": 0.6154891304347826,
+      "naReasons": {},
+      "referenceKinds": {
+        "human_qasper": 100
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "decisions-extension-20261007-v1:v2:main",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "decisions-scan",
+      "metric": "faithfulness",
+      "nAnswers": 100,
+      "nRequested": 99,
+      "nScored": 99,
+      "nNA": 1,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 91,
+      "meanDocumentMacro": 0.9563930035836612,
+      "naReasons": {
+        "explicit_abstention": 1
+      },
+      "referenceKinds": {
+        "human_qasper": 100
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "decisions-extension-20261007-v1:v2:main",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "hybrid-decisions",
+      "metric": "answer_accuracy",
+      "nAnswers": 99,
+      "nRequested": 99,
+      "nScored": 99,
+      "nNA": 0,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 1,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 91,
+      "meanDocumentMacro": 0.6085164835164835,
+      "naReasons": {},
+      "referenceKinds": {
+        "human_qasper": 99
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "decisions-extension-20261007-v1:v2:main",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "hybrid-decisions",
+      "metric": "faithfulness",
+      "nAnswers": 99,
+      "nRequested": 98,
+      "nScored": 96,
+      "nNA": 1,
+      "nFailed": 2,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 1,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 100,
+      "nDocumentsScored": 89,
+      "meanDocumentMacro": 0.9463772136377104,
+      "naReasons": {
+        "explicit_abstention": 1
+      },
+      "referenceKinds": {
+        "human_qasper": 99
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "decisions-extension-20261007-v1:v2:main",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "decisions-scan",
+      "metric": "answer_accuracy",
+      "nAnswers": 40,
+      "nRequested": 0,
+      "nScored": 0,
+      "nNA": 40,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 0,
+      "meanDocumentMacro": null,
+      "naReasons": {
+        "unanswerable_reference": 40
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "decisions-extension-20261007-v1:v2:main",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "decisions-scan",
+      "metric": "faithfulness",
+      "nAnswers": 40,
+      "nRequested": 26,
+      "nScored": 26,
+      "nNA": 14,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 24,
+      "meanDocumentMacro": 0.7784045815295815,
+      "naReasons": {
+        "explicit_abstention": 14
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    },
+    {
+      "experimentId": "decisions-extension-20261007-v1:v2:main",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "hybrid-decisions",
+      "metric": "answer_accuracy",
+      "nAnswers": 40,
+      "nRequested": 0,
+      "nScored": 0,
+      "nNA": 40,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 0,
+      "meanDocumentMacro": null,
+      "naReasons": {
+        "unanswerable_reference": 40
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "positive-reference nonempty answers, including abstentions, with successful scores"
+    },
+    {
+      "experimentId": "decisions-extension-20261007-v1:v2:main",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "hybrid-decisions",
+      "metric": "faithfulness",
+      "nAnswers": 40,
+      "nRequested": 28,
+      "nScored": 28,
+      "nNA": 12,
+      "nFailed": 0,
+      "nUnscorable": 0,
+      "nPending": 0,
+      "nMissingGenerations": 0,
+      "nOracleIneligible": 0,
+      "nSourceAssignments": 40,
+      "nDocumentsScored": 26,
+      "meanDocumentMacro": 0.7441648095494249,
+      "naReasons": {
+        "explicit_abstention": 12
+      },
+      "referenceKinds": {
+        "human_qasper": 40
+      },
+      "conditionalPopulation": "nonabstaining nonempty answers with supplied context and successful scores"
+    }
+  ],
+  "abstention": [
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "bge-m3",
+      "nAnswers": 60,
+      "nAbstained": 0,
+      "rateDocumentMacro": 0.0,
+      "rateAnswerMicro": 0.0,
+      "nDocuments": 8,
+      "nMissingGenerations": 0
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "bm25",
+      "nAnswers": 60,
+      "nAbstained": 1,
+      "rateDocumentMacro": 0.013888888888888888,
+      "rateAnswerMicro": 0.016666666666666666,
+      "nDocuments": 8,
+      "nMissingGenerations": 0
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "closed-book",
+      "nAnswers": 60,
+      "nAbstained": 0,
+      "rateDocumentMacro": 0.0,
+      "rateAnswerMicro": 0.0,
+      "nDocuments": 8,
+      "nMissingGenerations": 0
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "hybrid",
+      "nAnswers": 60,
+      "nAbstained": 1,
+      "rateDocumentMacro": 0.013888888888888888,
+      "rateAnswerMicro": 0.016666666666666666,
+      "nDocuments": 8,
+      "nMissingGenerations": 0
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "hybrid-bge",
+      "nAnswers": 59,
+      "nAbstained": 0,
+      "rateDocumentMacro": 0.0,
+      "rateAnswerMicro": 0.0,
+      "nDocuments": 8,
+      "nMissingGenerations": 1
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "hybrid-jev",
+      "nAnswers": 60,
+      "nAbstained": 0,
+      "rateDocumentMacro": 0.0,
+      "rateAnswerMicro": 0.0,
+      "nDocuments": 8,
+      "nMissingGenerations": 0
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "jev-scan",
+      "nAnswers": 57,
+      "nAbstained": 0,
+      "rateDocumentMacro": 0.0,
+      "rateAnswerMicro": 0.0,
+      "nDocuments": 8,
+      "nMissingGenerations": 3
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "openai-dense",
+      "nAnswers": 60,
+      "nAbstained": 0,
+      "rateDocumentMacro": 0.0,
+      "rateAnswerMicro": 0.0,
+      "nDocuments": 8,
+      "nMissingGenerations": 0
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "oracle",
+      "nAnswers": 60,
+      "nAbstained": 0,
+      "rateDocumentMacro": 0.0,
+      "rateAnswerMicro": 0.0,
+      "nDocuments": 8,
+      "nMissingGenerations": 0
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "bge-m3",
+      "nAnswers": 100,
+      "nAbstained": 2,
+      "rateDocumentMacro": 0.021739130434782608,
+      "rateAnswerMicro": 0.02,
+      "nDocuments": 92,
+      "nMissingGenerations": 0
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "bm25",
+      "nAnswers": 100,
+      "nAbstained": 2,
+      "rateDocumentMacro": 0.021739130434782608,
+      "rateAnswerMicro": 0.02,
+      "nDocuments": 92,
+      "nMissingGenerations": 0
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "closed-book",
+      "nAnswers": 100,
+      "nAbstained": 50,
+      "rateDocumentMacro": 0.4927536231884058,
+      "rateAnswerMicro": 0.5,
+      "nDocuments": 92,
+      "nMissingGenerations": 0
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "hybrid",
+      "nAnswers": 100,
+      "nAbstained": 2,
+      "rateDocumentMacro": 0.021739130434782608,
+      "rateAnswerMicro": 0.02,
+      "nDocuments": 92,
+      "nMissingGenerations": 0
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "hybrid-bge",
+      "nAnswers": 100,
+      "nAbstained": 1,
+      "rateDocumentMacro": 0.010869565217391304,
+      "rateAnswerMicro": 0.01,
+      "nDocuments": 92,
+      "nMissingGenerations": 0
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "hybrid-jev",
+      "nAnswers": 99,
+      "nAbstained": 1,
+      "rateDocumentMacro": 0.01098901098901099,
+      "rateAnswerMicro": 0.010101010101010102,
+      "nDocuments": 91,
+      "nMissingGenerations": 1
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "jev-scan",
+      "nAnswers": 100,
+      "nAbstained": 1,
+      "rateDocumentMacro": 0.010869565217391304,
+      "rateAnswerMicro": 0.01,
+      "nDocuments": 92,
+      "nMissingGenerations": 0
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "openai-dense",
+      "nAnswers": 100,
+      "nAbstained": 1,
+      "rateDocumentMacro": 0.010869565217391304,
+      "rateAnswerMicro": 0.01,
+      "nDocuments": 92,
+      "nMissingGenerations": 0
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "oracle",
+      "nAnswers": 100,
+      "nAbstained": 6,
+      "rateDocumentMacro": 0.059782608695652176,
+      "rateAnswerMicro": 0.06,
+      "nDocuments": 92,
+      "nMissingGenerations": 0
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "bge-m3",
+      "nAnswers": 39,
+      "nAbstained": 16,
+      "rateDocumentMacro": 0.3939393939393939,
+      "rateAnswerMicro": 0.41025641025641024,
+      "nDocuments": 33,
+      "nMissingGenerations": 1
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "bm25",
+      "nAnswers": 40,
+      "nAbstained": 12,
+      "rateDocumentMacro": 0.29411764705882354,
+      "rateAnswerMicro": 0.3,
+      "nDocuments": 34,
+      "nMissingGenerations": 0
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "closed-book",
+      "nAnswers": 40,
+      "nAbstained": 18,
+      "rateDocumentMacro": 0.4411764705882353,
+      "rateAnswerMicro": 0.45,
+      "nDocuments": 34,
+      "nMissingGenerations": 0
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "hybrid",
+      "nAnswers": 40,
+      "nAbstained": 12,
+      "rateDocumentMacro": 0.27941176470588236,
+      "rateAnswerMicro": 0.3,
+      "nDocuments": 34,
+      "nMissingGenerations": 0
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "hybrid-bge",
+      "nAnswers": 40,
+      "nAbstained": 15,
+      "rateDocumentMacro": 0.36764705882352944,
+      "rateAnswerMicro": 0.375,
+      "nDocuments": 34,
+      "nMissingGenerations": 0
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "hybrid-jev",
+      "nAnswers": 40,
+      "nAbstained": 12,
+      "rateDocumentMacro": 0.29411764705882354,
+      "rateAnswerMicro": 0.3,
+      "nDocuments": 34,
+      "nMissingGenerations": 0
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "jev-scan",
+      "nAnswers": 40,
+      "nAbstained": 13,
+      "rateDocumentMacro": 0.3382352941176471,
+      "rateAnswerMicro": 0.325,
+      "nDocuments": 34,
+      "nMissingGenerations": 0
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "openai-dense",
+      "nAnswers": 40,
+      "nAbstained": 17,
+      "rateDocumentMacro": 0.4264705882352941,
+      "rateAnswerMicro": 0.425,
+      "nDocuments": 34,
+      "nMissingGenerations": 0
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "oracle",
+      "nAnswers": 40,
+      "nAbstained": 40,
+      "rateDocumentMacro": 1.0,
+      "rateAnswerMicro": 1.0,
+      "nDocuments": 34,
+      "nMissingGenerations": 0
+    },
+    {
+      "experimentId": "decisions-extension-20261007-v1:v2:main",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "decisions-scan",
+      "nAnswers": 53,
+      "nAbstained": 0,
+      "rateDocumentMacro": 0.0,
+      "rateAnswerMicro": 0.0,
+      "nDocuments": 8,
+      "nMissingGenerations": 7
+    },
+    {
+      "experimentId": "decisions-extension-20261007-v1:v2:main",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "hybrid-decisions",
+      "nAnswers": 60,
+      "nAbstained": 0,
+      "rateDocumentMacro": 0.0,
+      "rateAnswerMicro": 0.0,
+      "nDocuments": 8,
+      "nMissingGenerations": 0
+    },
+    {
+      "experimentId": "decisions-extension-20261007-v1:v2:main",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "decisions-scan",
+      "nAnswers": 100,
+      "nAbstained": 1,
+      "rateDocumentMacro": 0.010869565217391304,
+      "rateAnswerMicro": 0.01,
+      "nDocuments": 92,
+      "nMissingGenerations": 0
+    },
+    {
+      "experimentId": "decisions-extension-20261007-v1:v2:main",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "hybrid-decisions",
+      "nAnswers": 99,
+      "nAbstained": 1,
+      "rateDocumentMacro": 0.01098901098901099,
+      "rateAnswerMicro": 0.010101010101010102,
+      "nDocuments": 91,
+      "nMissingGenerations": 1
+    },
+    {
+      "experimentId": "decisions-extension-20261007-v1:v2:main",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "decisions-scan",
+      "nAnswers": 40,
+      "nAbstained": 14,
+      "rateDocumentMacro": 0.35294117647058826,
+      "rateAnswerMicro": 0.35,
+      "nDocuments": 34,
+      "nMissingGenerations": 0
+    },
+    {
+      "experimentId": "decisions-extension-20261007-v1:v2:main",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "hybrid-decisions",
+      "nAnswers": 40,
+      "nAbstained": 12,
+      "rateDocumentMacro": 0.29411764705882354,
+      "rateAnswerMicro": 0.3,
+      "nDocuments": 34,
+      "nMissingGenerations": 0
+    }
+  ],
+  "groupIntervals": [
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "bge-m3",
+      "metric": "faithfulness",
+      "meanDocumentMacro": 0.9009074588379122,
+      "ciLow": 0.8728521009219539,
+      "ciHigh": 0.9313463216726084,
+      "nScored": 60,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "bge-m3",
+      "metric": "answer_accuracy",
+      "meanDocumentMacro": 0.8635168650793651,
+      "ciLow": 0.8225672743055555,
+      "ciHigh": 0.9045154389880952,
+      "nScored": 60,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "bm25",
+      "metric": "faithfulness",
+      "meanDocumentMacro": 0.8906111358684888,
+      "ciLow": 0.8241101491101491,
+      "ciHigh": 0.9449922588985089,
+      "nScored": 59,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "bm25",
+      "metric": "answer_accuracy",
+      "meanDocumentMacro": 0.827579365079365,
+      "ciLow": 0.7608221726190476,
+      "ciHigh": 0.8885788690476191,
+      "nScored": 60,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "closed-book",
+      "metric": "faithfulness",
+      "meanDocumentMacro": null,
+      "ciLow": null,
+      "ciHigh": null,
+      "nScored": 0,
+      "nDocuments": 0,
+      "limitedDocumentSupport": true
+    },
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "closed-book",
+      "metric": "answer_accuracy",
+      "meanDocumentMacro": 0.8076140873015873,
+      "ciLow": 0.7447668650793651,
+      "ciHigh": 0.8739583333333333,
+      "nScored": 59,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "decisions-scan",
+      "metric": "faithfulness",
+      "meanDocumentMacro": 0.9726657519068234,
+      "ciLow": 0.9554496576092558,
+      "ciHigh": 0.9882936507936508,
+      "nScored": 53,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "decisions-scan",
+      "metric": "answer_accuracy",
+      "meanDocumentMacro": 0.8876612103174604,
+      "ciLow": 0.8456082589285715,
+      "ciHigh": 0.9305555555555556,
+      "nScored": 53,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "hybrid",
+      "metric": "faithfulness",
+      "meanDocumentMacro": 0.937518262987013,
+      "ciLow": 0.9068559929653679,
+      "ciHigh": 0.966827876984127,
+      "nScored": 59,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "hybrid",
+      "metric": "answer_accuracy",
+      "meanDocumentMacro": 0.8294890873015873,
+      "ciLow": 0.775173611111111,
+      "ciHigh": 0.8833085317460317,
+      "nScored": 60,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "hybrid-bge",
+      "metric": "faithfulness",
+      "meanDocumentMacro": 0.9473557056369556,
+      "ciLow": 0.9249725632440475,
+      "ciHigh": 0.9682730463980463,
+      "nScored": 59,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "hybrid-bge",
+      "metric": "answer_accuracy",
+      "meanDocumentMacro": 0.8418402777777778,
+      "ciLow": 0.78984375,
+      "ciHigh": 0.8913237847222222,
+      "nScored": 59,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "hybrid-decisions",
+      "metric": "faithfulness",
+      "meanDocumentMacro": 0.9737773086118674,
+      "ciLow": 0.9559744823531588,
+      "ciHigh": 0.9893849206349207,
+      "nScored": 60,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "hybrid-decisions",
+      "metric": "answer_accuracy",
+      "meanDocumentMacro": 0.8919022817460318,
+      "ciLow": 0.8606764632936509,
+      "ciHigh": 0.9241086929563492,
+      "nScored": 60,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "hybrid-jev",
+      "metric": "faithfulness",
+      "meanDocumentMacro": 0.9631761551664826,
+      "ciLow": 0.9471757396869004,
+      "ciHigh": 0.9760655893723229,
+      "nScored": 60,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "hybrid-jev",
+      "metric": "answer_accuracy",
+      "meanDocumentMacro": 0.864360119047619,
+      "ciLow": 0.8245907738095238,
+      "ciHigh": 0.9041666666666667,
+      "nScored": 60,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "jev-scan",
+      "metric": "faithfulness",
+      "meanDocumentMacro": 0.9750550575343774,
+      "ciLow": 0.9578938926422842,
+      "ciHigh": 0.990531629318394,
+      "nScored": 57,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "jev-scan",
+      "metric": "answer_accuracy",
+      "meanDocumentMacro": 0.8738095238095238,
+      "ciLow": 0.8416666666666667,
+      "ciHigh": 0.9075548735119048,
+      "nScored": 57,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "openai-dense",
+      "metric": "faithfulness",
+      "meanDocumentMacro": 0.9102899132571314,
+      "ciLow": 0.8972961181188434,
+      "ciHigh": 0.9203619508356793,
+      "nScored": 60,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "openai-dense",
+      "metric": "answer_accuracy",
+      "meanDocumentMacro": 0.8349578373015873,
+      "ciLow": 0.77873046875,
+      "ciHigh": 0.8901413690476191,
+      "nScored": 60,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "oracle",
+      "metric": "faithfulness",
+      "meanDocumentMacro": 0.9063781415343916,
+      "ciLow": 0.8681161127645503,
+      "ciHigh": 0.9450024801587301,
+      "nScored": 60,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "method": "oracle",
+      "metric": "answer_accuracy",
+      "meanDocumentMacro": 0.938157242063492,
+      "ciLow": 0.906332775297619,
+      "ciHigh": 0.966765873015873,
+      "nScored": 60,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "bge-m3",
+      "metric": "faithfulness",
+      "meanDocumentMacro": 0.9527259523337954,
+      "ciLow": 0.9182670366126249,
+      "ciHigh": 0.9792363492535061,
+      "nScored": 98,
+      "nDocuments": 90,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "bge-m3",
+      "metric": "answer_accuracy",
+      "meanDocumentMacro": 0.6227355072463768,
+      "ciLow": 0.561141304347826,
+      "ciHigh": 0.6825181159420289,
+      "nScored": 100,
+      "nDocuments": 92,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "bm25",
+      "metric": "faithfulness",
+      "meanDocumentMacro": 0.9261080094465027,
+      "ciLow": 0.885911555764497,
+      "ciHigh": 0.9587819474915062,
+      "nScored": 98,
+      "nDocuments": 90,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "bm25",
+      "metric": "answer_accuracy",
+      "meanDocumentMacro": 0.5810688405797102,
+      "ciLow": 0.5190217391304348,
+      "ciHigh": 0.6403985507246377,
+      "nScored": 100,
+      "nDocuments": 92,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "closed-book",
+      "metric": "faithfulness",
+      "meanDocumentMacro": null,
+      "ciLow": null,
+      "ciHigh": null,
+      "nScored": 0,
+      "nDocuments": 0,
+      "limitedDocumentSupport": true
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "closed-book",
+      "metric": "answer_accuracy",
+      "meanDocumentMacro": 0.051630434782608696,
+      "ciLow": 0.021739130434782608,
+      "ciHigh": 0.08967391304347826,
+      "nScored": 100,
+      "nDocuments": 92,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "decisions-scan",
+      "metric": "faithfulness",
+      "meanDocumentMacro": 0.9563930035836612,
+      "ciLow": 0.9234116876014394,
+      "ciHigh": 0.9813105741621885,
+      "nScored": 99,
+      "nDocuments": 91,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "decisions-scan",
+      "metric": "answer_accuracy",
+      "meanDocumentMacro": 0.6154891304347826,
+      "ciLow": 0.5516304347826086,
+      "ciHigh": 0.6766304347826086,
+      "nScored": 100,
+      "nDocuments": 92,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "hybrid",
+      "metric": "faithfulness",
+      "meanDocumentMacro": 0.9504882197973111,
+      "ciLow": 0.918276062585795,
+      "ciHigh": 0.9755297456295986,
+      "nScored": 97,
+      "nDocuments": 89,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "hybrid",
+      "metric": "answer_accuracy",
+      "meanDocumentMacro": 0.5919384057971014,
+      "ciLow": 0.53125,
+      "ciHigh": 0.6521739130434783,
+      "nScored": 100,
+      "nDocuments": 92,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "hybrid-bge",
+      "metric": "faithfulness",
+      "meanDocumentMacro": 0.951516615252879,
+      "ciLow": 0.9252118119975263,
+      "ciHigh": 0.9738968540616892,
+      "nScored": 99,
+      "nDocuments": 91,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "hybrid-bge",
+      "metric": "answer_accuracy",
+      "meanDocumentMacro": 0.6082427536231884,
+      "ciLow": 0.5421195652173914,
+      "ciHigh": 0.6721014492753623,
+      "nScored": 100,
+      "nDocuments": 92,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "hybrid-decisions",
+      "metric": "faithfulness",
+      "meanDocumentMacro": 0.9463772136377104,
+      "ciLow": 0.9080827654752107,
+      "ciHigh": 0.9758026755698253,
+      "nScored": 96,
+      "nDocuments": 89,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "hybrid-decisions",
+      "metric": "answer_accuracy",
+      "meanDocumentMacro": 0.6085164835164835,
+      "ciLow": 0.5439560439560439,
+      "ciHigh": 0.6703640109890104,
+      "nScored": 99,
+      "nDocuments": 91,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "hybrid-jev",
+      "metric": "faithfulness",
+      "meanDocumentMacro": 0.9582772936939603,
+      "ciLow": 0.9276094977553311,
+      "ciHigh": 0.9811657266344767,
+      "nScored": 98,
+      "nDocuments": 90,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "hybrid-jev",
+      "metric": "answer_accuracy",
+      "meanDocumentMacro": 0.6071428571428571,
+      "ciLow": 0.5425824175824175,
+      "ciHigh": 0.6689560439560439,
+      "nScored": 99,
+      "nDocuments": 91,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "jev-scan",
+      "metric": "faithfulness",
+      "meanDocumentMacro": 0.948464533294042,
+      "ciLow": 0.9145109302910692,
+      "ciHigh": 0.9748268934277136,
+      "nScored": 99,
+      "nDocuments": 91,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "jev-scan",
+      "metric": "answer_accuracy",
+      "meanDocumentMacro": 0.6019021739130435,
+      "ciLow": 0.5384963768115942,
+      "ciHigh": 0.6630434782608695,
+      "nScored": 100,
+      "nDocuments": 92,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "openai-dense",
+      "metric": "faithfulness",
+      "meanDocumentMacro": 0.9472864683797134,
+      "ciLow": 0.9184962564907619,
+      "ciHigh": 0.9713748757302814,
+      "nScored": 99,
+      "nDocuments": 91,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "openai-dense",
+      "metric": "answer_accuracy",
+      "meanDocumentMacro": 0.6135531135531136,
+      "ciLow": 0.5508241758241759,
+      "ciHigh": 0.6730769230769231,
+      "nScored": 99,
+      "nDocuments": 91,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "oracle",
+      "metric": "faithfulness",
+      "meanDocumentMacro": 0.9034254698047801,
+      "ciLow": 0.8535521574530195,
+      "ciHigh": 0.9463379173508484,
+      "nScored": 93,
+      "nDocuments": 87,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "method": "oracle",
+      "metric": "answer_accuracy",
+      "meanDocumentMacro": 0.6721014492753623,
+      "ciLow": 0.6028079710144928,
+      "ciHigh": 0.738677536231884,
+      "nScored": 99,
+      "nDocuments": 92,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "bge-m3",
+      "metric": "faithfulness",
+      "meanDocumentMacro": 0.7891053391053391,
+      "ciLow": 0.6752141955266955,
+      "ciHigh": 0.883982683982684,
+      "nScored": 23,
+      "nDocuments": 22,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "bge-m3",
+      "metric": "answer_accuracy",
+      "meanDocumentMacro": null,
+      "ciLow": null,
+      "ciHigh": null,
+      "nScored": 0,
+      "nDocuments": 0,
+      "limitedDocumentSupport": true
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "bm25",
+      "metric": "faithfulness",
+      "meanDocumentMacro": 0.7552197802197802,
+      "ciLow": 0.639102564102564,
+      "ciHigh": 0.8561824633699634,
+      "nScored": 28,
+      "nDocuments": 26,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "bm25",
+      "metric": "answer_accuracy",
+      "meanDocumentMacro": null,
+      "ciLow": null,
+      "ciHigh": null,
+      "nScored": 0,
+      "nDocuments": 0,
+      "limitedDocumentSupport": true
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "closed-book",
+      "metric": "faithfulness",
+      "meanDocumentMacro": null,
+      "ciLow": null,
+      "ciHigh": null,
+      "nScored": 0,
+      "nDocuments": 0,
+      "limitedDocumentSupport": true
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "closed-book",
+      "metric": "answer_accuracy",
+      "meanDocumentMacro": null,
+      "ciLow": null,
+      "ciHigh": null,
+      "nScored": 0,
+      "nDocuments": 0,
+      "limitedDocumentSupport": true
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "decisions-scan",
+      "metric": "faithfulness",
+      "meanDocumentMacro": 0.7784045815295815,
+      "ciLow": 0.6682539682539682,
+      "ciHigh": 0.8700379163660413,
+      "nScored": 26,
+      "nDocuments": 24,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "decisions-scan",
+      "metric": "answer_accuracy",
+      "meanDocumentMacro": null,
+      "ciLow": null,
+      "ciHigh": null,
+      "nScored": 0,
+      "nDocuments": 0,
+      "limitedDocumentSupport": true
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "hybrid",
+      "metric": "faithfulness",
+      "meanDocumentMacro": 0.7875594570039014,
+      "ciLow": 0.6745286195286195,
+      "ciHigh": 0.8845545067072845,
+      "nScored": 28,
+      "nDocuments": 27,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "hybrid",
+      "metric": "answer_accuracy",
+      "meanDocumentMacro": null,
+      "ciLow": null,
+      "ciHigh": null,
+      "nScored": 0,
+      "nDocuments": 0,
+      "limitedDocumentSupport": true
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "hybrid-bge",
+      "metric": "faithfulness",
+      "meanDocumentMacro": 0.7606962481962481,
+      "ciLow": 0.6375,
+      "ciHigh": 0.8672659632034632,
+      "nScored": 25,
+      "nDocuments": 24,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "hybrid-bge",
+      "metric": "answer_accuracy",
+      "meanDocumentMacro": null,
+      "ciLow": null,
+      "ciHigh": null,
+      "nScored": 0,
+      "nDocuments": 0,
+      "limitedDocumentSupport": true
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "hybrid-decisions",
+      "metric": "faithfulness",
+      "meanDocumentMacro": 0.7441648095494249,
+      "ciLow": 0.6319203873050027,
+      "ciHigh": 0.8435557498057498,
+      "nScored": 28,
+      "nDocuments": 26,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "hybrid-decisions",
+      "metric": "answer_accuracy",
+      "meanDocumentMacro": null,
+      "ciLow": null,
+      "ciHigh": null,
+      "nScored": 0,
+      "nDocuments": 0,
+      "limitedDocumentSupport": true
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "hybrid-jev",
+      "metric": "faithfulness",
+      "meanDocumentMacro": 0.7721904164211857,
+      "ciLow": 0.6369802072927073,
+      "ciHigh": 0.8863025195957889,
+      "nScored": 28,
+      "nDocuments": 26,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "hybrid-jev",
+      "metric": "answer_accuracy",
+      "meanDocumentMacro": null,
+      "ciLow": null,
+      "ciHigh": null,
+      "nScored": 0,
+      "nDocuments": 0,
+      "limitedDocumentSupport": true
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "jev-scan",
+      "metric": "faithfulness",
+      "meanDocumentMacro": 0.7633943602693603,
+      "ciLow": 0.6327554187710438,
+      "ciHigh": 0.8771054292929292,
+      "nScored": 27,
+      "nDocuments": 24,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "jev-scan",
+      "metric": "answer_accuracy",
+      "meanDocumentMacro": null,
+      "ciLow": null,
+      "ciHigh": null,
+      "nScored": 0,
+      "nDocuments": 0,
+      "limitedDocumentSupport": true
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "openai-dense",
+      "metric": "faithfulness",
+      "meanDocumentMacro": 0.8510489510489511,
+      "ciLow": 0.7442234848484849,
+      "ciHigh": 0.9331585081585082,
+      "nScored": 23,
+      "nDocuments": 22,
+      "limitedDocumentSupport": false
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "openai-dense",
+      "metric": "answer_accuracy",
+      "meanDocumentMacro": null,
+      "ciLow": null,
+      "ciHigh": null,
+      "nScored": 0,
+      "nDocuments": 0,
+      "limitedDocumentSupport": true
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "oracle",
+      "metric": "faithfulness",
+      "meanDocumentMacro": null,
+      "ciLow": null,
+      "ciHigh": null,
+      "nScored": 0,
+      "nDocuments": 0,
+      "limitedDocumentSupport": true
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "method": "oracle",
+      "metric": "answer_accuracy",
+      "meanDocumentMacro": null,
+      "ciLow": null,
+      "ciHigh": null,
+      "nScored": 0,
+      "nDocuments": 0,
+      "limitedDocumentSupport": true
+    }
+  ],
+  "paired": [
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "metric": "answer_accuracy",
+      "method": "hybrid-decisions",
+      "baseline": "openai-dense",
+      "nPairs": 60,
+      "nBothRequested": 60,
+      "nMethodScored": 60,
+      "nBaselineScored": 60,
+      "nMethodScoredUnmatched": 0,
+      "nBaselineScoredUnmatched": 0,
+      "meanDifference": 0.05694444444444444,
+      "ciLow": 0.01875,
+      "ciHigh": 0.103125,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false,
+      "documentDifferences": [
+        {
+          "documentId": "openstax:american-government-3e",
+          "difference": 0.15
+        },
+        {
+          "documentId": "openstax:astronomy-2e",
+          "difference": 0.027777777777777776
+        },
+        {
+          "documentId": "openstax:biology-2e",
+          "difference": 0.027777777777777776
+        },
+        {
+          "documentId": "openstax:introduction-business",
+          "difference": 0.0
+        },
+        {
+          "documentId": "openstax:introduction-philosophy",
+          "difference": 0.0
+        },
+        {
+          "documentId": "openstax:introduction-sociology-3e",
+          "difference": 0.125
+        },
+        {
+          "documentId": "openstax:principles-economics-3e",
+          "difference": 0.125
+        },
+        {
+          "documentId": "openstax:psychology-2e",
+          "difference": 0.0
+        }
+      ]
+    },
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "metric": "answer_accuracy",
+      "method": "hybrid-decisions",
+      "baseline": "hybrid-bge",
+      "nPairs": 59,
+      "nBothRequested": 59,
+      "nMethodScored": 60,
+      "nBaselineScored": 59,
+      "nMethodScoredUnmatched": 1,
+      "nBaselineScoredUnmatched": 0,
+      "meanDifference": 0.05303819444444444,
+      "ciLow": 0.018663194444444444,
+      "ciHigh": 0.09131944444444444,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false,
+      "documentDifferences": [
+        {
+          "documentId": "openstax:american-government-3e",
+          "difference": 0.15
+        },
+        {
+          "documentId": "openstax:astronomy-2e",
+          "difference": 0.027777777777777776
+        },
+        {
+          "documentId": "openstax:biology-2e",
+          "difference": 0.027777777777777776
+        },
+        {
+          "documentId": "openstax:introduction-business",
+          "difference": 0.0
+        },
+        {
+          "documentId": "openstax:introduction-philosophy",
+          "difference": 0.125
+        },
+        {
+          "documentId": "openstax:introduction-sociology-3e",
+          "difference": 0.03125
+        },
+        {
+          "documentId": "openstax:principles-economics-3e",
+          "difference": 0.0625
+        },
+        {
+          "documentId": "openstax:psychology-2e",
+          "difference": 0.0
+        }
+      ]
+    },
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "metric": "answer_accuracy",
+      "method": "hybrid-decisions",
+      "baseline": "hybrid-jev",
+      "nPairs": 60,
+      "nBothRequested": 60,
+      "nMethodScored": 60,
+      "nBaselineScored": 60,
+      "nMethodScoredUnmatched": 0,
+      "nBaselineScoredUnmatched": 0,
+      "meanDifference": 0.027542162698412698,
+      "ciLow": -0.005357142857142859,
+      "ciHigh": 0.062375992063492064,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false,
+      "documentDifferences": [
+        {
+          "documentId": "openstax:american-government-3e",
+          "difference": -0.05
+        },
+        {
+          "documentId": "openstax:astronomy-2e",
+          "difference": 0.0
+        },
+        {
+          "documentId": "openstax:biology-2e",
+          "difference": 0.027777777777777776
+        },
+        {
+          "documentId": "openstax:introduction-business",
+          "difference": 0.0
+        },
+        {
+          "documentId": "openstax:introduction-philosophy",
+          "difference": 0.10714285714285714
+        },
+        {
+          "documentId": "openstax:introduction-sociology-3e",
+          "difference": 0.09375
+        },
+        {
+          "documentId": "openstax:principles-economics-3e",
+          "difference": 0.0
+        },
+        {
+          "documentId": "openstax:psychology-2e",
+          "difference": 0.041666666666666664
+        }
+      ]
+    },
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "metric": "answer_accuracy",
+      "method": "hybrid-decisions",
+      "baseline": "jev-scan",
+      "nPairs": 57,
+      "nBothRequested": 57,
+      "nMethodScored": 60,
+      "nBaselineScored": 57,
+      "nMethodScoredUnmatched": 3,
+      "nBaselineScoredUnmatched": 0,
+      "meanDifference": 0.014620535714285714,
+      "ciLow": 0.00390625,
+      "ciHigh": 0.02890625,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false,
+      "documentDifferences": [
+        {
+          "documentId": "openstax:american-government-3e",
+          "difference": 0.05
+        },
+        {
+          "documentId": "openstax:astronomy-2e",
+          "difference": 0.0
+        },
+        {
+          "documentId": "openstax:biology-2e",
+          "difference": 0.03125
+        },
+        {
+          "documentId": "openstax:introduction-business",
+          "difference": 0.0
+        },
+        {
+          "documentId": "openstax:introduction-philosophy",
+          "difference": 0.03571428571428571
+        },
+        {
+          "documentId": "openstax:introduction-sociology-3e",
+          "difference": 0.0
+        },
+        {
+          "documentId": "openstax:principles-economics-3e",
+          "difference": 0.0
+        },
+        {
+          "documentId": "openstax:psychology-2e",
+          "difference": 0.0
+        }
+      ]
+    },
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "metric": "answer_accuracy",
+      "method": "decisions-scan",
+      "baseline": "openai-dense",
+      "nPairs": 53,
+      "nBothRequested": 53,
+      "nMethodScored": 53,
+      "nBaselineScored": 60,
+      "nMethodScoredUnmatched": 0,
+      "nBaselineScoredUnmatched": 7,
+      "meanDifference": 0.043055555555555555,
+      "ciLow": 0.014930555555555555,
+      "ciHigh": 0.075,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false,
+      "documentDifferences": [
+        {
+          "documentId": "openstax:american-government-3e",
+          "difference": 0.1
+        },
+        {
+          "documentId": "openstax:astronomy-2e",
+          "difference": 0.0
+        },
+        {
+          "documentId": "openstax:biology-2e",
+          "difference": 0.027777777777777776
+        },
+        {
+          "documentId": "openstax:introduction-business",
+          "difference": 0.0
+        },
+        {
+          "documentId": "openstax:introduction-philosophy",
+          "difference": 0.041666666666666664
+        },
+        {
+          "documentId": "openstax:introduction-sociology-3e",
+          "difference": 0.125
+        },
+        {
+          "documentId": "openstax:principles-economics-3e",
+          "difference": 0.0
+        },
+        {
+          "documentId": "openstax:psychology-2e",
+          "difference": 0.05
+        }
+      ]
+    },
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "metric": "answer_accuracy",
+      "method": "decisions-scan",
+      "baseline": "hybrid-bge",
+      "nPairs": 52,
+      "nBothRequested": 52,
+      "nMethodScored": 53,
+      "nBaselineScored": 59,
+      "nMethodScoredUnmatched": 1,
+      "nBaselineScoredUnmatched": 7,
+      "meanDifference": 0.038628472222222224,
+      "ciLow": 0.013628472222222222,
+      "ciHigh": 0.06640625,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false,
+      "documentDifferences": [
+        {
+          "documentId": "openstax:american-government-3e",
+          "difference": 0.1
+        },
+        {
+          "documentId": "openstax:astronomy-2e",
+          "difference": 0.0
+        },
+        {
+          "documentId": "openstax:biology-2e",
+          "difference": 0.027777777777777776
+        },
+        {
+          "documentId": "openstax:introduction-business",
+          "difference": 0.0
+        },
+        {
+          "documentId": "openstax:introduction-philosophy",
+          "difference": 0.1
+        },
+        {
+          "documentId": "openstax:introduction-sociology-3e",
+          "difference": 0.03125
+        },
+        {
+          "documentId": "openstax:principles-economics-3e",
+          "difference": 0.0
+        },
+        {
+          "documentId": "openstax:psychology-2e",
+          "difference": 0.05
+        }
+      ]
+    },
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "metric": "answer_accuracy",
+      "method": "decisions-scan",
+      "baseline": "hybrid-jev",
+      "nPairs": 53,
+      "nBothRequested": 53,
+      "nMethodScored": 53,
+      "nBaselineScored": 60,
+      "nMethodScoredUnmatched": 0,
+      "nBaselineScoredUnmatched": 7,
+      "meanDifference": 0.034722222222222224,
+      "ciLow": -0.014062500000000002,
+      "ciHigh": 0.07925347222222222,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false,
+      "documentDifferences": [
+        {
+          "documentId": "openstax:american-government-3e",
+          "difference": -0.1
+        },
+        {
+          "documentId": "openstax:astronomy-2e",
+          "difference": 0.03125
+        },
+        {
+          "documentId": "openstax:biology-2e",
+          "difference": 0.027777777777777776
+        },
+        {
+          "documentId": "openstax:introduction-business",
+          "difference": 0.0
+        },
+        {
+          "documentId": "openstax:introduction-philosophy",
+          "difference": 0.125
+        },
+        {
+          "documentId": "openstax:introduction-sociology-3e",
+          "difference": 0.09375
+        },
+        {
+          "documentId": "openstax:principles-economics-3e",
+          "difference": 0.0
+        },
+        {
+          "documentId": "openstax:psychology-2e",
+          "difference": 0.1
+        }
+      ]
+    },
+    {
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "metric": "answer_accuracy",
+      "method": "decisions-scan",
+      "baseline": "jev-scan",
+      "nPairs": 50,
+      "nBothRequested": 50,
+      "nMethodScored": 53,
+      "nBaselineScored": 57,
+      "nMethodScoredUnmatched": 3,
+      "nBaselineScoredUnmatched": 7,
+      "meanDifference": 0.013020833333333332,
+      "ciLow": 0.00390625,
+      "ciHigh": 0.026041666666666664,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false,
+      "documentDifferences": [
+        {
+          "documentId": "openstax:american-government-3e",
+          "difference": 0.0
+        },
+        {
+          "documentId": "openstax:astronomy-2e",
+          "difference": 0.03125
+        },
+        {
+          "documentId": "openstax:biology-2e",
+          "difference": 0.03125
+        },
+        {
+          "documentId": "openstax:introduction-business",
+          "difference": 0.0
+        },
+        {
+          "documentId": "openstax:introduction-philosophy",
+          "difference": 0.041666666666666664
+        },
+        {
+          "documentId": "openstax:introduction-sociology-3e",
+          "difference": 0.0
+        },
+        {
+          "documentId": "openstax:principles-economics-3e",
+          "difference": 0.0
+        },
+        {
+          "documentId": "openstax:psychology-2e",
+          "difference": 0.0
+        }
+      ]
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "metric": "answer_accuracy",
+      "method": "hybrid-decisions",
+      "baseline": "openai-dense",
+      "nPairs": 98,
+      "nBothRequested": 99,
+      "nMethodScored": 99,
+      "nBaselineScored": 99,
+      "nMethodScoredUnmatched": 1,
+      "nBaselineScoredUnmatched": 1,
+      "meanDifference": -0.0023148148148148147,
+      "ciLow": -0.0412037037037037,
+      "ciHigh": 0.03796296296296296,
+      "nDocuments": 90,
+      "limitedDocumentSupport": false,
+      "documentDifferences": [
+        {
+          "documentId": "qasper:1602.03483",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1603.01547",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1603.08868",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1604.02038",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1604.02201",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1605.05156",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1605.05166",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1606.07043",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1610.09722",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1611.01116",
+          "difference": -0.75
+        },
+        {
+          "documentId": "qasper:1612.04118",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1612.05202",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1612.07486",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1701.03578",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1703.10152",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1704.06851",
+          "difference": -0.5
+        },
+        {
+          "documentId": "qasper:1707.07568",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1708.00549",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1708.07690",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1709.05453",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1709.06136",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1710.01789",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1710.06923",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1710.07695",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1712.02555",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1802.09059",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1803.06745",
+          "difference": -0.3333333333333333
+        },
+        {
+          "documentId": "qasper:1804.00982",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1804.09692",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1805.04558",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1805.04833",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1806.04387",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1806.07042",
+          "difference": -0.5
+        },
+        {
+          "documentId": "qasper:1806.09652",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1807.03674",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1808.07231",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1808.09180",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1809.00129",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1810.02268",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1810.13414",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1811.04791",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1901.03253",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1901.09501",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1902.10246",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1903.10318",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1904.02954",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1905.01347",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1905.05644",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1905.07562",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1906.01749",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1906.08871",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1908.07491",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1908.11046",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1908.11049",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1908.11053",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.00437",
+          "difference": 1.0
+        },
+        {
+          "documentId": "qasper:1909.00786",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.02855",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.03087",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1909.05190",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.05372",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.07158",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.10481",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1909.11706",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.12208",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.01108",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.02677",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.03943",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.07973",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.14589",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.00461",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.05652",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1911.10401",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.11025",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.11161",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.11899",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.00342",
+          "difference": -0.125
+        },
+        {
+          "documentId": "qasper:1912.07076",
+          "difference": -0.5
+        },
+        {
+          "documentId": "qasper:1912.08084",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1912.10162",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.11585",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2002.03056",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:2002.06851",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2002.09616",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.03131",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.03728",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.04978",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.07459",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:2003.09244",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.11687",
+          "difference": 0.0
+        }
+      ]
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "metric": "answer_accuracy",
+      "method": "hybrid-decisions",
+      "baseline": "hybrid-bge",
+      "nPairs": 99,
+      "nBothRequested": 99,
+      "nMethodScored": 99,
+      "nBaselineScored": 100,
+      "nMethodScoredUnmatched": 0,
+      "nBaselineScoredUnmatched": 1,
+      "meanDifference": 0.004578754578754579,
+      "ciLow": -0.03983516483516483,
+      "ciHigh": 0.04990842490842491,
+      "nDocuments": 91,
+      "limitedDocumentSupport": false,
+      "documentDifferences": [
+        {
+          "documentId": "qasper:1602.03483",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1603.01547",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1603.08868",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1604.02038",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1604.02201",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1605.05156",
+          "difference": 0.125
+        },
+        {
+          "documentId": "qasper:1605.05166",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1606.07043",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1610.09722",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1611.01116",
+          "difference": -1.0
+        },
+        {
+          "documentId": "qasper:1612.04118",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1612.05202",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1612.07486",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1701.03578",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1703.10152",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1704.06851",
+          "difference": -0.5
+        },
+        {
+          "documentId": "qasper:1707.07568",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1708.00549",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1708.07690",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1709.05453",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1709.06136",
+          "difference": 0.75
+        },
+        {
+          "documentId": "qasper:1710.01789",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1710.06923",
+          "difference": 0.75
+        },
+        {
+          "documentId": "qasper:1710.07695",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1712.02555",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1802.09059",
+          "difference": 0.5
+        },
+        {
+          "documentId": "qasper:1803.06745",
+          "difference": -0.3333333333333333
+        },
+        {
+          "documentId": "qasper:1804.00982",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1804.09692",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1805.04558",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1805.04833",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1806.04387",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1806.07042",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1806.09652",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1807.03674",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1808.07231",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1808.09180",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1809.00129",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1809.03391",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1810.02268",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1810.13414",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1811.04791",
+          "difference": 0.5
+        },
+        {
+          "documentId": "qasper:1901.03253",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1901.09501",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1902.10246",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1903.10318",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1904.02954",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1905.01347",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1905.05644",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1905.07562",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1906.01749",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1906.08871",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1908.07491",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1908.11046",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1908.11049",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1908.11053",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.00437",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.00786",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.02855",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.03087",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1909.05190",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.05372",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.07158",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.10481",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1909.11706",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.12208",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.01108",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.02677",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.03943",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.07973",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.14589",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.00461",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.05652",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1911.10401",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.11025",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.11161",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.11899",
+          "difference": -0.5
+        },
+        {
+          "documentId": "qasper:1912.00342",
+          "difference": -0.125
+        },
+        {
+          "documentId": "qasper:1912.07076",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.08084",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.10162",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.11585",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2002.03056",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:2002.06851",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:2002.09616",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.03131",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.03728",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:2003.04978",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.07459",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:2003.09244",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.11687",
+          "difference": 0.0
+        }
+      ]
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "metric": "answer_accuracy",
+      "method": "hybrid-decisions",
+      "baseline": "hybrid-jev",
+      "nPairs": 98,
+      "nBothRequested": 98,
+      "nMethodScored": 99,
+      "nBaselineScored": 99,
+      "nMethodScoredUnmatched": 1,
+      "nBaselineScoredUnmatched": 1,
+      "meanDifference": 0.001388888888888889,
+      "ciLow": -0.027777777777777776,
+      "ciHigh": 0.030555555555555555,
+      "nDocuments": 90,
+      "limitedDocumentSupport": false,
+      "documentDifferences": [
+        {
+          "documentId": "qasper:1602.03483",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1603.01547",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1603.08868",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1604.02038",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1604.02201",
+          "difference": 0.5
+        },
+        {
+          "documentId": "qasper:1605.05156",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1605.05166",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1606.07043",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1610.09722",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1611.01116",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1612.04118",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1612.05202",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1612.07486",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1701.03578",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1703.10152",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1704.06851",
+          "difference": -0.5
+        },
+        {
+          "documentId": "qasper:1707.07568",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1708.00549",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1708.07690",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1709.05453",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1709.06136",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1710.01789",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1710.06923",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1710.07695",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1712.02555",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1802.09059",
+          "difference": -0.5
+        },
+        {
+          "documentId": "qasper:1803.06745",
+          "difference": -0.08333333333333333
+        },
+        {
+          "documentId": "qasper:1804.00982",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1804.09692",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1805.04558",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1805.04833",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1806.04387",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1806.07042",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1806.09652",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1807.03674",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1808.07231",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1808.09180",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1809.00129",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1809.03391",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1810.02268",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1810.13414",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1811.04791",
+          "difference": 0.5
+        },
+        {
+          "documentId": "qasper:1901.03253",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1901.09501",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1902.10246",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1903.10318",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1904.02954",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1905.01347",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1905.05644",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1905.07562",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1906.01749",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1906.08871",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1908.07491",
+          "difference": 0.08333333333333333
+        },
+        {
+          "documentId": "qasper:1908.11046",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1908.11053",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.00437",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1909.00786",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1909.02855",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.03087",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1909.05190",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.05372",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.07158",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1909.10481",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1909.11706",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.12208",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.01108",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.02677",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.03943",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.07973",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.14589",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.00461",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.05652",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1911.10401",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.11025",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.11161",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.11899",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.00342",
+          "difference": -0.125
+        },
+        {
+          "documentId": "qasper:1912.07076",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.08084",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.10162",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.11585",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2002.03056",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:2002.06851",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2002.09616",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.03131",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.03728",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.04978",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.07459",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:2003.09244",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.11687",
+          "difference": 0.0
+        }
+      ]
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "metric": "answer_accuracy",
+      "method": "hybrid-decisions",
+      "baseline": "jev-scan",
+      "nPairs": 99,
+      "nBothRequested": 99,
+      "nMethodScored": 99,
+      "nBaselineScored": 100,
+      "nMethodScoredUnmatched": 0,
+      "nBaselineScoredUnmatched": 1,
+      "meanDifference": 0.01098901098901099,
+      "ciLow": -0.018772893772893772,
+      "ciHigh": 0.040293040293040296,
+      "nDocuments": 91,
+      "limitedDocumentSupport": false,
+      "documentDifferences": [
+        {
+          "documentId": "qasper:1602.03483",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1603.01547",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1603.08868",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1604.02038",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1604.02201",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1605.05156",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1605.05166",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1606.07043",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1610.09722",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1611.01116",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1612.04118",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1612.05202",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1612.07486",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1701.03578",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1703.10152",
+          "difference": 0.125
+        },
+        {
+          "documentId": "qasper:1704.06851",
+          "difference": -0.5
+        },
+        {
+          "documentId": "qasper:1707.07568",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1708.00549",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1708.07690",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1709.05453",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1709.06136",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1710.01789",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1710.06923",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1710.07695",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1712.02555",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1802.09059",
+          "difference": -0.5
+        },
+        {
+          "documentId": "qasper:1803.06745",
+          "difference": -0.08333333333333333
+        },
+        {
+          "documentId": "qasper:1804.00982",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1804.09692",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1805.04558",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1805.04833",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1806.04387",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1806.07042",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1806.09652",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1807.03674",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1808.07231",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1808.09180",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1809.00129",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1809.03391",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1810.02268",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1810.13414",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1811.04791",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1901.03253",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1901.09501",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1902.10246",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1903.10318",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1904.02954",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1905.01347",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1905.05644",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1905.07562",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1906.01749",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1906.08871",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1908.07491",
+          "difference": 0.08333333333333333
+        },
+        {
+          "documentId": "qasper:1908.11046",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1908.11049",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1908.11053",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.00437",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.00786",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.02855",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.03087",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1909.05190",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.05372",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.07158",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.10481",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1909.11706",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.12208",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.01108",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.02677",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.03943",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.07973",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.14589",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.00461",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.05652",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.10401",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.11025",
+          "difference": -0.125
+        },
+        {
+          "documentId": "qasper:1911.11161",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.11899",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.00342",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.07076",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1912.08084",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1912.10162",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.11585",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2002.03056",
+          "difference": 0.5
+        },
+        {
+          "documentId": "qasper:2002.06851",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2002.09616",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.03131",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.03728",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.04978",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.07459",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:2003.09244",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.11687",
+          "difference": 0.0
+        }
+      ]
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "metric": "answer_accuracy",
+      "method": "decisions-scan",
+      "baseline": "openai-dense",
+      "nPairs": 99,
+      "nBothRequested": 100,
+      "nMethodScored": 100,
+      "nBaselineScored": 99,
+      "nMethodScoredUnmatched": 1,
+      "nBaselineScoredUnmatched": 0,
+      "meanDifference": 0.0032051282051282055,
+      "ciLow": -0.03571428571428571,
+      "ciHigh": 0.042582417582417584,
+      "nDocuments": 91,
+      "limitedDocumentSupport": false,
+      "documentDifferences": [
+        {
+          "documentId": "qasper:1602.03483",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1603.01547",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1603.08868",
+          "difference": -0.5
+        },
+        {
+          "documentId": "qasper:1604.02038",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1604.02201",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1605.05156",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1605.05166",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1606.07043",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1610.09722",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1611.01116",
+          "difference": -0.75
+        },
+        {
+          "documentId": "qasper:1612.04118",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1612.05202",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1612.07486",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1701.03578",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1703.10152",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1704.06851",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1707.07568",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1708.00549",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1708.07690",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1709.05453",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1709.06136",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1710.01789",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1710.06923",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1710.07695",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1712.02555",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1802.09059",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1803.06745",
+          "difference": -0.3333333333333333
+        },
+        {
+          "documentId": "qasper:1803.09000",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1804.00982",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1804.09692",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1805.04558",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1805.04833",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1806.04387",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1806.07042",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1806.09652",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1807.03674",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1808.07231",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1808.09180",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1809.00129",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1810.02268",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1810.13414",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1811.04791",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1901.03253",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1901.09501",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1902.10246",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1903.10318",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1904.02954",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1905.01347",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1905.05644",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1905.07562",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1906.01749",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1906.08871",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1908.07491",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1908.11046",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1908.11049",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1908.11053",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.00437",
+          "difference": 1.0
+        },
+        {
+          "documentId": "qasper:1909.00786",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.02855",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.03087",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1909.05190",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.05372",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.07158",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.10481",
+          "difference": 0.5
+        },
+        {
+          "documentId": "qasper:1909.11706",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.12208",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.01108",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.02677",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.03943",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.07973",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.14589",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.00461",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.05652",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.10401",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.11025",
+          "difference": 0.125
+        },
+        {
+          "documentId": "qasper:1911.11161",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.11899",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.00342",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.07076",
+          "difference": -0.5
+        },
+        {
+          "documentId": "qasper:1912.08084",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1912.10162",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.11585",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2002.03056",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:2002.06851",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2002.09616",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.03131",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.03728",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.04978",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.07459",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.09244",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.11687",
+          "difference": 0.0
+        }
+      ]
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "metric": "answer_accuracy",
+      "method": "decisions-scan",
+      "baseline": "hybrid-bge",
+      "nPairs": 100,
+      "nBothRequested": 100,
+      "nMethodScored": 100,
+      "nBaselineScored": 100,
+      "nMethodScoredUnmatched": 0,
+      "nBaselineScoredUnmatched": 0,
+      "meanDifference": 0.007246376811594203,
+      "ciLow": -0.0384963768115942,
+      "ciHigh": 0.05253623188405797,
+      "nDocuments": 92,
+      "limitedDocumentSupport": false,
+      "documentDifferences": [
+        {
+          "documentId": "qasper:1602.03483",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1603.01547",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1603.08868",
+          "difference": -0.5
+        },
+        {
+          "documentId": "qasper:1604.02038",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1604.02201",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1605.05156",
+          "difference": 0.125
+        },
+        {
+          "documentId": "qasper:1605.05166",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1606.07043",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1610.09722",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1611.01116",
+          "difference": -1.0
+        },
+        {
+          "documentId": "qasper:1612.04118",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1612.05202",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1612.07486",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1701.03578",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1703.10152",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1704.06851",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1707.07568",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1708.00549",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1708.07690",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1709.05453",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1709.06136",
+          "difference": 0.5
+        },
+        {
+          "documentId": "qasper:1710.01789",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1710.06923",
+          "difference": 1.0
+        },
+        {
+          "documentId": "qasper:1710.07695",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1712.02555",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1802.09059",
+          "difference": 0.5
+        },
+        {
+          "documentId": "qasper:1803.06745",
+          "difference": -0.3333333333333333
+        },
+        {
+          "documentId": "qasper:1803.09000",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1804.00982",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1804.09692",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1805.04558",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1805.04833",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1806.04387",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1806.07042",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1806.09652",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1807.03674",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1808.07231",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1808.09180",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1809.00129",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1809.03391",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1810.02268",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1810.13414",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1811.04791",
+          "difference": 0.5
+        },
+        {
+          "documentId": "qasper:1901.03253",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1901.09501",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1902.10246",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1903.10318",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1904.02954",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1905.01347",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1905.05644",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1905.07562",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1906.01749",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1906.08871",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1908.07491",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1908.11046",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1908.11049",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1908.11053",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.00437",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.00786",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.02855",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.03087",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1909.05190",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.05372",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.07158",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.10481",
+          "difference": 0.5
+        },
+        {
+          "documentId": "qasper:1909.11706",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.12208",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.01108",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.02677",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.03943",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.07973",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.14589",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.00461",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.05652",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.10401",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.11025",
+          "difference": 0.125
+        },
+        {
+          "documentId": "qasper:1911.11161",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.11899",
+          "difference": -0.5
+        },
+        {
+          "documentId": "qasper:1912.00342",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.07076",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.08084",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.10162",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.11585",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2002.03056",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:2002.06851",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:2002.09616",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.03131",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.03728",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:2003.04978",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.07459",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.09244",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.11687",
+          "difference": 0.0
+        }
+      ]
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "metric": "answer_accuracy",
+      "method": "decisions-scan",
+      "baseline": "hybrid-jev",
+      "nPairs": 99,
+      "nBothRequested": 99,
+      "nMethodScored": 100,
+      "nBaselineScored": 99,
+      "nMethodScoredUnmatched": 1,
+      "nBaselineScoredUnmatched": 0,
+      "meanDifference": 0.004120879120879121,
+      "ciLow": -0.024267399267399268,
+      "ciHigh": 0.03388278388278388,
+      "nDocuments": 91,
+      "limitedDocumentSupport": false,
+      "documentDifferences": [
+        {
+          "documentId": "qasper:1602.03483",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1603.01547",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1603.08868",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1604.02038",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1604.02201",
+          "difference": 0.5
+        },
+        {
+          "documentId": "qasper:1605.05156",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1605.05166",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1606.07043",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1610.09722",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1611.01116",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1612.04118",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1612.05202",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1612.07486",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1701.03578",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1703.10152",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1704.06851",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1707.07568",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1708.00549",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1708.07690",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1709.05453",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1709.06136",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1710.01789",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1710.06923",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1710.07695",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1712.02555",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1802.09059",
+          "difference": -0.5
+        },
+        {
+          "documentId": "qasper:1803.06745",
+          "difference": -0.08333333333333333
+        },
+        {
+          "documentId": "qasper:1803.09000",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1804.00982",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1804.09692",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1805.04558",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1805.04833",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1806.04387",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1806.07042",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1806.09652",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1807.03674",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1808.07231",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1808.09180",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1809.00129",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1809.03391",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1810.02268",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1810.13414",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1811.04791",
+          "difference": 0.5
+        },
+        {
+          "documentId": "qasper:1901.03253",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1901.09501",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1902.10246",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1903.10318",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1904.02954",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1905.01347",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1905.05644",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1905.07562",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1906.01749",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1906.08871",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1908.07491",
+          "difference": 0.08333333333333333
+        },
+        {
+          "documentId": "qasper:1908.11046",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1908.11053",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.00437",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1909.00786",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1909.02855",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.03087",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1909.05190",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.05372",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.07158",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1909.10481",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.11706",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.12208",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.01108",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.02677",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.03943",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.07973",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.14589",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.00461",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.05652",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.10401",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.11025",
+          "difference": 0.125
+        },
+        {
+          "documentId": "qasper:1911.11161",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.11899",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.00342",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.07076",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.08084",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.10162",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.11585",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2002.03056",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:2002.06851",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2002.09616",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.03131",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.03728",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.04978",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.07459",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.09244",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.11687",
+          "difference": 0.0
+        }
+      ]
+    },
+    {
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "metric": "answer_accuracy",
+      "method": "decisions-scan",
+      "baseline": "jev-scan",
+      "nPairs": 100,
+      "nBothRequested": 100,
+      "nMethodScored": 100,
+      "nBaselineScored": 100,
+      "nMethodScoredUnmatched": 0,
+      "nBaselineScoredUnmatched": 0,
+      "meanDifference": 0.01358695652173913,
+      "ciLow": -0.012228260869565218,
+      "ciHigh": 0.03985507246376811,
+      "nDocuments": 92,
+      "limitedDocumentSupport": false,
+      "documentDifferences": [
+        {
+          "documentId": "qasper:1602.03483",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1603.01547",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1603.08868",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1604.02038",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1604.02201",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1605.05156",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1605.05166",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1606.07043",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1610.09722",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1611.01116",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1612.04118",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1612.05202",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1612.07486",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1701.03578",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1703.10152",
+          "difference": 0.125
+        },
+        {
+          "documentId": "qasper:1704.06851",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1707.07568",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1708.00549",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1708.07690",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1709.05453",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1709.06136",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1710.01789",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1710.06923",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1710.07695",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1712.02555",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1802.09059",
+          "difference": -0.5
+        },
+        {
+          "documentId": "qasper:1803.06745",
+          "difference": -0.08333333333333333
+        },
+        {
+          "documentId": "qasper:1803.09000",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1804.00982",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1804.09692",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1805.04558",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1805.04833",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1806.04387",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1806.07042",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1806.09652",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1807.03674",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1808.07231",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1808.09180",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1809.00129",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1809.03391",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1810.02268",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1810.13414",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1811.04791",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1901.03253",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1901.09501",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1902.10246",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1903.10318",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1904.02954",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1905.01347",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1905.05644",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1905.07562",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1906.01749",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1906.08871",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1908.07491",
+          "difference": 0.08333333333333333
+        },
+        {
+          "documentId": "qasper:1908.11046",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1908.11049",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1908.11053",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.00437",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.00786",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.02855",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.03087",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1909.05190",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.05372",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.07158",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.10481",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.11706",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.12208",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.01108",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.02677",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.03943",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.07973",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.14589",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.00461",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.05652",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1911.10401",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.11025",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.11161",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.11899",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.00342",
+          "difference": 0.125
+        },
+        {
+          "documentId": "qasper:1912.07076",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1912.08084",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1912.10162",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.11585",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2002.03056",
+          "difference": 0.5
+        },
+        {
+          "documentId": "qasper:2002.06851",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2002.09616",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.03131",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.03728",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.04978",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.07459",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.09244",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.11687",
+          "difference": 0.0
+        }
+      ]
+    }
+  ],
+  "costs": {
+    "global": {
+      "knownUsd": "91.086478848",
+      "reservedUsd": "4.9342592",
+      "committedUsd": "96.020738048",
+      "attempts": 75528,
+      "unknownAttempts": 53
+    },
+    "cumulativeJudge": {
+      "knownUsd": "40.7509821",
+      "reservedUsd": "2.28576",
+      "committedUsd": "43.0367421",
+      "attempts": 8487,
+      "unknownAttempts": 3
+    },
+    "extension": {
+      "knownUsd": "38.2242044",
+      "reservedUsd": "0.8006496",
+      "committedUsd": "39.024854",
+      "attempts": 31150,
+      "unknownAttempts": 15
+    },
+    "newJudge": {
+      "knownUsd": "7.0250816",
+      "reservedUsd": "0",
+      "committedUsd": "7.0250816",
+      "attempts": 1352,
+      "unknownAttempts": 0
+    }
+  },
+  "integrity": {
+    "audit": {
+      "ledgerSha256": "b7b391147049899a598862d59ccee0ce5848a03d8b046b256cef545528345f9b",
+      "retrievalBackupSha256": "ae32ef0c13df405fa8f22722566556726458292f9e5fa2823b5cc2f3b7023fb4",
+      "freezeSha256": "c13b7f13bef429920ad9b1592b5448a1f91e6f09d249208edc788f015c0073b3",
+      "sourceSha256": "febd56caefc21826391207cf5fecb585e0bcc9b16a2f5d849e400cdf5a26f246"
+    },
+    "preservation": {
+      "createdAt": "2026-10-07T20:14:54.246630+00:00",
+      "backup": "/home/juan/dev/jev-vs-rag/data/research/study-budget-decisions-final-20261007.sqlite",
+      "bytes": 2543689728,
+      "backupSha256": "b7b391147049899a598862d59ccee0ce5848a03d8b046b256cef545528345f9b",
+      "integrity": "ok",
+      "judgeFreezeSha256": "c13b7f13bef429920ad9b1592b5448a1f91e6f09d249208edc788f015c0073b3",
+      "resultSha256": "265b6c9d314bac1978fce5ec9c04b4f6fc1214ea9f3edc710dd4cf14748a367b",
+      "completionSha256": "8a3235d736c7af2c72a816e6736268d17a6dc28aa1f5dca4dbc5cee9a0aaaaa1",
+      "sourceSha256": "f9a40869a51a152afe5699d9240bac060ec6213111a5f61fddf017be49aa3e06",
+      "expectedMetricPairs": 676,
+      "terminalMetricPairs": 676,
+      "policy": "Consistent SQLite backup after all judge processes exited. Preserves errors and unknown usage. Final scientific/cost audit follows separately."
+    }
+  },
+  "limitations": [
+    "This is an extension designed after the original results, not a preregistered contemporary comparison.",
+    "The judge model is an alias invoked on different dates. Shared prompts, references and questions do not rule out provider drift.",
+    "Pairs require both scores to be completed; failures, NA and unscorable scores remain explicit and are never zero-filled.",
+    "Faithfulness additionally conditions on both methods supplying a nonabstaining answer with context. Applicability can differ by method.",
+    "Bootstrap intervals are exploratory and unadjusted for multiple comparisons; eight test books limit precision.",
+    "Book reference authorship is unchanged. Automated judging does not provide independent human validation.",
+    "This file checks metric/sample provenance. A separate ledger audit must bind scores to paid attempts and establish spending."
+  ]
+}

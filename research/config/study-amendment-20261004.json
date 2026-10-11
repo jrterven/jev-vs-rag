@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "id": "book-ai-completion-20261004-v1",
+  "recordedAt": "2026-10-05T02:24:57.987620+00:00",
+  "stage": "before-heldout-execution",
+  "authorization": "User requested GPT-6 Astra Ultra to complete the outstanding book questions and finish the paper.",
+  "bookReferenceConstruction": {
+    "humanQuestionsPreserved": 2,
+    "newModelGeneratedQuestions": 98,
+    "development": {
+      "books": 2,
+      "questions": 20,
+      "human": 0,
+      "modelGenerated": 20
+    },
+    "test": {
+      "books": 8,
+      "questions": 80,
+      "human": 2,
+      "modelGenerated": 78
+    },
+    "perBook": {
+      "factual": 4,
+      "explanatory": 3,
+      "multi_section": 3
+    },
+    "model": "gpt-6-astra",
+    "reasoningEffort": "ultra",
+    "authoringMechanism": "Codex subagents",
+    "humanReviewOfModelQuestions": false,
+    "review": "Author semantic self-check plus deterministic integrity checks; not independent human validation.",
+    "sourceAccess": "Selected canonical sections and neighboring context; no retrieval outputs accessed by authoring agents.",
+    "paraphrases": "Natural semantic paraphrases; technical terms retained. Paraphrases are not proof of uncontaminated evaluation.",
+    "originalHumanBackupSha256": "13aaf2109681cf8865cf201dcd9ec3e6fcf8cbf86f55236dfbd2af59d26eae06",
+    "generationProtocolSha256": "e1eb2699c2f1bf74003b1057e5b2c4f012c9c1847a437185a586833dde02aefd"
+  },
+  "primaryEvaluation": {
+    "qasper": {
+      "answerable": 320,
+      "unanswerable": 76,
+      "reference": "human"
+    },
+    "books": {
+      "questions": 80,
+      "reference": "mixed: 78 model-generated, 2 human"
+    },
+    "poolCorpora": false,
+    "metrics": [
+      "evidence-coverage@5",
+      "complete-evidence-set@5",
+      "five-passage-oracle",
+      "stagewise-evidence-retention"
+    ],
+    "bootstrap": {
+      "unit": "document",
+      "resamples": 10000,
+      "seed": 42
+    },
+    "bookSensitivity": [
+      "per-book",
+      "leave-one-book-out",
+      "exclude-two-human-questions"
+    ]
+  },
+  "operationalEvaluation": {
+    "methods": [
+      "bm25",
+      "openai-dense",
+      "bge-m3",
+      "hybrid",
+      "hybrid-bge",
+      "hybrid-jev",
+      "jev-scan"
+    ],
+    "timingQuestions": 100,
+    "timingRounds": 3,
+    "timingSampling": "Existing seeded schedule: 50 per corpus; per-book counts reported, not asserted equal.",
+    "noTransientSearchRetries": true,
+    "sameSourceChunks": true,
+    "topK": 5
+  },
+  "secondaryEvaluation": {
+    "generationQuestions": 200,
+    "selection": {
+      "qasperPositive": 100,
+      "qasperNegative": 40,
+      "books": 60
+    },
+    "arms": 9,
+    "generator": "gpt-4.1-mini-2025-04-14",
+    "maxOutputTokens": 512,
+    "contextTokens": 2500,
+    "metrics": [
+      "official RAGAS Faithfulness",
+      "official RAGAS AnswerAccuracy"
+    ],
+    "ragasVersion": "0.4.3",
+    "judge": "gpt-6.1-sol",
+    "reasoningEffort": "medium",
+    "referencePolicy": "Unchanged frozen QASPER first-human answer or unchanged book answer, with provenance declared for every record.",
+    "faithfulnessApplicability": "Nonempty nonabstaining answers with supplied evidence only; other cases are NA.",
+    "answerAccuracyApplicability": "Positive-reference nonempty answers, including abstentions; negatives excluded and abstention reported separately.",
+    "factualCorrectness": "Development diagnostic only; excluded from main test before inspecting outputs.",
+    "humanAnswerRatingsCompleted": 0,
+    "humanRatingsInMainStudy": false,
+    "technicalCalibrationIsHumanValidation": false
+  },
+  "optionalAblations": {
+    "status": "not-in-main-study",
+    "selectedBeforeHeldoutOutputs": true,
+    "reason": "Complete the seven-method main comparison with explicit model-authored references and calibrated automatic answer evaluation. Optional structure/window/order sweeps remain future work, not missing main-study results."
+  },
+  "budget": {
+    "sharedApiCapUsd": "200",
+    "observedBeforeAmendmentUsd": "6.785603256",
+    "judgeReserveUsd": "80",
+    "fullStudyForecast": "Required after a fresh combined QASPER/book development pilot with the final implementation.",
+    "authoringCodexCost": "Not available as metered API usage; reported separately as unpriced authoring resource, not zero-dollar retrieval."
+  },
+  "release": {
+    "status": "author-review-only",
+    "automaticArxivSubmission": false,
+    "bulkSourceBooksRedistributed": false,
+    "sourceAttributionAndLicenseMetadataPreserved": true,
+    "publisherModelUsePermissionClaimed": false
+  },
+  "limitations": [
+    "Mostly model-authored book references and no independent human validation of them.",
+    "Author, generator, and judge share a provider family; different models do not guarantee independent errors.",
+    "Public sources may occur in undisclosed training data.",
+    "Only eight test books; book questions are not independent document units.",
+    "Automatic answer metrics do not establish citation correctness or replace human review."
+  ]
+}

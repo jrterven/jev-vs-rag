@@ -1,0 +1,2066 @@
+{
+  "schemaVersion": 1,
+  "kind": "ragas-study-analysis",
+  "scope": "test",
+  "aggregation": "document_macro",
+  "integrity": {
+    "samplesSha256": "a9f834fb5fffccb76378fe1f910cd354b613ada5174a93a77702aa6022c870dc",
+    "samplesHash": "8d48e1d4d85ac8034b463c158b62e3f95bade15d37bda1e579779b3344510f19",
+    "exportManifestSha256": "b8d2b230108c2e8e0d37ede6a50bab7c823513bb740bcea55a4735b924c12e0b",
+    "runtimeManifestSha256": "933d9e18fd94ff41d7c869533bbb221ef6857e4820cb8306f0313890b11aba81",
+    "resultsSha256": "1ded1c16c8fd3948ea904b3fa40dd122dd69bc37c222c9ddbe5d1317eb511009",
+    "runtimeSourceHash": "d497d7fa6ad46348d1cf92ba0788c08dd8c2ddf7fd2b24e25c2b7e1c2d998a5b",
+    "analysisSourceSha256": "f76410e2c9e6c1b1ce12a2b1cfd908996e84040bf8353d50f88ee4e73402af8b",
+    "runtimeInputHashVerified": true,
+    "runtimeSourceVerified": true
+  },
+  "accounting": {
+    "answers": 1794,
+    "requestedMetrics": 2874,
+    "terminalMetrics": 2874,
+    "completed": 2869,
+    "failed": 5,
+    "unscorable": 0,
+    "pending": 0,
+    "notApplicable": 714,
+    "missingGenerations": 6
+  },
+  "referenceCounts": [
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "referenceKind": "human_book",
+      "answers": 9,
+      "uniqueQuestions": 1,
+      "uniqueDocuments": 1
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "referenceKind": "model_generated_book",
+      "answers": 527,
+      "uniqueQuestions": 59,
+      "uniqueDocuments": 8
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "referenceKind": "human_qasper",
+      "answers": 1258,
+      "uniqueQuestions": 140,
+      "uniqueDocuments": 120
+    }
+  ],
+  "paired": [
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "metric": "faithfulness",
+      "method": "jev-scan",
+      "baseline": "openai-dense",
+      "nPairs": 57,
+      "nBothRequested": 57,
+      "nMethodScored": 57,
+      "nBaselineScored": 60,
+      "nMethodScoredUnmatched": 0,
+      "nBaselineScoredUnmatched": 3,
+      "meanDifference": 0.06913435724020896,
+      "ciLow": 0.050359264379638155,
+      "ciHigh": 0.08997147774100898,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false,
+      "documentDifferences": [
+        {
+          "documentId": "openstax:american-government-3e",
+          "difference": 0.1276923076923077
+        },
+        {
+          "documentId": "openstax:astronomy-2e",
+          "difference": 0.06998085429457979
+        },
+        {
+          "documentId": "openstax:biology-2e",
+          "difference": 0.07291666666666667
+        },
+        {
+          "documentId": "openstax:introduction-business",
+          "difference": 0.04339202464202464
+        },
+        {
+          "documentId": "openstax:introduction-philosophy",
+          "difference": 0.05158730158730158
+        },
+        {
+          "documentId": "openstax:introduction-sociology-3e",
+          "difference": 0.025204115737203978
+        },
+        {
+          "documentId": "openstax:principles-economics-3e",
+          "difference": 0.07896825396825397
+        },
+        {
+          "documentId": "openstax:psychology-2e",
+          "difference": 0.08333333333333333
+        }
+      ]
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "metric": "faithfulness",
+      "method": "jev-scan",
+      "baseline": "hybrid-bge",
+      "nPairs": 56,
+      "nBothRequested": 56,
+      "nMethodScored": 57,
+      "nBaselineScored": 59,
+      "nMethodScoredUnmatched": 1,
+      "nBaselineScoredUnmatched": 3,
+      "meanDifference": 0.02846406750588736,
+      "ciLow": 0.010458775165806419,
+      "ciHigh": 0.050202730690724715,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false,
+      "documentDifferences": [
+        {
+          "documentId": "openstax:american-government-3e",
+          "difference": 0.09333333333333334
+        },
+        {
+          "documentId": "openstax:astronomy-2e",
+          "difference": 0.033651751298810116
+        },
+        {
+          "documentId": "openstax:biology-2e",
+          "difference": 0.03645833333333333
+        },
+        {
+          "documentId": "openstax:introduction-business",
+          "difference": 0.03640491452991454
+        },
+        {
+          "documentId": "openstax:introduction-philosophy",
+          "difference": -0.006283068783068779
+        },
+        {
+          "documentId": "openstax:introduction-sociology-3e",
+          "difference": 0.016290133477633487
+        },
+        {
+          "documentId": "openstax:principles-economics-3e",
+          "difference": -0.0029761904761904843
+        },
+        {
+          "documentId": "openstax:psychology-2e",
+          "difference": 0.020833333333333332
+        }
+      ]
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "metric": "answer_accuracy",
+      "method": "jev-scan",
+      "baseline": "openai-dense",
+      "nPairs": 57,
+      "nBothRequested": 57,
+      "nMethodScored": 57,
+      "nBaselineScored": 60,
+      "nMethodScoredUnmatched": 0,
+      "nBaselineScoredUnmatched": 3,
+      "meanDifference": 0.04796626984126984,
+      "ciLow": 0.003472222222222222,
+      "ciHigh": 0.09756944444444444,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false,
+      "documentDifferences": [
+        {
+          "documentId": "openstax:american-government-3e",
+          "difference": 0.1
+        },
+        {
+          "documentId": "openstax:astronomy-2e",
+          "difference": 0.027777777777777776
+        },
+        {
+          "documentId": "openstax:biology-2e",
+          "difference": 0.0
+        },
+        {
+          "documentId": "openstax:introduction-business",
+          "difference": 0.0
+        },
+        {
+          "documentId": "openstax:introduction-philosophy",
+          "difference": -0.03571428571428571
+        },
+        {
+          "documentId": "openstax:introduction-sociology-3e",
+          "difference": 0.125
+        },
+        {
+          "documentId": "openstax:principles-economics-3e",
+          "difference": 0.16666666666666666
+        },
+        {
+          "documentId": "openstax:psychology-2e",
+          "difference": 0.0
+        }
+      ]
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "openstax-books",
+      "unanswerable": false,
+      "metric": "answer_accuracy",
+      "method": "jev-scan",
+      "baseline": "hybrid-bge",
+      "nPairs": 56,
+      "nBothRequested": 56,
+      "nMethodScored": 57,
+      "nBaselineScored": 59,
+      "nMethodScoredUnmatched": 1,
+      "nBaselineScoredUnmatched": 3,
+      "meanDifference": 0.03550347222222222,
+      "ciLow": 0.012586805555555556,
+      "ciHigh": 0.062239583333333334,
+      "nDocuments": 8,
+      "limitedDocumentSupport": false,
+      "documentDifferences": [
+        {
+          "documentId": "openstax:american-government-3e",
+          "difference": 0.1
+        },
+        {
+          "documentId": "openstax:astronomy-2e",
+          "difference": 0.027777777777777776
+        },
+        {
+          "documentId": "openstax:biology-2e",
+          "difference": 0.0
+        },
+        {
+          "documentId": "openstax:introduction-business",
+          "difference": 0.0
+        },
+        {
+          "documentId": "openstax:introduction-philosophy",
+          "difference": 0.041666666666666664
+        },
+        {
+          "documentId": "openstax:introduction-sociology-3e",
+          "difference": 0.03125
+        },
+        {
+          "documentId": "openstax:principles-economics-3e",
+          "difference": 0.08333333333333333
+        },
+        {
+          "documentId": "openstax:psychology-2e",
+          "difference": 0.0
+        }
+      ]
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "metric": "faithfulness",
+      "method": "jev-scan",
+      "baseline": "openai-dense",
+      "nPairs": 99,
+      "nBothRequested": 99,
+      "nMethodScored": 99,
+      "nBaselineScored": 99,
+      "nMethodScoredUnmatched": 0,
+      "nBaselineScoredUnmatched": 0,
+      "meanDifference": 0.001178064914328651,
+      "ciLow": -0.029215542456896688,
+      "ciHigh": 0.02991354731779748,
+      "nDocuments": 91,
+      "limitedDocumentSupport": false,
+      "documentDifferences": [
+        {
+          "documentId": "qasper:1602.03483",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1603.01547",
+          "difference": -0.23076923076923073
+        },
+        {
+          "documentId": "qasper:1603.08868",
+          "difference": 0.125
+        },
+        {
+          "documentId": "qasper:1604.02038",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1604.02201",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1605.05156",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1605.05166",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1606.07043",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1610.09722",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1611.01116",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1612.04118",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1612.05202",
+          "difference": 0.01388888888888884
+        },
+        {
+          "documentId": "qasper:1612.07486",
+          "difference": -0.09090909090909094
+        },
+        {
+          "documentId": "qasper:1701.03578",
+          "difference": -0.3333333333333333
+        },
+        {
+          "documentId": "qasper:1703.10152",
+          "difference": 0.09285714285714286
+        },
+        {
+          "documentId": "qasper:1704.06851",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1707.07568",
+          "difference": -0.09999999999999998
+        },
+        {
+          "documentId": "qasper:1708.00549",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1708.07690",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1709.05453",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1709.06136",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1710.01789",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1710.06923",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1710.07695",
+          "difference": 0.375
+        },
+        {
+          "documentId": "qasper:1712.02555",
+          "difference": -0.33333333333333337
+        },
+        {
+          "documentId": "qasper:1802.09059",
+          "difference": 0.1428571428571429
+        },
+        {
+          "documentId": "qasper:1803.06745",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1803.09000",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1804.00982",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1804.09692",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1805.04558",
+          "difference": -0.11111111111111116
+        },
+        {
+          "documentId": "qasper:1805.04833",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1806.04387",
+          "difference": 0.08333333333333337
+        },
+        {
+          "documentId": "qasper:1806.07042",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1806.09652",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1807.03674",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1808.07231",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1808.09180",
+          "difference": 0.125
+        },
+        {
+          "documentId": "qasper:1809.00129",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1809.03391",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1810.02268",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1810.13414",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1811.04791",
+          "difference": -0.19999999999999996
+        },
+        {
+          "documentId": "qasper:1901.03253",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1901.09501",
+          "difference": 0.09999999999999998
+        },
+        {
+          "documentId": "qasper:1902.10246",
+          "difference": 0.09999999999999998
+        },
+        {
+          "documentId": "qasper:1903.10318",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1904.02954",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1905.01347",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1905.05644",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1905.07562",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1906.01749",
+          "difference": 0.023076923076923106
+        },
+        {
+          "documentId": "qasper:1906.08871",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1908.07491",
+          "difference": -0.07142857142857144
+        },
+        {
+          "documentId": "qasper:1908.11046",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1908.11049",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1908.11053",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.00437",
+          "difference": -0.6666666666666667
+        },
+        {
+          "documentId": "qasper:1909.00786",
+          "difference": -0.022624434389140302
+        },
+        {
+          "documentId": "qasper:1909.02855",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.03087",
+          "difference": -0.2857142857142857
+        },
+        {
+          "documentId": "qasper:1909.05190",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.05372",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.07158",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.10481",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.11706",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.12208",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.01108",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.02677",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.03943",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.07973",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.14589",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.00461",
+          "difference": 0.09090909090909094
+        },
+        {
+          "documentId": "qasper:1911.05652",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.10401",
+          "difference": -0.5
+        },
+        {
+          "documentId": "qasper:1911.11025",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.11161",
+          "difference": 0.3611111111111111
+        },
+        {
+          "documentId": "qasper:1911.11899",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.00342",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.07076",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.08084",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.10162",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2002.03056",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2002.06851",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2002.09616",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.03131",
+          "difference": 0.17647058823529416
+        },
+        {
+          "documentId": "qasper:2003.03728",
+          "difference": 0.4285714285714286
+        },
+        {
+          "documentId": "qasper:2003.04978",
+          "difference": 0.07692307692307687
+        },
+        {
+          "documentId": "qasper:2003.07459",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.09244",
+          "difference": 0.23809523809523814
+        },
+        {
+          "documentId": "qasper:2003.11687",
+          "difference": 0.0
+        }
+      ]
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "metric": "faithfulness",
+      "method": "jev-scan",
+      "baseline": "hybrid-bge",
+      "nPairs": 99,
+      "nBothRequested": 99,
+      "nMethodScored": 99,
+      "nBaselineScored": 99,
+      "nMethodScoredUnmatched": 0,
+      "nBaselineScoredUnmatched": 0,
+      "meanDifference": -0.0030520819588369685,
+      "ciLow": -0.027576343575353757,
+      "ciHigh": 0.020509416605085637,
+      "nDocuments": 91,
+      "limitedDocumentSupport": false,
+      "documentDifferences": [
+        {
+          "documentId": "qasper:1602.03483",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1603.01547",
+          "difference": -0.23076923076923073
+        },
+        {
+          "documentId": "qasper:1603.08868",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1604.02038",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1604.02201",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1605.05156",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1605.05166",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1606.07043",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1610.09722",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1611.01116",
+          "difference": 0.4
+        },
+        {
+          "documentId": "qasper:1612.04118",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1612.05202",
+          "difference": -0.11111111111111116
+        },
+        {
+          "documentId": "qasper:1612.07486",
+          "difference": -0.09090909090909094
+        },
+        {
+          "documentId": "qasper:1701.03578",
+          "difference": -0.5
+        },
+        {
+          "documentId": "qasper:1703.10152",
+          "difference": 0.033333333333333326
+        },
+        {
+          "documentId": "qasper:1704.06851",
+          "difference": 0.09090909090909094
+        },
+        {
+          "documentId": "qasper:1707.07568",
+          "difference": 0.11428571428571432
+        },
+        {
+          "documentId": "qasper:1708.00549",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1708.07690",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1709.05453",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1709.06136",
+          "difference": 0.1428571428571429
+        },
+        {
+          "documentId": "qasper:1710.01789",
+          "difference": 0.09999999999999998
+        },
+        {
+          "documentId": "qasper:1710.06923",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1710.07695",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1712.02555",
+          "difference": -0.13333333333333341
+        },
+        {
+          "documentId": "qasper:1802.09059",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1803.06745",
+          "difference": 0.16666666666666666
+        },
+        {
+          "documentId": "qasper:1803.09000",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1804.00982",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1804.09692",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1805.04558",
+          "difference": -0.11111111111111116
+        },
+        {
+          "documentId": "qasper:1805.04833",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1806.04387",
+          "difference": 0.07692307692307687
+        },
+        {
+          "documentId": "qasper:1806.07042",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1806.09652",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1807.03674",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1808.07231",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1808.09180",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1809.00129",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1809.03391",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1810.02268",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1810.13414",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1811.04791",
+          "difference": -0.19999999999999996
+        },
+        {
+          "documentId": "qasper:1901.03253",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1901.09501",
+          "difference": 0.19999999999999996
+        },
+        {
+          "documentId": "qasper:1902.10246",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1903.10318",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1904.02954",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1905.01347",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1905.05644",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1905.07562",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1906.01749",
+          "difference": -0.07692307692307687
+        },
+        {
+          "documentId": "qasper:1906.08871",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1908.07491",
+          "difference": -0.004761904761904782
+        },
+        {
+          "documentId": "qasper:1908.11046",
+          "difference": 0.09090909090909094
+        },
+        {
+          "documentId": "qasper:1908.11049",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1908.11053",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.00437",
+          "difference": -0.3333333333333333
+        },
+        {
+          "documentId": "qasper:1909.00786",
+          "difference": -0.17647058823529416
+        },
+        {
+          "documentId": "qasper:1909.02855",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.03087",
+          "difference": -0.2857142857142857
+        },
+        {
+          "documentId": "qasper:1909.05190",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.05372",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.07158",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.10481",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.11706",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.12208",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.01108",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.02677",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.03943",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.07973",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.14589",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.00461",
+          "difference": 0.08333333333333337
+        },
+        {
+          "documentId": "qasper:1911.05652",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.10401",
+          "difference": 0.2142857142857143
+        },
+        {
+          "documentId": "qasper:1911.11025",
+          "difference": -0.03125
+        },
+        {
+          "documentId": "qasper:1911.11161",
+          "difference": -0.2222222222222222
+        },
+        {
+          "documentId": "qasper:1911.11899",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.00342",
+          "difference": 0.1833333333333333
+        },
+        {
+          "documentId": "qasper:1912.07076",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.08084",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.10162",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2002.03056",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2002.06851",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2002.09616",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.03131",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.03728",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.04978",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.07459",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.09244",
+          "difference": 0.08333333333333337
+        },
+        {
+          "documentId": "qasper:2003.11687",
+          "difference": 0.0
+        }
+      ]
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "metric": "answer_accuracy",
+      "method": "jev-scan",
+      "baseline": "openai-dense",
+      "nPairs": 99,
+      "nBothRequested": 100,
+      "nMethodScored": 100,
+      "nBaselineScored": 99,
+      "nMethodScoredUnmatched": 1,
+      "nBaselineScoredUnmatched": 0,
+      "meanDifference": -0.010531135531135532,
+      "ciLow": -0.050824175824175824,
+      "ciHigh": 0.03023122710622694,
+      "nDocuments": 91,
+      "limitedDocumentSupport": false,
+      "documentDifferences": [
+        {
+          "documentId": "qasper:1602.03483",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1603.01547",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1603.08868",
+          "difference": -0.5
+        },
+        {
+          "documentId": "qasper:1604.02038",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1604.02201",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1605.05156",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1605.05166",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1606.07043",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1610.09722",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1611.01116",
+          "difference": -0.75
+        },
+        {
+          "documentId": "qasper:1612.04118",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1612.05202",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1612.07486",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1701.03578",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1703.10152",
+          "difference": 0.125
+        },
+        {
+          "documentId": "qasper:1704.06851",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1707.07568",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1708.00549",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1708.07690",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1709.05453",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1709.06136",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1710.01789",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1710.06923",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1710.07695",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1712.02555",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1802.09059",
+          "difference": 0.5
+        },
+        {
+          "documentId": "qasper:1803.06745",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1803.09000",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1804.00982",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1804.09692",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1805.04558",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1805.04833",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1806.04387",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1806.07042",
+          "difference": -0.5
+        },
+        {
+          "documentId": "qasper:1806.09652",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1807.03674",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1808.07231",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1808.09180",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1809.00129",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1810.02268",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1810.13414",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1811.04791",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1901.03253",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1901.09501",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1902.10246",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1903.10318",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1904.02954",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1905.01347",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1905.05644",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1905.07562",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1906.01749",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1906.08871",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1908.07491",
+          "difference": -0.08333333333333333
+        },
+        {
+          "documentId": "qasper:1908.11046",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1908.11049",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1908.11053",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.00437",
+          "difference": 1.0
+        },
+        {
+          "documentId": "qasper:1909.00786",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.02855",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.03087",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.05190",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.05372",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.07158",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.10481",
+          "difference": 0.5
+        },
+        {
+          "documentId": "qasper:1909.11706",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.12208",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.01108",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.02677",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.03943",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.07973",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.14589",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.00461",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.05652",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1911.10401",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.11025",
+          "difference": 0.125
+        },
+        {
+          "documentId": "qasper:1911.11161",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.11899",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.00342",
+          "difference": -0.125
+        },
+        {
+          "documentId": "qasper:1912.07076",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1912.08084",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.10162",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.11585",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2002.03056",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:2002.06851",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2002.09616",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.03131",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.03728",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.04978",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.07459",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.09244",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.11687",
+          "difference": 0.0
+        }
+      ]
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": false,
+      "metric": "answer_accuracy",
+      "method": "jev-scan",
+      "baseline": "hybrid-bge",
+      "nPairs": 100,
+      "nBothRequested": 100,
+      "nMethodScored": 100,
+      "nBaselineScored": 100,
+      "nMethodScoredUnmatched": 0,
+      "nBaselineScoredUnmatched": 0,
+      "meanDifference": -0.006340579710144927,
+      "ciLow": -0.0552536231884058,
+      "ciHigh": 0.042119565217391304,
+      "nDocuments": 92,
+      "limitedDocumentSupport": false,
+      "documentDifferences": [
+        {
+          "documentId": "qasper:1602.03483",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1603.01547",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1603.08868",
+          "difference": -0.5
+        },
+        {
+          "documentId": "qasper:1604.02038",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1604.02201",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1605.05156",
+          "difference": 0.125
+        },
+        {
+          "documentId": "qasper:1605.05166",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1606.07043",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1610.09722",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1611.01116",
+          "difference": -1.0
+        },
+        {
+          "documentId": "qasper:1612.04118",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1612.05202",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1612.07486",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1701.03578",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1703.10152",
+          "difference": -0.125
+        },
+        {
+          "documentId": "qasper:1704.06851",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1707.07568",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1708.00549",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1708.07690",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1709.05453",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1709.06136",
+          "difference": 0.5
+        },
+        {
+          "documentId": "qasper:1710.01789",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1710.06923",
+          "difference": 1.0
+        },
+        {
+          "documentId": "qasper:1710.07695",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1712.02555",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1802.09059",
+          "difference": 1.0
+        },
+        {
+          "documentId": "qasper:1803.06745",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1803.09000",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1804.00982",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1804.09692",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1805.04558",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1805.04833",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1806.04387",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1806.07042",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1806.09652",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1807.03674",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1808.07231",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1808.09180",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1809.00129",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1809.03391",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1810.02268",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1810.13414",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1811.04791",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1901.03253",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1901.09501",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1902.10246",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1903.10318",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1904.02954",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1905.01347",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1905.05644",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1905.07562",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1906.01749",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1906.08871",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1908.07491",
+          "difference": -0.08333333333333333
+        },
+        {
+          "documentId": "qasper:1908.11046",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1908.11049",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1908.11053",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.00437",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.00786",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.02855",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.03087",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.05190",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.05372",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.07158",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.10481",
+          "difference": 0.5
+        },
+        {
+          "documentId": "qasper:1909.11706",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.12208",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.01108",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.02677",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.03943",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.07973",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.14589",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.00461",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.05652",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1911.10401",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.11025",
+          "difference": 0.125
+        },
+        {
+          "documentId": "qasper:1911.11161",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.11899",
+          "difference": -0.5
+        },
+        {
+          "documentId": "qasper:1912.00342",
+          "difference": -0.125
+        },
+        {
+          "documentId": "qasper:1912.07076",
+          "difference": 0.25
+        },
+        {
+          "documentId": "qasper:1912.08084",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:1912.10162",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.11585",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2002.03056",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:2002.06851",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:2002.09616",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.03131",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.03728",
+          "difference": -0.25
+        },
+        {
+          "documentId": "qasper:2003.04978",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.07459",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.09244",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.11687",
+          "difference": 0.0
+        }
+      ]
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "metric": "faithfulness",
+      "method": "jev-scan",
+      "baseline": "openai-dense",
+      "nPairs": 22,
+      "nBothRequested": 22,
+      "nMethodScored": 27,
+      "nBaselineScored": 23,
+      "nMethodScoredUnmatched": 5,
+      "nBaselineScoredUnmatched": 1,
+      "meanDifference": -0.05285455285455286,
+      "ciLow": -0.17160677285677287,
+      "ciHigh": 0.03786495911495906,
+      "nDocuments": 21,
+      "limitedDocumentSupport": false,
+      "documentDifferences": [
+        {
+          "documentId": "qasper:1706.02427",
+          "difference": -0.11363636363636365
+        },
+        {
+          "documentId": "qasper:1710.01789",
+          "difference": 0.19999999999999996
+        },
+        {
+          "documentId": "qasper:1711.11118",
+          "difference": 0.16666666666666663
+        },
+        {
+          "documentId": "qasper:1802.09233",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1804.03839",
+          "difference": -0.26363636363636367
+        },
+        {
+          "documentId": "qasper:1809.03695",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1902.10246",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1905.08392",
+          "difference": -0.16666666666666663
+        },
+        {
+          "documentId": "qasper:1906.01010",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1906.05506",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1906.06349",
+          "difference": -0.09999999999999998
+        },
+        {
+          "documentId": "qasper:1907.00168",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.01860",
+          "difference": -1.0
+        },
+        {
+          "documentId": "qasper:1909.06708",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.08357",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1910.09942",
+          "difference": -0.32307692307692315
+        },
+        {
+          "documentId": "qasper:1910.12477",
+          "difference": 0.1388888888888889
+        },
+        {
+          "documentId": "qasper:1911.06815",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2001.11316",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.03728",
+          "difference": 0.1515151515151516
+        },
+        {
+          "documentId": "qasper:2003.12450",
+          "difference": 0.19999999999999996
+        }
+      ]
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "metric": "faithfulness",
+      "method": "jev-scan",
+      "baseline": "hybrid-bge",
+      "nPairs": 23,
+      "nBothRequested": 23,
+      "nMethodScored": 27,
+      "nBaselineScored": 25,
+      "nMethodScoredUnmatched": 4,
+      "nBaselineScoredUnmatched": 2,
+      "meanDifference": 0.006099960645415194,
+      "ciLow": -0.08118949232585596,
+      "ciHigh": 0.09039846517119245,
+      "nDocuments": 22,
+      "limitedDocumentSupport": false,
+      "documentDifferences": [
+        {
+          "documentId": "qasper:1706.02427",
+          "difference": -0.1636363636363637
+        },
+        {
+          "documentId": "qasper:1710.01789",
+          "difference": 0.33333333333333337
+        },
+        {
+          "documentId": "qasper:1711.11118",
+          "difference": 0.30000000000000004
+        },
+        {
+          "documentId": "qasper:1802.09233",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1804.03839",
+          "difference": -0.36363636363636365
+        },
+        {
+          "documentId": "qasper:1809.03695",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1902.10246",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1905.08392",
+          "difference": 0.11904761904761907
+        },
+        {
+          "documentId": "qasper:1906.05506",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1906.06349",
+          "difference": 0.06666666666666665
+        },
+        {
+          "documentId": "qasper:1907.00168",
+          "difference": 0.5
+        },
+        {
+          "documentId": "qasper:1909.01860",
+          "difference": -0.5
+        },
+        {
+          "documentId": "qasper:1909.06708",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1909.08357",
+          "difference": 0.16666666666666663
+        },
+        {
+          "documentId": "qasper:1910.09942",
+          "difference": -0.06666666666666665
+        },
+        {
+          "documentId": "qasper:1910.12477",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1911.06815",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:1912.00239",
+          "difference": -0.16666666666666669
+        },
+        {
+          "documentId": "qasper:2001.11316",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2002.04745",
+          "difference": 0.0
+        },
+        {
+          "documentId": "qasper:2003.03728",
+          "difference": -0.09090909090909083
+        },
+        {
+          "documentId": "qasper:2003.12450",
+          "difference": 0.0
+        }
+      ]
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "metric": "answer_accuracy",
+      "method": "jev-scan",
+      "baseline": "openai-dense",
+      "nPairs": 0,
+      "nBothRequested": 0,
+      "nMethodScored": 0,
+      "nBaselineScored": 0,
+      "nMethodScoredUnmatched": 0,
+      "nBaselineScoredUnmatched": 0,
+      "meanDifference": null,
+      "ciLow": null,
+      "ciHigh": null,
+      "nDocuments": 0,
+      "limitedDocumentSupport": true,
+      "documentDifferences": []
+    },
+    {
+      "experimentId": "gb10-main-study-20261004-v1",
+      "corpus": "qasper-test",
+      "unanswerable": true,
+      "metric": "answer_accuracy",
+      "method": "jev-scan",
+      "baseline": "hybrid-bge",
+      "nPairs": 0,
+      "nBothRequested": 0,
+      "nMethodScored": 0,
+      "nBaselineScored": 0,
+      "nMethodScoredUnmatched": 0,
+      "nBaselineScoredUnmatched": 0,
+      "meanDifference": null,
+      "ciLow": null,
+      "ciHigh": null,
+      "nDocuments": 0,
+      "limitedDocumentSupport": true,
+      "documentDifferences": []
+    }
+  ]
+}

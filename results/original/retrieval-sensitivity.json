@@ -1,0 +1,1934 @@
+{
+  "schemaVersion": 1,
+  "kind": "measured-study-readout",
+  "experimentId": "gb10-main-study-20261004-v1",
+  "phase": "test",
+  "modelAuthoredOnlySensitivity": {
+    "pairedComparisons": [
+      {
+        "corpus": "openstax-books",
+        "method": "bge-m3",
+        "baseline": "openai-dense",
+        "mean": -0.07221660692680261,
+        "low": -0.14430129129424502,
+        "high": 0.0068089750630592714,
+        "clusters": 8,
+        "samples": 10000,
+        "seed": 42,
+        "nPairs": 78,
+        "missingMethod": 0,
+        "missingBaseline": 0,
+        "perDocument": [
+          {
+            "documentId": "openstax:american-government-3e",
+            "value": -0.12640449438202248,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:astronomy-2e",
+            "value": -0.2504708097928437,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:biology-2e",
+            "value": -0.09891812865497078,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-business",
+            "value": -0.15,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-philosophy",
+            "value": 0.14157706093189965,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:introduction-sociology-3e",
+            "value": 0.0062271062271062275,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:principles-economics-3e",
+            "value": -0.06641025641025641,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:psychology-2e",
+            "value": -0.03333333333333334,
+            "nQuestions": 10
+          }
+        ],
+        "leaveOneDocumentOut": [
+          {
+            "omittedDocumentId": "openstax:american-government-3e",
+            "difference": -0.06447548014748548
+          },
+          {
+            "omittedDocumentId": "openstax:astronomy-2e",
+            "difference": -0.046751720803082444
+          },
+          {
+            "omittedDocumentId": "openstax:biology-2e",
+            "difference": -0.06840210382277857
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-business",
+            "difference": -0.06110469363063155
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-philosophy",
+            "difference": -0.10275855947804578
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-sociology-3e",
+            "difference": -0.08342285166307528
+          },
+          {
+            "omittedDocumentId": "openstax:principles-economics-3e",
+            "difference": -0.0730460855720235
+          },
+          {
+            "omittedDocumentId": "openstax:psychology-2e",
+            "difference": -0.07777136029729821
+          }
+        ]
+      },
+      {
+        "corpus": "openstax-books",
+        "method": "bm25",
+        "baseline": "openai-dense",
+        "mean": -0.09219281661556704,
+        "low": -0.2099563661143139,
+        "high": 0.021282187323146573,
+        "clusters": 8,
+        "samples": 10000,
+        "seed": 42,
+        "nPairs": 78,
+        "missingMethod": 0,
+        "missingBaseline": 0,
+        "perDocument": [
+          {
+            "documentId": "openstax:american-government-3e",
+            "value": -0.35,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:astronomy-2e",
+            "value": -0.1111111111111111,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:biology-2e",
+            "value": 0.08441520467836257,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-business",
+            "value": -0.3,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-philosophy",
+            "value": 0.08602150537634408,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:introduction-sociology-3e",
+            "value": -0.19686813186813187,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:principles-economics-3e",
+            "value": 0.1,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:psychology-2e",
+            "value": -0.05,
+            "nQuestions": 10
+          }
+        ],
+        "leaveOneDocumentOut": [
+          {
+            "omittedDocumentId": "openstax:american-government-3e",
+            "difference": -0.05536321898921948
+          },
+          {
+            "omittedDocumentId": "openstax:astronomy-2e",
+            "difference": -0.0894902031162036
+          },
+          {
+            "omittedDocumentId": "openstax:biology-2e",
+            "difference": -0.11742253394327128
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-business",
+            "difference": -0.06250607613207662
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-philosophy",
+            "difference": -0.11765200547155434
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-sociology-3e",
+            "difference": -0.07723920015091491
+          },
+          {
+            "omittedDocumentId": "openstax:principles-economics-3e",
+            "difference": -0.11964893327493376
+          },
+          {
+            "omittedDocumentId": "openstax:psychology-2e",
+            "difference": -0.09822036184636232
+          }
+        ]
+      },
+      {
+        "corpus": "openstax-books",
+        "method": "hybrid",
+        "baseline": "openai-dense",
+        "mean": -0.03888327359346927,
+        "low": -0.1047232093009088,
+        "high": 0.03187031812539255,
+        "clusters": 8,
+        "samples": 10000,
+        "seed": 42,
+        "nPairs": 78,
+        "missingMethod": 0,
+        "missingBaseline": 0,
+        "perDocument": [
+          {
+            "documentId": "openstax:american-government-3e",
+            "value": -0.1764044943820225,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:astronomy-2e",
+            "value": -0.08380414312617702,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:biology-2e",
+            "value": -0.06558479532163743,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-business",
+            "value": -0.15,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-philosophy",
+            "value": 0.14157706093189965,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:introduction-sociology-3e",
+            "value": 0.0062271062271062275,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:principles-economics-3e",
+            "value": 0.06692307692307692,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:psychology-2e",
+            "value": -0.05,
+            "nQuestions": 10
+          }
+        ],
+        "leaveOneDocumentOut": [
+          {
+            "omittedDocumentId": "openstax:american-government-3e",
+            "difference": -0.019237384909390236
+          },
+          {
+            "omittedDocumentId": "openstax:astronomy-2e",
+            "difference": -0.032466006517368154
+          },
+          {
+            "omittedDocumentId": "openstax:biology-2e",
+            "difference": -0.03506877048944524
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-business",
+            "difference": -0.023009455535393446
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-philosophy",
+            "difference": -0.06466332138280768
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-sociology-3e",
+            "difference": -0.04532761356783719
+          },
+          {
+            "omittedDocumentId": "openstax:principles-economics-3e",
+            "difference": -0.05399846652440443
+          },
+          {
+            "omittedDocumentId": "openstax:psychology-2e",
+            "difference": -0.03729516982110773
+          }
+        ]
+      },
+      {
+        "corpus": "openstax-books",
+        "method": "hybrid-bge",
+        "baseline": "openai-dense",
+        "mean": 0.04268788550104363,
+        "low": -0.024568320148354063,
+        "high": 0.09618708458001436,
+        "clusters": 8,
+        "samples": 10000,
+        "seed": 42,
+        "nPairs": 78,
+        "missingMethod": 0,
+        "missingBaseline": 0,
+        "perDocument": [
+          {
+            "documentId": "openstax:american-government-3e",
+            "value": -0.018023255813953486,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:astronomy-2e",
+            "value": 0.1384180790960452,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:biology-2e",
+            "value": 0.034415204678362565,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-business",
+            "value": -0.15,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-philosophy",
+            "value": 0.030465949820788527,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:introduction-sociology-3e",
+            "value": 0.08956043956043956,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:principles-economics-3e",
+            "value": 0.11666666666666665,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:psychology-2e",
+            "value": 0.1,
+            "nQuestions": 10
+          }
+        ],
+        "leaveOneDocumentOut": [
+          {
+            "omittedDocumentId": "openstax:american-government-3e",
+            "difference": 0.05136090568890036
+          },
+          {
+            "omittedDocumentId": "openstax:astronomy-2e",
+            "difference": 0.02901214355890055
+          },
+          {
+            "omittedDocumentId": "openstax:biology-2e",
+            "difference": 0.04386969704714093
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-business",
+            "difference": 0.07021472628690702
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-philosophy",
+            "difference": 0.04443387631250865
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-sociology-3e",
+            "difference": 0.03599180634970135
+          },
+          {
+            "omittedDocumentId": "openstax:principles-economics-3e",
+            "difference": 0.03211948819166891
+          },
+          {
+            "omittedDocumentId": "openstax:psychology-2e",
+            "difference": 0.03450044057262129
+          }
+        ]
+      },
+      {
+        "corpus": "openstax-books",
+        "method": "hybrid-jev",
+        "baseline": "openai-dense",
+        "mean": 0.11174542518358331,
+        "low": 0.04391615275900019,
+        "high": 0.18370469536243708,
+        "clusters": 8,
+        "samples": 10000,
+        "seed": 42,
+        "nPairs": 78,
+        "missingMethod": 0,
+        "missingBaseline": 0,
+        "perDocument": [
+          {
+            "documentId": "openstax:american-government-3e",
+            "value": 0.13197674418604652,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:astronomy-2e",
+            "value": 0.1384180790960452,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:biology-2e",
+            "value": 0.28441520467836257,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-business",
+            "value": 0,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-philosophy",
+            "value": 0.08602150537634408,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:introduction-sociology-3e",
+            "value": 0.05313186813186813,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:principles-economics-3e",
+            "value": 0.23333333333333334,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:psychology-2e",
+            "value": -0.03333333333333334,
+            "nQuestions": 10
+          }
+        ],
+        "leaveOneDocumentOut": [
+          {
+            "omittedDocumentId": "openstax:american-government-3e",
+            "difference": 0.10885523675466001
+          },
+          {
+            "omittedDocumentId": "openstax:astronomy-2e",
+            "difference": 0.1079350460532316
+          },
+          {
+            "omittedDocumentId": "openstax:biology-2e",
+            "difference": 0.08707831382718627
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-business",
+            "difference": 0.12770905735266663
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-philosophy",
+            "difference": 0.11542027087033178
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-sociology-3e",
+            "difference": 0.1201187904766855
+          },
+          {
+            "omittedDocumentId": "openstax:principles-economics-3e",
+            "difference": 0.09437572401933332
+          },
+          {
+            "omittedDocumentId": "openstax:psychology-2e",
+            "difference": 0.1324709621145714
+          }
+        ]
+      },
+      {
+        "corpus": "openstax-books",
+        "method": "jev-scan",
+        "baseline": "openai-dense",
+        "mean": 0.07080525424341237,
+        "low": 0.018451489129984885,
+        "high": 0.1254855718273386,
+        "clusters": 8,
+        "samples": 10000,
+        "seed": 42,
+        "nPairs": 78,
+        "missingMethod": 0,
+        "missingBaseline": 0,
+        "perDocument": [
+          {
+            "documentId": "openstax:american-government-3e",
+            "value": 0.08197674418604652,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:astronomy-2e",
+            "value": 0.19397363465160075,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:biology-2e",
+            "value": 0.18441520467836256,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-business",
+            "value": 0,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-philosophy",
+            "value": 0.08602150537634408,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:introduction-sociology-3e",
+            "value": 0.05313186813186813,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:principles-economics-3e",
+            "value": 0.0002564102564102333,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:psychology-2e",
+            "value": -0.03333333333333334,
+            "nQuestions": 10
+          }
+        ],
+        "leaveOneDocumentOut": [
+          {
+            "omittedDocumentId": "openstax:american-government-3e",
+            "difference": 0.06920932710875034
+          },
+          {
+            "omittedDocumentId": "openstax:astronomy-2e",
+            "difference": 0.05320977132795689
+          },
+          {
+            "omittedDocumentId": "openstax:biology-2e",
+            "difference": 0.05457526132413377
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-business",
+            "difference": 0.08092029056389985
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-philosophy",
+            "difference": 0.06863150408156497
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-sociology-3e",
+            "difference": 0.0733300236879187
+          },
+          {
+            "omittedDocumentId": "openstax:principles-economics-3e",
+            "difference": 0.08088366052726982
+          },
+          {
+            "omittedDocumentId": "openstax:psychology-2e",
+            "difference": 0.08568219532580461
+          }
+        ]
+      },
+      {
+        "corpus": "openstax-books",
+        "method": "bge-m3",
+        "baseline": "hybrid-bge",
+        "mean": -0.11490449242784623,
+        "low": -0.20934893687229067,
+        "high": -0.025000000000000015,
+        "clusters": 8,
+        "samples": 10000,
+        "seed": 42,
+        "nPairs": 78,
+        "missingMethod": 0,
+        "missingBaseline": 0,
+        "perDocument": [
+          {
+            "documentId": "openstax:american-government-3e",
+            "value": -0.10838123856806899,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:astronomy-2e",
+            "value": -0.3888888888888889,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:biology-2e",
+            "value": -0.13333333333333336,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-business",
+            "value": 0,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-philosophy",
+            "value": 0.1111111111111111,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:introduction-sociology-3e",
+            "value": -0.08333333333333334,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:principles-economics-3e",
+            "value": -0.18307692307692308,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:psychology-2e",
+            "value": -0.13333333333333336,
+            "nQuestions": 10
+          }
+        ],
+        "leaveOneDocumentOut": [
+          {
+            "omittedDocumentId": "openstax:american-government-3e",
+            "difference": -0.11583638583638585
+          },
+          {
+            "omittedDocumentId": "openstax:astronomy-2e",
+            "difference": -0.075763864361983
+          },
+          {
+            "omittedDocumentId": "openstax:biology-2e",
+            "difference": -0.1122718008699195
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-business",
+            "difference": -0.13131941991753854
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-philosophy",
+            "difference": -0.14719243579055444
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-sociology-3e",
+            "difference": -0.11941465801277665
+          },
+          {
+            "omittedDocumentId": "openstax:principles-economics-3e",
+            "difference": -0.10516557376369241
+          },
+          {
+            "omittedDocumentId": "openstax:psychology-2e",
+            "difference": -0.1122718008699195
+          }
+        ]
+      },
+      {
+        "corpus": "openstax-books",
+        "method": "bm25",
+        "baseline": "hybrid-bge",
+        "mean": -0.13488070211661066,
+        "low": -0.23233293388798168,
+        "high": -0.036436396588427816,
+        "clusters": 8,
+        "samples": 10000,
+        "seed": 42,
+        "nPairs": 78,
+        "missingMethod": 0,
+        "missingBaseline": 0,
+        "perDocument": [
+          {
+            "documentId": "openstax:american-government-3e",
+            "value": -0.3319767441860465,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:astronomy-2e",
+            "value": -0.24952919020715628,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:biology-2e",
+            "value": 0.05,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-business",
+            "value": -0.15,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-philosophy",
+            "value": 0.05555555555555555,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:introduction-sociology-3e",
+            "value": -0.2864285714285714,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:principles-economics-3e",
+            "value": -0.016666666666666663,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:psychology-2e",
+            "value": -0.15,
+            "nQuestions": 10
+          }
+        ],
+        "leaveOneDocumentOut": [
+          {
+            "omittedDocumentId": "openstax:american-government-3e",
+            "difference": -0.10672412467811983
+          },
+          {
+            "omittedDocumentId": "openstax:astronomy-2e",
+            "difference": -0.11850234667510415
+          },
+          {
+            "omittedDocumentId": "openstax:biology-2e",
+            "difference": -0.16129223099041215
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-business",
+            "difference": -0.1327208024189836
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-philosophy",
+            "difference": -0.16208588178406294
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-sociology-3e",
+            "difference": -0.11323100650061627
+          },
+          {
+            "omittedDocumentId": "openstax:principles-economics-3e",
+            "difference": -0.15176842146660263
+          },
+          {
+            "omittedDocumentId": "openstax:psychology-2e",
+            "difference": -0.1327208024189836
+          }
+        ]
+      },
+      {
+        "corpus": "openstax-books",
+        "method": "hybrid",
+        "baseline": "hybrid-bge",
+        "mean": -0.0815711590945129,
+        "low": -0.1441151866852481,
+        "high": -0.011047008547008548,
+        "clusters": 8,
+        "samples": 10000,
+        "seed": 42,
+        "nPairs": 78,
+        "missingMethod": 0,
+        "missingBaseline": 0,
+        "perDocument": [
+          {
+            "documentId": "openstax:american-government-3e",
+            "value": -0.158381238568069,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:astronomy-2e",
+            "value": -0.2222222222222222,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:biology-2e",
+            "value": -0.1,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-business",
+            "value": 0,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-philosophy",
+            "value": 0.1111111111111111,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:introduction-sociology-3e",
+            "value": -0.08333333333333334,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:principles-economics-3e",
+            "value": -0.04974358974358974,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:psychology-2e",
+            "value": -0.15,
+            "nQuestions": 10
+          }
+        ],
+        "leaveOneDocumentOut": [
+          {
+            "omittedDocumentId": "openstax:american-government-3e",
+            "difference": -0.07059829059829059
+          },
+          {
+            "omittedDocumentId": "openstax:astronomy-2e",
+            "difference": -0.061478150076268716
+          },
+          {
+            "omittedDocumentId": "openstax:biology-2e",
+            "difference": -0.07893846753658616
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-business",
+            "difference": -0.09322418182230044
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-philosophy",
+            "difference": -0.10909719769531633
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-sociology-3e",
+            "difference": -0.08131941991753854
+          },
+          {
+            "omittedDocumentId": "openstax:principles-economics-3e",
+            "difference": -0.08611795471607334
+          },
+          {
+            "omittedDocumentId": "openstax:psychology-2e",
+            "difference": -0.07179561039372902
+          }
+        ]
+      },
+      {
+        "corpus": "openstax-books",
+        "method": "hybrid-jev",
+        "baseline": "hybrid-bge",
+        "mean": 0.06905753968253969,
+        "low": -0.011190476190476195,
+        "high": 0.14822420634920636,
+        "clusters": 8,
+        "samples": 10000,
+        "seed": 42,
+        "nPairs": 78,
+        "missingMethod": 0,
+        "missingBaseline": 0,
+        "perDocument": [
+          {
+            "documentId": "openstax:american-government-3e",
+            "value": 0.15,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:astronomy-2e",
+            "value": 0,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:biology-2e",
+            "value": 0.25,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-business",
+            "value": 0.15,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-philosophy",
+            "value": 0.05555555555555555,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:introduction-sociology-3e",
+            "value": -0.036428571428571435,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:principles-economics-3e",
+            "value": 0.11666666666666667,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:psychology-2e",
+            "value": -0.13333333333333336,
+            "nQuestions": 10
+          }
+        ],
+        "leaveOneDocumentOut": [
+          {
+            "omittedDocumentId": "openstax:american-government-3e",
+            "difference": 0.05749433106575964
+          },
+          {
+            "omittedDocumentId": "openstax:astronomy-2e",
+            "difference": 0.07892290249433108
+          },
+          {
+            "omittedDocumentId": "openstax:biology-2e",
+            "difference": 0.04320861678004534
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-business",
+            "difference": 0.05749433106575964
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-philosophy",
+            "difference": 0.07098639455782313
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-sociology-3e",
+            "difference": 0.08412698412698415
+          },
+          {
+            "omittedDocumentId": "openstax:principles-economics-3e",
+            "difference": 0.062256235827664395
+          },
+          {
+            "omittedDocumentId": "openstax:psychology-2e",
+            "difference": 0.09797052154195011
+          }
+        ]
+      },
+      {
+        "corpus": "openstax-books",
+        "method": "jev-scan",
+        "baseline": "hybrid-bge",
+        "mean": 0.02811736874236874,
+        "low": -0.04655841727716728,
+        "high": 0.09683531746031745,
+        "clusters": 8,
+        "samples": 10000,
+        "seed": 42,
+        "nPairs": 78,
+        "missingMethod": 0,
+        "missingBaseline": 0,
+        "perDocument": [
+          {
+            "documentId": "openstax:american-government-3e",
+            "value": 0.1,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:astronomy-2e",
+            "value": 0.05555555555555555,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:biology-2e",
+            "value": 0.15,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-business",
+            "value": 0.15,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-philosophy",
+            "value": 0.05555555555555555,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:introduction-sociology-3e",
+            "value": -0.036428571428571435,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:principles-economics-3e",
+            "value": -0.11641025641025642,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:psychology-2e",
+            "value": -0.13333333333333336,
+            "nQuestions": 10
+          }
+        ],
+        "leaveOneDocumentOut": [
+          {
+            "omittedDocumentId": "openstax:american-government-3e",
+            "difference": 0.017848421419849984
+          },
+          {
+            "omittedDocumentId": "openstax:astronomy-2e",
+            "difference": 0.024197627769056342
+          },
+          {
+            "omittedDocumentId": "openstax:biology-2e",
+            "difference": 0.01070556427699285
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-business",
+            "difference": 0.01070556427699285
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-philosophy",
+            "difference": 0.024197627769056342
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-sociology-3e",
+            "difference": 0.03733821733821734
+          },
+          {
+            "omittedDocumentId": "openstax:principles-economics-3e",
+            "difference": 0.04876417233560092
+          },
+          {
+            "omittedDocumentId": "openstax:psychology-2e",
+            "difference": 0.05118175475318333
+          }
+        ]
+      },
+      {
+        "corpus": "openstax-books",
+        "method": "openai-dense",
+        "baseline": "hybrid-bge",
+        "mean": -0.04268788550104363,
+        "low": -0.09618708458001438,
+        "high": 0.024568320148354063,
+        "clusters": 8,
+        "samples": 10000,
+        "seed": 42,
+        "nPairs": 78,
+        "missingMethod": 0,
+        "missingBaseline": 0,
+        "perDocument": [
+          {
+            "documentId": "openstax:american-government-3e",
+            "value": 0.018023255813953486,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:astronomy-2e",
+            "value": -0.1384180790960452,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:biology-2e",
+            "value": -0.034415204678362565,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-business",
+            "value": 0.15,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-philosophy",
+            "value": -0.030465949820788527,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:introduction-sociology-3e",
+            "value": -0.08956043956043956,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:principles-economics-3e",
+            "value": -0.11666666666666665,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:psychology-2e",
+            "value": -0.1,
+            "nQuestions": 10
+          }
+        ],
+        "leaveOneDocumentOut": [
+          {
+            "omittedDocumentId": "openstax:american-government-3e",
+            "difference": -0.05136090568890036
+          },
+          {
+            "omittedDocumentId": "openstax:astronomy-2e",
+            "difference": -0.02901214355890055
+          },
+          {
+            "omittedDocumentId": "openstax:biology-2e",
+            "difference": -0.04386969704714093
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-business",
+            "difference": -0.07021472628690702
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-philosophy",
+            "difference": -0.04443387631250865
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-sociology-3e",
+            "difference": -0.03599180634970135
+          },
+          {
+            "omittedDocumentId": "openstax:principles-economics-3e",
+            "difference": -0.03211948819166891
+          },
+          {
+            "omittedDocumentId": "openstax:psychology-2e",
+            "difference": -0.03450044057262129
+          }
+        ]
+      }
+    ],
+    "bookSensitivity": [
+      {
+        "corpus": "openstax-books",
+        "method": "bge-m3",
+        "mean": 0.7552023451789913,
+        "perBook": [
+          {
+            "documentId": "openstax:american-government-3e",
+            "value": 0.741618761431931,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:astronomy-2e",
+            "value": 0.5,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:biology-2e",
+            "value": 0.5666666666666667,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-business",
+            "value": 0.85,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-philosophy",
+            "value": 1,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:introduction-sociology-3e",
+            "value": 0.9166666666666667,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:principles-economics-3e",
+            "value": 0.5999999999999999,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:psychology-2e",
+            "value": 0.8666666666666666,
+            "nQuestions": 10
+          }
+        ],
+        "leaveOneBookOut": [
+          {
+            "omittedDocumentId": "openstax:american-government-3e",
+            "coverage": 0.757142857142857
+          },
+          {
+            "omittedDocumentId": "openstax:astronomy-2e",
+            "coverage": 0.7916598230617043
+          },
+          {
+            "omittedDocumentId": "openstax:biology-2e",
+            "coverage": 0.7821360135378947
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-business",
+            "coverage": 0.7416598230617043
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-philosophy",
+            "coverage": 0.720231251633133
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-sociology-3e",
+            "coverage": 0.7321360135378948
+          },
+          {
+            "omittedDocumentId": "openstax:principles-economics-3e",
+            "coverage": 0.7773741087759901
+          },
+          {
+            "omittedDocumentId": "openstax:psychology-2e",
+            "coverage": 0.739278870680752
+          }
+        ]
+      },
+      {
+        "corpus": "openstax-books",
+        "method": "bm25",
+        "mean": 0.735226135490227,
+        "perBook": [
+          {
+            "documentId": "openstax:american-government-3e",
+            "value": 0.5180232558139535,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:astronomy-2e",
+            "value": 0.6393596986817326,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:biology-2e",
+            "value": 0.75,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-business",
+            "value": 0.7,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-philosophy",
+            "value": 0.9444444444444444,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:introduction-sociology-3e",
+            "value": 0.7135714285714286,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:principles-economics-3e",
+            "value": 0.7664102564102564,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:psychology-2e",
+            "value": 0.85,
+            "nQuestions": 10
+          }
+        ],
+        "leaveOneBookOut": [
+          {
+            "omittedDocumentId": "openstax:american-government-3e",
+            "coverage": 0.7662551183011231
+          },
+          {
+            "omittedDocumentId": "openstax:astronomy-2e",
+            "coverage": 0.7489213407485832
+          },
+          {
+            "omittedDocumentId": "openstax:biology-2e",
+            "coverage": 0.7331155834174021
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-business",
+            "coverage": 0.7402584405602594
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-philosophy",
+            "coverage": 0.7053378056396244
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-sociology-3e",
+            "coverage": 0.7383196650500553
+          },
+          {
+            "omittedDocumentId": "openstax:principles-economics-3e",
+            "coverage": 0.73077126107308
+          },
+          {
+            "omittedDocumentId": "openstax:psychology-2e",
+            "coverage": 0.718829869131688
+          }
+        ]
+      },
+      {
+        "corpus": "openstax-books",
+        "method": "hybrid",
+        "mean": 0.7885356785123246,
+        "perBook": [
+          {
+            "documentId": "openstax:american-government-3e",
+            "value": 0.691618761431931,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:astronomy-2e",
+            "value": 0.6666666666666666,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:biology-2e",
+            "value": 0.6,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-business",
+            "value": 0.85,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-philosophy",
+            "value": 1,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:introduction-sociology-3e",
+            "value": 0.9166666666666667,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:principles-economics-3e",
+            "value": 0.7333333333333333,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:psychology-2e",
+            "value": 0.85,
+            "nQuestions": 10
+          }
+        ],
+        "leaveOneBookOut": [
+          {
+            "omittedDocumentId": "openstax:american-government-3e",
+            "coverage": 0.8023809523809523
+          },
+          {
+            "omittedDocumentId": "openstax:astronomy-2e",
+            "coverage": 0.8059455373474187
+          },
+          {
+            "omittedDocumentId": "openstax:biology-2e",
+            "coverage": 0.8154693468712282
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-business",
+            "coverage": 0.7797550611569425
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-philosophy",
+            "coverage": 0.758326489728371
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-sociology-3e",
+            "coverage": 0.7702312516331329
+          },
+          {
+            "omittedDocumentId": "openstax:principles-economics-3e",
+            "coverage": 0.7964217278236091
+          },
+          {
+            "omittedDocumentId": "openstax:psychology-2e",
+            "coverage": 0.7797550611569425
+          }
+        ]
+      },
+      {
+        "corpus": "openstax-books",
+        "method": "hybrid-bge",
+        "mean": 0.8701068376068376,
+        "perBook": [
+          {
+            "documentId": "openstax:american-government-3e",
+            "value": 0.85,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:astronomy-2e",
+            "value": 0.8888888888888888,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:biology-2e",
+            "value": 0.7,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-business",
+            "value": 0.85,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-philosophy",
+            "value": 0.8888888888888888,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:introduction-sociology-3e",
+            "value": 1,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:principles-economics-3e",
+            "value": 0.783076923076923,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:psychology-2e",
+            "value": 1,
+            "nQuestions": 10
+          }
+        ],
+        "leaveOneBookOut": [
+          {
+            "omittedDocumentId": "openstax:american-government-3e",
+            "coverage": 0.8729792429792429
+          },
+          {
+            "omittedDocumentId": "openstax:astronomy-2e",
+            "coverage": 0.8674236874236874
+          },
+          {
+            "omittedDocumentId": "openstax:biology-2e",
+            "coverage": 0.8944078144078144
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-business",
+            "coverage": 0.8729792429792429
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-philosophy",
+            "coverage": 0.8674236874236875
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-sociology-3e",
+            "coverage": 0.8515506715506715
+          },
+          {
+            "omittedDocumentId": "openstax:principles-economics-3e",
+            "coverage": 0.8825396825396826
+          },
+          {
+            "omittedDocumentId": "openstax:psychology-2e",
+            "coverage": 0.8515506715506715
+          }
+        ]
+      },
+      {
+        "corpus": "openstax-books",
+        "method": "hybrid-jev",
+        "mean": 0.9391643772893773,
+        "perBook": [
+          {
+            "documentId": "openstax:american-government-3e",
+            "value": 1,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:astronomy-2e",
+            "value": 0.8888888888888888,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:biology-2e",
+            "value": 0.95,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-business",
+            "value": 1,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-philosophy",
+            "value": 0.9444444444444444,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:introduction-sociology-3e",
+            "value": 0.9635714285714286,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:principles-economics-3e",
+            "value": 0.8997435897435897,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:psychology-2e",
+            "value": 0.8666666666666666,
+            "nQuestions": 10
+          }
+        ],
+        "leaveOneBookOut": [
+          {
+            "omittedDocumentId": "openstax:american-government-3e",
+            "coverage": 0.9304735740450026
+          },
+          {
+            "omittedDocumentId": "openstax:astronomy-2e",
+            "coverage": 0.9463465899180186
+          },
+          {
+            "omittedDocumentId": "openstax:biology-2e",
+            "coverage": 0.9376164311878598
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-business",
+            "coverage": 0.9304735740450026
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-philosophy",
+            "coverage": 0.9384100819815105
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-sociology-3e",
+            "coverage": 0.9356776556776556
+          },
+          {
+            "omittedDocumentId": "openstax:principles-economics-3e",
+            "coverage": 0.9447959183673469
+          },
+          {
+            "omittedDocumentId": "openstax:psychology-2e",
+            "coverage": 0.9495211930926217
+          }
+        ]
+      },
+      {
+        "corpus": "openstax-books",
+        "method": "jev-scan",
+        "mean": 0.8982242063492064,
+        "perBook": [
+          {
+            "documentId": "openstax:american-government-3e",
+            "value": 0.95,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:astronomy-2e",
+            "value": 0.9444444444444444,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:biology-2e",
+            "value": 0.85,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-business",
+            "value": 1,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-philosophy",
+            "value": 0.9444444444444444,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:introduction-sociology-3e",
+            "value": 0.9635714285714286,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:principles-economics-3e",
+            "value": 0.6666666666666666,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:psychology-2e",
+            "value": 0.8666666666666666,
+            "nQuestions": 10
+          }
+        ],
+        "leaveOneBookOut": [
+          {
+            "omittedDocumentId": "openstax:american-government-3e",
+            "coverage": 0.890827664399093
+          },
+          {
+            "omittedDocumentId": "openstax:astronomy-2e",
+            "coverage": 0.8916213151927438
+          },
+          {
+            "omittedDocumentId": "openstax:biology-2e",
+            "coverage": 0.9051133786848072
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-business",
+            "coverage": 0.8836848072562359
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-philosophy",
+            "coverage": 0.8916213151927438
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-sociology-3e",
+            "coverage": 0.888888888888889
+          },
+          {
+            "omittedDocumentId": "openstax:principles-economics-3e",
+            "coverage": 0.9313038548752834
+          },
+          {
+            "omittedDocumentId": "openstax:psychology-2e",
+            "coverage": 0.902732426303855
+          }
+        ]
+      },
+      {
+        "corpus": "openstax-books",
+        "method": "openai-dense",
+        "mean": 0.8274189521057941,
+        "perBook": [
+          {
+            "documentId": "openstax:american-government-3e",
+            "value": 0.8680232558139535,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:astronomy-2e",
+            "value": 0.7504708097928438,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:biology-2e",
+            "value": 0.6655847953216375,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-business",
+            "value": 1,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:introduction-philosophy",
+            "value": 0.8584229390681003,
+            "nQuestions": 9
+          },
+          {
+            "documentId": "openstax:introduction-sociology-3e",
+            "value": 0.9104395604395604,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:principles-economics-3e",
+            "value": 0.6664102564102564,
+            "nQuestions": 10
+          },
+          {
+            "documentId": "openstax:psychology-2e",
+            "value": 0.9,
+            "nQuestions": 10
+          }
+        ],
+        "leaveOneBookOut": [
+          {
+            "omittedDocumentId": "openstax:american-government-3e",
+            "coverage": 0.8216183372903426
+          },
+          {
+            "omittedDocumentId": "openstax:astronomy-2e",
+            "coverage": 0.8384115438647869
+          },
+          {
+            "omittedDocumentId": "openstax:biology-2e",
+            "coverage": 0.8505381173606735
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-business",
+            "coverage": 0.8027645166923361
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-philosophy",
+            "coverage": 0.8229898111111789
+          },
+          {
+            "omittedDocumentId": "openstax:introduction-sociology-3e",
+            "coverage": 0.8155588652009703
+          },
+          {
+            "omittedDocumentId": "openstax:principles-economics-3e",
+            "coverage": 0.8504201943480137
+          },
+          {
+            "omittedDocumentId": "openstax:psychology-2e",
+            "coverage": 0.8170502309780503
+          }
+        ]
+      }
+    ]
+  },
+  "typeSummary": [
+    {
+      "corpus": "openstax-books",
+      "type": "factual",
+      "method": "bm25",
+      "mean": 0.803805304864627,
+      "low": 0.6721398305084746,
+      "high": 0.9208603896103896,
+      "clusters": 8,
+      "samples": 10000,
+      "seed": 42,
+      "nQuestions": 32,
+      "nDocuments": 8
+    },
+    {
+      "corpus": "openstax-books",
+      "type": "factual",
+      "method": "openai-dense",
+      "mean": 0.8942658311804164,
+      "low": 0.8138659678858163,
+      "high": 0.96875,
+      "clusters": 8,
+      "samples": 10000,
+      "seed": 42,
+      "nQuestions": 32,
+      "nDocuments": 8
+    },
+    {
+      "corpus": "openstax-books",
+      "type": "factual",
+      "method": "bge-m3",
+      "mean": 0.8271103896103896,
+      "low": 0.7167207792207793,
+      "high": 0.9375,
+      "clusters": 8,
+      "samples": 10000,
+      "seed": 42,
+      "nQuestions": 32,
+      "nDocuments": 8
+    },
+    {
+      "corpus": "openstax-books",
+      "type": "factual",
+      "method": "hybrid",
+      "mean": 0.8271103896103896,
+      "low": 0.7167207792207793,
+      "high": 0.935521509740259,
+      "clusters": 8,
+      "samples": 10000,
+      "seed": 42,
+      "nQuestions": 32,
+      "nDocuments": 8
+    },
+    {
+      "corpus": "openstax-books",
+      "type": "factual",
+      "method": "hybrid-bge",
+      "mean": 0.9208603896103896,
+      "low": 0.8417207792207793,
+      "high": 0.9833603896103896,
+      "clusters": 8,
+      "samples": 10000,
+      "seed": 42,
+      "nQuestions": 32,
+      "nDocuments": 8
+    },
+    {
+      "corpus": "openstax-books",
+      "type": "factual",
+      "method": "hybrid-jev",
+      "mean": 1,
+      "low": 1,
+      "high": 1,
+      "clusters": 8,
+      "samples": 10000,
+      "seed": 42,
+      "nQuestions": 32,
+      "nDocuments": 8
+    },
+    {
+      "corpus": "openstax-books",
+      "type": "factual",
+      "method": "jev-scan",
+      "mean": 0.90625,
+      "low": 0.78125,
+      "high": 1,
+      "clusters": 8,
+      "samples": 10000,
+      "seed": 42,
+      "nQuestions": 32,
+      "nDocuments": 8
+    },
+    {
+      "corpus": "openstax-books",
+      "type": "explanatory",
+      "method": "bm25",
+      "mean": 0.867948717948718,
+      "low": 0.75,
+      "high": 0.9583333333333334,
+      "clusters": 8,
+      "samples": 10000,
+      "seed": 42,
+      "nQuestions": 24,
+      "nDocuments": 8
+    },
+    {
+      "corpus": "openstax-books",
+      "type": "explanatory",
+      "method": "openai-dense",
+      "mean": 0.8931318681318681,
+      "low": 0.7916666666666666,
+      "high": 0.9835164835164836,
+      "clusters": 8,
+      "samples": 10000,
+      "seed": 42,
+      "nQuestions": 24,
+      "nDocuments": 8
+    },
+    {
+      "corpus": "openstax-books",
+      "type": "explanatory",
+      "method": "bge-m3",
+      "mean": 0.8153870162297128,
+      "low": 0.6446629213483146,
+      "high": 0.9681647940074907,
+      "clusters": 8,
+      "samples": 10000,
+      "seed": 42,
+      "nQuestions": 24,
+      "nDocuments": 8
+    },
+    {
+      "corpus": "openstax-books",
+      "type": "explanatory",
+      "method": "hybrid",
+      "mean": 0.8431647940074907,
+      "low": 0.727996254681648,
+      "high": 0.9583333333333334,
+      "clusters": 8,
+      "samples": 10000,
+      "seed": 42,
+      "nQuestions": 24,
+      "nDocuments": 8
+    },
+    {
+      "corpus": "openstax-books",
+      "type": "explanatory",
+      "method": "hybrid-bge",
+      "mean": 0.979059829059829,
+      "low": 0.9371794871794872,
+      "high": 1,
+      "clusters": 8,
+      "samples": 10000,
+      "seed": 42,
+      "nQuestions": 24,
+      "nDocuments": 8
+    },
+    {
+      "corpus": "openstax-books",
+      "type": "explanatory",
+      "method": "hybrid-jev",
+      "mean": 0.9373931623931624,
+      "low": 0.8538461538461538,
+      "high": 1,
+      "clusters": 8,
+      "samples": 10000,
+      "seed": 42,
+      "nQuestions": 24,
+      "nDocuments": 8
+    },
+    {
+      "corpus": "openstax-books",
+      "type": "explanatory",
+      "method": "jev-scan",
+      "mean": 0.9027777777777778,
+      "low": 0.7916666666666667,
+      "high": 0.9861111111111112,
+      "clusters": 8,
+      "samples": 10000,
+      "seed": 42,
+      "nQuestions": 24,
+      "nDocuments": 8
+    },
+    {
+      "corpus": "openstax-books",
+      "type": "multi_section",
+      "method": "bm25",
+      "mean": 0.46455334071613147,
+      "low": 0.2896525470653377,
+      "high": 0.638888888888889,
+      "clusters": 8,
+      "samples": 10000,
+      "seed": 42,
+      "nQuestions": 24,
+      "nDocuments": 8
+    },
+    {
+      "corpus": "openstax-books",
+      "type": "multi_section",
+      "method": "openai-dense",
+      "mean": 0.62502014392487,
+      "low": 0.4891601546219888,
+      "high": 0.7702882317801673,
+      "clusters": 8,
+      "samples": 10000,
+      "seed": 42,
+      "nQuestions": 24,
+      "nDocuments": 8
+    },
+    {
+      "corpus": "openstax-books",
+      "type": "multi_section",
+      "method": "bge-m3",
+      "mean": 0.5561208010335916,
+      "low": 0.37556524547803616,
+      "high": 0.7366763565891473,
+      "clusters": 8,
+      "samples": 10000,
+      "seed": 42,
+      "nQuestions": 24,
+      "nDocuments": 8
+    },
+    {
+      "corpus": "openstax-books",
+      "type": "multi_section",
+      "method": "hybrid",
+      "mean": 0.6325096899224806,
+      "low": 0.4380652454780362,
+      "high": 0.8061208010335917,
+      "clusters": 8,
+      "samples": 10000,
+      "seed": 42,
+      "nQuestions": 24,
+      "nDocuments": 8
+    },
+    {
+      "corpus": "openstax-books",
+      "type": "multi_section",
+      "method": "hybrid-bge",
+      "mean": 0.6805555555555555,
+      "low": 0.5208333333333334,
+      "high": 0.8472222222222222,
+      "clusters": 8,
+      "samples": 10000,
+      "seed": 42,
+      "nQuestions": 24,
+      "nDocuments": 8
+    },
+    {
+      "corpus": "openstax-books",
+      "type": "multi_section",
+      "method": "hybrid-jev",
+      "mean": 0.866765873015873,
+      "low": 0.7973214285714286,
+      "high": 0.9306324404761894,
+      "clusters": 8,
+      "samples": 10000,
+      "seed": 42,
+      "nQuestions": 24,
+      "nDocuments": 8
+    },
+    {
+      "corpus": "openstax-books",
+      "type": "multi_section",
+      "method": "jev-scan",
+      "mean": 0.8459325396825398,
+      "low": 0.7834325396825396,
+      "high": 0.9027777777777778,
+      "clusters": 8,
+      "samples": 10000,
+      "seed": 42,
+      "nQuestions": 24,
+      "nDocuments": 8
+    }
+  ]
+}

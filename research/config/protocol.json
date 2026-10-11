@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "seed": 42,
+  "methods": ["bm25", "openai-dense", "bge-m3", "hybrid", "hybrid-bge", "hybrid-jev", "jev-scan"],
+  "chunkTokens": 500,
+  "overlapTokens": 75,
+  "topK": 5,
+  "hybridDepth": 50,
+  "rrfK": 60,
+  "jevWindowTokens": 12000,
+  "jevRetain": 10,
+  "concurrency": 2,
+  "requestTimeoutMs": 120000,
+  "maxBudgetUsd": "200",
+  "maxDocumentTokens": 1000000,
+  "bootstrapSamples": 10000,
+  "models": {
+    "jev": "jev-1.13.0", "openaiEmbedding": "text-embedding-3-small",
+    "bge": "BAAI/bge-m3", "bgeRevision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "reranker": "BAAI/bge-reranker-v2-m3", "rerankerRevision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+    "generation": "gpt-4.1-mini-2025-04-14"
+  },
+  "rates": { "jevInput": "0.042", "embeddingInput": "0.02", "generationInput": "0.40", "generationCachedInput": "0.10", "generationOutput": "1.60", "date": "2026-10-03" },
+  "local": { "python": "python3", "device": "cpu", "batchSize": 8, "precision": "fp32", "modelCacheDir": "research/.cache/huggingface/hub" },
+  "timing": { "questions": 100, "rounds": 3 },
+  "generation": { "questions": 200, "maxOutputTokens": 512 }
+}
