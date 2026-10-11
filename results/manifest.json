@@ -3,8 +3,8 @@
   "kind": "research-result-distribution",
   "files": {
     "README.md": {
-      "sha256": "78a4eea4b5847c35389198a18d6660f31999ae746691efbc2191472bdede6a52",
-      "bytes": 3646
+      "sha256": "d68af7cab6598f5988df735b3a3c9d4b7a342c642e580e488cb1b394891b37ae",
+      "bytes": 3808
     },
     "clef/README.md": {
       "sha256": "f03affcf92c2897abf2593d4045bc88d0f05c8814bf0ca2b5d2f5d463f85946a",
@@ -33,6 +33,26 @@
     "decisions/retrieval.json": {
       "sha256": "07c414ae75d31dca0ad7e671e15a893203162bcc8e8cd12197deee98179bd555",
       "bytes": 672810
+    },
+    "figures/README.md": {
+      "sha256": "45d8a18e2e5b0eb2d56e4b4fd6cee0486425d2290af1bea376b016d04a19e196",
+      "bytes": 2530
+    },
+    "figures/evidence-answer-quality.png": {
+      "sha256": "b648ce4a6c926bbc6b2b195aea69852587f54ab000fa128a67fd958e2de4fca5",
+      "bytes": 96775
+    },
+    "figures/retrieval-api-reuse.png": {
+      "sha256": "291b836f64ea743d44a8af8f77a67fcef70db6d82ed29745cb1b4166da0027ec",
+      "bytes": 97864
+    },
+    "figures/retrieval-strategies.png": {
+      "sha256": "9af84edba645ec8250bd8040b2dda42fb88ce7493ddb487742902463c501d2a7",
+      "bytes": 82759
+    },
+    "figures/scan-retention.png": {
+      "sha256": "808c36f696d17b75f82e76d4dd4a4200adb2fe29f680c0d33ed6f47f146b5752",
+      "bytes": 62764
     },
     "original/README.md": {
       "sha256": "0351509aeee32f047891cc08b8c098a41d8bdaad3eec5a885b3e1ac5e3655ddd",

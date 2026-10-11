@@ -1,6 +1,6 @@
-# Experimental results
+# Scan or Index? — Experimental results
 
-Numerical outputs from the original seven-method Jev/RAG experiment and the subsequent OpenAI Decisions and local Cloudflare Clef extensions. The original measurements, their reference authorship, and the conditions of each extension remain separate.
+Numerical outputs and charts for **Scan or Index? Evidence Coverage, Answer Quality, and Cost in Long-Document RAG**. The original seven-method experiment and the Decisions and Clef extensions retain separate measurement dates, reference provenance, and deployment conditions.
 
 | Directory | Contents |
 | --- | --- |
@@ -8,7 +8,8 @@ Numerical outputs from the original seven-method Jev/RAG experiment and the subs
 | [decisions/](decisions/README.md) | Decisions retrieval and paired answer comparisons |
 | [clef/](clef/README.md) | Local Clef retrieval, retention, timing, and answer comparisons |
 | [retrieval.csv](retrieval.csv) | EC@5 means and 95% document-bootstrap intervals for all 11 methods and both corpora |
-| [provenance.json](provenance.json) | Original artifact hashes and the source commit for the numerical export |
+| [figures/](figures/README.md) | Retrieval design, evidence retention, cumulative API cost, and evidence versus answer quality |
+| [provenance.json](provenance.json) | Source and distribution checksums for the numerical export |
 | [manifest.json](manifest.json) | File checksums for this distribution |
 
 ## Verify
